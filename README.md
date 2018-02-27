@@ -62,7 +62,7 @@ Alla fine di una riga non vuota non **DEVONO** esserci spazi bianchi.
 Le righe dei file PHP **DEVONO** terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
 
 
-## COnvenzione di denominazione
+## Convenzione di denominazione
 
 
 ### Files
@@ -70,7 +70,15 @@ I nomi dei files **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi dei files **NON DEVONO** contenere spazi.
 
-I nomi dei files **DEVONO** essere in stile CapitalizedWords.
+I nomi dei files **DEVONO** seguire lo stile CapitalizedWords.
 
 I nomi dei files **DEVONO** terminare con l'estensione `.php`.
+
+
+### Costanti
+I nomi dei files **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura (underscore).
+
+Tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiuscolo.
+
+Tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura (underscore).
 
