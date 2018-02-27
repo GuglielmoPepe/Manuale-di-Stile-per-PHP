@@ -26,7 +26,11 @@ Il codice PHP **NON DEVE** mai usare la tabulazione per i rientri.
 
 
 ### Lunghezza massima delle righe
+La lunghezza massima di una riga **DEVONO** essere di 72 caratteri.
 
+Righe più lunghe **DEVONO** essere divise in più righe successive di non più di 72 caratteri.
+
+Alla fine di una riga non vuota non **DEVONO** esserci spazi bianchi. 
 
 ### Fine riga
-
+Le righe dei file PHP **DEVONO** terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
