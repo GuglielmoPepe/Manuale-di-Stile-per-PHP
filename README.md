@@ -15,6 +15,7 @@ Guida alla redazione di programmi in PHP.
   * [Interfacce](#interfacce)
   * [Classi astratte](#classi-astratte)
   * [Classi](#classi)
+  * [Costanti di classe](#costanti-di-classe)
   * [Proprietà](#proprietà)
   * [Metodi](#metodi)
 
