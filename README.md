@@ -8,6 +8,7 @@ Guida alla redazione di programmi in PHP.
   * [Lunghezza massima delle righe](#lunghezza-massima-delle-righe) 
   * [Fine riga](#fine-riga) 
 * [Convenzione di denominazione](#convenzione-di-denominazione)
+  * [Directories](#directories)
   * [Files](#files)
   * [Costanti](#costanti)
   * [Variabili](#variabili)
@@ -64,13 +65,19 @@ Le righe dei file PHP **DEVONO** terminare con un singolo carattere di avanzamen
 
 ## Convenzione di denominazione
 
+### Directories
+I nomi delle directories **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi delle directories **NON DEVONO** contenere spazi.
+
+I nomi delle directories **DEVONO** avere la prima lettera in maiuscolo.
 
 ### Files
 I nomi dei files **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi dei files **NON DEVONO** contenere spazi.
 
-I nomi dei files **DEVONO** seguire lo stile CapitalizedWords.
+I nomi dei files **DEVONO** avere la prima lettera in maiuscolo.
 
 I nomi dei files **DEVONO** terminare con l'estensione `.php`.
 
