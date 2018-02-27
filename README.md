@@ -93,3 +93,8 @@ Tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiusc
 
 Tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura (underscore).
 
+### Variabili
+I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi delle variabili **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
+
