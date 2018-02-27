@@ -7,7 +7,17 @@ Guida alla redazione di programmi in PHP.
   * [Indentazione](#indentazione)
   * [Lunghezza massima delle righe](#lunghezza-massima-delle-righe) 
   * [Fine riga](#fine-riga) 
-  
+* [Convenzione di denominazione](#convenzione-di-denominazione)
+  * [Files](#files)
+  * [Costanti](#costanti)
+  * [Variabili](#variabili)
+  * [Funzioni](#funzioni)
+  * [Interfacce](#interfacce)
+  * [Classi astratte](#classi-astratte)
+  * [Classi](#classi)
+  * [Proprietà](#proprietà)
+  * [Metodi](#metodi)
+
   
   
 ## Formattazione dei file PHP
