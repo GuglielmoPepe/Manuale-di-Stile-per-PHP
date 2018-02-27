@@ -17,6 +17,10 @@ Il tag di apertura `<?php` **DEVE** essere seguito da una singola riga vuota.
 
 Il tag di chiusura `?>` **DEVE** essere omesso dai files che contengono solo codice PHP.
 
+Il tag breve `<?=` **DEVE** essere utilizzato solo nei file template al posto di `<?php echo `.
+
+Il tag breve `<?=` **DEVE** essere immediatamente seguito da un singolo spazio, dalla variabile o dal valore della funzione da stampare, da un singolo spazio ed infine dal tag di chiusura `?>`.
+
 Tutti i files **DEVONO** terminare con una singola riga vuota.
 
 ### Indentazione
