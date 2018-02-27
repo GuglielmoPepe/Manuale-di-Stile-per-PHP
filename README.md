@@ -98,3 +98,8 @@ I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi delle variabili **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
 
+### Funzioni
+I nomi delle funzioni **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi delle funzioni **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
+
