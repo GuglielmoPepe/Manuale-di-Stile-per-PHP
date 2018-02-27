@@ -66,12 +66,11 @@ Le righe dei file PHP **DEVONO** terminare con un singolo carattere di avanzamen
 
 
 ### Files
-I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, carattere di sottolineatura ed il trattino.
+I nomi dei files **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi dei files **NON DEVONO** contenere spazi.
 
-I nomi dei files che contengono codice PHP **DEVONO** terminare con l'estensione `.php`.
+I nomi dei files **DEVONO** essere in stile CapitalizedWords.
 
-I files che contengono classi PHP **DEVONO** avere lo stesso nome della classe che contengono ed essere in stile CapitalizedWords, mentre qualsiasi altro nome di file (configurazioni, viste, script generici, ecc.) **DEVE** essere in minuscolo.
-
+I nomi dei files **DEVONO** terminare con l'estensione `.php`.
 
