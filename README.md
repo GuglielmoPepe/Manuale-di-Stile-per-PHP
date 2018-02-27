@@ -60,3 +60,18 @@ Alla fine di una riga non vuota non **DEVONO** esserci spazi bianchi.
 
 ### Fine riga
 Le righe dei file PHP **DEVONO** terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
+
+
+## COnvenzione di denominazione
+
+
+### Files
+I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, carattere di sottolineatura ed il trattino.
+
+I nomi dei files **NON DEVONO** contenere spazi.
+
+I nomi dei files che contengono codice PHP **DEVONO** terminare con l'estensione `.php`.
+
+I files che contengono classi PHP **DEVONO** avere lo stesso nome della classe che contengono ed essere in stile CapitalizedWords, mentre qualsiasi altro nome di file (configurazioni, viste, script generici, ecc.) **DEVE** essere in minuscolo.
+
+
