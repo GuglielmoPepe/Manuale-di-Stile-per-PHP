@@ -70,20 +70,24 @@ I nomi delle directories **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi delle directories **NON DEVONO** contenere spazi.
 
-I nomi delle directories **DEVONO** avere la prima lettera in maiuscolo.
+I nomi delle directories **DEVONO** essere tutti in minuscolo.
+
+I nomi delle directories **DEVONO** essere di una sola parola.
 
 ### Files
 I nomi dei files **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi dei files **NON DEVONO** contenere spazi.
 
-I nomi dei files **DEVONO** avere la prima lettera in maiuscolo.
+I nomi dei files **DEVONO** essere tutti in minuscolo.
+
+I nomi dei files **DEVONO** essere di una sola parola.
 
 I nomi dei files **DEVONO** terminare con l'estensione `.php`.
 
 
 ### Costanti
-I nomi dei files **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura (underscore).
+I nomi delle costanti **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura (underscore).
 
 Tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiuscolo.
 
