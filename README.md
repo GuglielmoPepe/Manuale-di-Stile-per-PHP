@@ -207,6 +207,30 @@ In un array suddiviso su più righe l'ultimo elemento **DEVE** essere sempre del
 
 In un array suddiviso su più righe la parentesi di chiusura **DEVE** essere su una propria riga allo stesso livello di indentazione della riga contenente la dichiarazione dell'array.
 
+### Strutture di controllo
+### Funzioni
+### Interfacce
+### Traits
+### Classi astratte
 
+### Classi
+Le classi che estendono altre classi o che implementano interfacce **DEVONO** dichiarare le loro dipendenze sulla stessa linea  quando possibile.
+
+La dichiarazione di classe **DEVE** essere suddivisa su più righe se supera la lunghezza massima per una riga (inserire link).
+
+La dichiarazione di classe **DEVE** essere interrotta prima delle parole chiave `extends` e `implements` se supera la lunghezza massima per una riga(inserire link).
+
+Le istruzioni `extends` e `implements` **DEVONO** essere dichiarate su una propria riga e con un livelo di rientro.
+
+L'istruzione `implements` **DEVE** essere interrotta dopo ogni virgola che separa le interfacce se la dichiarazione di classe  supera la lunghezza massima della riga.
+
+I nomi delle interfacce **DEVONO** essere allineate se la dichiarazione di classe  supera la lunghezza massima della riga.
+
+La parentesi di apertura **DEVE** essere su una propria riga.
+
+La parentesi di chiusura **DEVE** essere su una propria riga, successiva al corpo della classe.
+
+### Proprietà
+### Metodi
 
 
