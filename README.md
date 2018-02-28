@@ -247,14 +247,15 @@ $string = "Hello ${name}, welcome back!";
 // Molto meglio
 $string = 'Hello ' . $name . ', welcome back!';
 ```
-Le stringhe devono essere concatenate utilizzando l'operatore `.`. L'operatore di concatenzione `.` deve essere sempre preceduto e seguito da uno spazio per migliorare la leggibilità. Esempio:
+Le stringhe devono essere concatenate utilizzando l'operatore di concatenzione `.`, che deve essere sempre preceduto e seguito da uno spazio per migliorare la leggibilità del codice. Esempio:
 
 ```php
 $string = 'Mickey' . ' ' . 'Mouse';
 ```
 
-Quando si concatenano le stringhe con l'operatore `.`, si consiglia di suddividere l'istruzione in più righe per migliorare la leggibilità. In questi casi, ogni riga successiva deve essere riempita con uno spazio bianco tale che l'operatore di concatenazione `.` sia allineato all'operatore di assegnazione `=`. Esempio:
+Quando si concatenano le stringhe con l'operatore `.`, si consiglia di suddividere l'istruzione in più righe per migliorare la leggibilità. In questi casi, ogni riga successiva deve essere riempita con tanti spazi bianchi, tali che l'operatore di concatenazione `.` sia allineato all'operatore di assegnazione `=`. 
 
+Esempio:
 ```php
 $sql = "SELECT `id`, `name` from `people` "
      . "WHERE `name`='Mickey' OR `name`='Minnie'";
