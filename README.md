@@ -24,3 +24,91 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Proprietà](#proprietà)
 * [Metodi](#metodi)
 
+
+
+## Formato dei files
+
+
+## Codifica dei caratteri
+
+
+
+## Indentazione
+
+
+
+## Lunghezza massima delle righe
+
+
+
+## Fine riga
+
+
+
+## Tags del codice PHP
+
+
+
+## Directories
+
+
+
+## Files
+
+
+
+## Istruzioni di inclusione
+
+
+
+## Costanti
+
+
+
+## Variabili
+
+
+
+## Istruzioni di controllo
+
+
+
+## Operatori logici
+
+
+
+## Funzioni
+
+
+
+## Namespaces
+
+
+
+## Interfacce
+
+
+
+## Traits
+
+
+
+## Classi astratte
+
+
+
+## Classi
+
+
+
+## Costanti di classe
+
+
+
+## Proprietà
+
+
+
+## Metodi
+
+
