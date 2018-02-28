@@ -23,6 +23,8 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Costanti di classe](#costanti-di-classe)
 * [Proprietà](#proprietà)
 * [Metodi](#metodi)
+* [Stringhe](#stringhe)
+* [Arrays](#arrays)
 
 
 
@@ -66,7 +68,7 @@ Questo è più un problema per gli sviluppatori che lavorano in un ambiente Wind
 ## Tags del codice PHP
 Devono sempre essere usati esclusivamente i tag PHP estesi `<?php ?>` e mai quelli concisi `<? ?>`.
 
-Nei file che contengono esclusivamente codice PHP, il tag di apertura `<?php` **DEVE** essere seguito da una singola riga vuota al fine di migliorare la leggibilità del codice.
+Nei file che contengono esclusivamente codice PHP, il tag di apertura `<?php` deve essere seguito da una singola riga vuota al fine di migliorare la leggibilità del codice.
 
 Nei file che contengono esclusivamente codice PHP, il tag di chiusura `?>` deve essere omesso facendo teminare i files con una singola riga vuota.
 
@@ -95,7 +97,7 @@ Questa esigenza nasce dal fatto che i nomi dei files vengono mappati con i nomi 
 ## Costanti
 Le costanti possono contenere caratteri alfanumerici e caratteri di sottolineatura. I numeri sono consentiti nei nomi delle costanti.
 
-Tutte le lettere utilizzate nel nome di una costante devono essere in maiuscolo, mentre tutte le parole nel nome di una costante devono essere separate da caratteri di sottolineatura. Questo include anche le costanti PHP predefinite come TRUE, FALSE e NULL.
+Tutte le lettere utilizzate nel nome di una costante devono essere in maiuscolo, mentre tutte le parole nel nome di una costante devono essere separate da caratteri di sottolineatura. Questo include anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL`.
 
 La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata.
 
