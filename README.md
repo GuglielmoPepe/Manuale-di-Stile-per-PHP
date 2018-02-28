@@ -129,7 +129,22 @@ Le variabili globali sono fortemente scoraggiate.
 
 
 ## Funzioni
+I nomi delle funzioni devono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle funzioni, ma sono scoraggiati nella maggior parte dei casi.
 
+I nomi delle funzioni devono sempre iniziare con una lettera minuscola. Quando il nome di una funzione è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (formattazione `mixedCase`).
+
+La verbosità è generalmente incoraggiata. I nomi delle funzioni dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
+
+Questo è un esempio di nome accettabile per una funzione:
+
+```php
+function longFunctionName()
+{
+
+}
+```
+
+Le funzioni globali sono fortemente scoraggiate.
 
 
 ## Namespaces
