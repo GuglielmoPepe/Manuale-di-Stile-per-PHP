@@ -22,17 +22,21 @@ Guida alla redazione di programmi in PHP.
   * [Proprietà](#proprietà)
   * [Metodi](#metodi)
 * [Stili per la codifica](#stili-per-la-codifica)
- * [Demarcazione del codice PHP](#demarcazione-del-codice-php)
- * [Stringhe](#stringhe)
- * [Arrays](#arrays)
- * [Funzioni](#funzioni)
- * [Interfacce](#interfacce)
- * [Traits](#traits)
- * [Classi astratte](#classi-astratte)
- * [Classi](#classi)
- * [Proprietà](#proprietà)
- * [Metodi](#metodi)
+  * [Demarcazione del codice PHP](#demarcazione-del-codice-php)
+  * [Costanti](#costanti)
+  * [Stringhe](#stringhe)
+  * [Arrays](#arrays)
+  * [Strutture di controllo](#strutture-di-controllo)
+  * [Funzioni](#funzioni)
+  * [Interfacce](#interfacce)
+  * [Traits](#traits)
+  * [Classi astratte](#classi-astratte)
+  * [Classi](#classi)
+  * [Proprietà](#proprietà)
+  * [Metodi](#metodi)
 
+  
+  
   
 ## Formattazione dei file PHP
 
