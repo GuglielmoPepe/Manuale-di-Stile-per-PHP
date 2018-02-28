@@ -40,12 +40,13 @@ Guida alla redazione di programmi in PHP.
 
 ### Codifica dei caratteri
 
-Il codice PHP **DEVE** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark).
+> Il codice PHP **DEVE** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark).
 
 
 ### Tags del codice PHP
-
-I files che contengono solo codice PHP **DEVONO** usare il tag esteso `<?php`.
+>
+> I files che contengono solo codice PHP **DEVONO** usare il tag esteso `<?php`.
+>
 
 Il tag di apertura `<?php` **DEVE** essere seguito da una singola riga vuota.
 
