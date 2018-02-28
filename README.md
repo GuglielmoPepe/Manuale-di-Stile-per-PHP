@@ -112,10 +112,9 @@ I nomi delle variabili dovrebbero essere quanto più descrittivi possibile, ma a
 Le variabili dovrebbero essere sempre prolisse, per descrivere i dati che lo sviluppatore intende memorizzare in essi. I nomi di variabili di una sola lettera, come `$i` e `$k`, sono scoraggiati tranne che nei cicli più piccoli. Se un ciclo contiene più di 20 righe di codice, le variabili dell'indice dovrebbero avere nomi più descrittivi.
 
 Le variabili che fanno riferimento agli oggetti dovrebbero in qualche modo essere associate alla classe di cui la variabile è un oggetto. Esempio:
+
 ```php
-
 $person = new Person();
-
 ```
 
 Le variabili globali sono fortemente scoraggiate.
