@@ -93,11 +93,32 @@ Questa esigenza nasce dal fatto che i nomi dei files vengono mappati con i nomi 
 
 
 ## Costanti
+Le costanti possono contenere caratteri alfanumerici e caratteri di sottolineatura. I numeri sono consentiti nei nomi delle costanti.
 
+Tutte le lettere utilizzate nel nome di una costante devono essere in maiuscolo, mentre tutte le parole nel nome di una costante devono essere separate da caratteri di sottolineatura. Questo include anche le costanti PHP predefinite come TRUE, FALSE e NULL.
+
+La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente scoraggiata.
+
+Le costanti devono essere denominate in modo da indicare il loro scopo e contenuto.
 
 
 ## Variabili
+I nomi delle variabili possono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle variabili, ma sono scoraggiati nella maggior parte dei casi.
 
+Tutte le variabili dovrebbero iniziare con una lettera minuscola e dovrebbero essere scritte in `mixedCase` in caso di più parole.
+
+I nomi delle variabili dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.  
+
+Le variabili dovrebbero essere sempre prolisse, per descrivere i dati che lo sviluppatore intende memorizzare in essi. I nomi di variabili di una sola lettera, come `$i` e `$k`, sono scoraggiati tranne che nei cicli più piccoli. Se un ciclo contiene più di 20 righe di codice, le variabili dell'indice dovrebbero avere nomi più descrittivi.
+
+Le variabili che fanno riferimento agli oggetti dovrebbero in qualche modo essere associate alla classe di cui la variabile è un oggetto. Esempio:
+```php
+
+$person = new Person();
+
+```
+
+Le variabili globali sono fortemente scoraggiate.
 
 
 ## Istruzioni di controllo
