@@ -133,3 +133,23 @@ I nomi delle classi astratte **DEVONO** iniziare con una lettera maiuscola e **D
 I nomi delle classi **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi delle classi **DEVONO** iniziare con una lettera maiuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+
+
+### Costanti di classe
+I nomi delle costanti di classe **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura (underscore).
+
+Tutte le lettere utilizzate nel nome di una costante di classe **DEVONO** essere in maiuscolo.
+
+Tutte le parole nel nome di una costante di classe **DEVONO** essere separate da caratteri di sottolineatura (underscore).
+
+
+### Proprietà
+I nomi delle proprietà **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi delle proprietà **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
+
+
+### Metodi
+I nomi dei metodi **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi dei metodi **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
