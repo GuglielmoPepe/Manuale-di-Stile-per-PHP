@@ -178,13 +178,41 @@ Se il nome di una classe è composto da più di una parola, la prima lettera di 
 
 
 ## Costanti di classe
+Le costanti possono contenere caratteri alfanumerici e caratteri di sottolineatura. I numeri sono consentiti nei nomi delle costanti.
 
+Tutte le lettere utilizzate nel nome di una costante devono essere in maiuscolo, mentre tutte le parole nel nome di una costante devono essere separate da caratteri di sottolineatura.
+
+I nomi delle costanti dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.  
 
 
 ## Proprietà
+I nomi delle proprietà possono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle proprietà ma sono scoraggiati nella maggior parte dei casi.
 
+Tutte le proprietà dovrebbero iniziare con una lettera minuscola e dovrebbero essere scritte in `mixedCase` in caso di più parole.
 
+I nomi delle proprietà dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.  
+
+Le proprietà dovrebbero essere sempre prolisse per descrivere i dati che lo sviluppatore intende memorizzare in essi.
+
+Le proprietà che fanno riferimento agli oggetti dovrebbero in qualche modo essere associate alla classe di cui la proprietà è un oggetto. Esempio:
+
+```php
+$this->person = new Person();
+```
 
 ## Metodi
+I nomi dei metodi possono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi dei metodi ma sono scoraggiati nella maggior parte dei casi.
 
+I nomi dei metodi devono sempre iniziare con una lettera minuscola. Quando il nome di un metodo è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (formattazione `mixedCase`).
+
+La verbosità è generalmente incoraggiata. I nomi dei metodi dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
+
+Questo è un esempio di nome accettabile per un metodo:
+
+```php
+public function longMethodName()
+{
+
+}
+```
 
