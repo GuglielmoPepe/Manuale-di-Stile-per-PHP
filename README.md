@@ -77,13 +77,13 @@ Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponib
 
 
 ## Directories
-I nomi delle directories devono essere di una sola parola e contenere solo caratteri alfanumerici, senza spazi oltre ad essere tutti in minuscolo.
+I nomi delle directories devono contenere solo caratteri alfanumerici, senza spazi oltre ad avere la prima lettera in maiuscolo. Se il nome di una directory è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (CapitalizedWords).
 
 Questa esigenza nasce dal fatto che i nomi delle directories vengono mappati con i nomi del `namespace`, creando un collegamento biunivoco tra nome directory e `namespace` (o `sub-namespace`).
 
 
 ## Files
-I nomi dei files devono essere di una sola parola e contenere solo caratteri alfanumerici, senza spazi oltre ad essere tutti in minuscolo e terminare con l'estensione `.php`.
+I nomi dei files devono contenere solo caratteri alfanumerici, senza spazi oltre ad avere la prima lettera in maiuscolo. Se il nome di una directory è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (CapitalizedWords). I nomi dei files devono terminare con l'estensione `.php`.
 
 Questa esigenza nasce dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
 
@@ -148,15 +148,21 @@ Le funzioni globali sono fortemente scoraggiate.
 
 
 ## Namespaces
+I nomi dei namespaces si mappano direttamente alle directories e possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi dei namespaces, ma sono scoraggiati nella maggior parte dei casi.
 
+Se il nome di un namespace è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (`CapitalizedWords`). Non sono consentite lettere maiuscole successive, ad es. un namespace "FilePDF" non è consentito, mentre "FilePdf" è accettabile.
 
 
 ## Interfacce
+I nomi delle interfacce si mappano direttamente ai files in cui sono memorizzate. I nomi delle interfacce possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle interfacce, ma sono scoraggiati nella maggior parte dei casi.
 
+Se il nome di un'interfaccia è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un'interfaccia "FilePDF" non è consentita, mentre "FilePdf" è accettabile.
 
 
 ## Traits
+I nomi dei traits si mappano direttamente ai files in cui sono memorizzati. I nomi dei traits possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi dei traits, ma sono sconsigliati nella maggior parte dei casi.
 
+Se il nome di un trait è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un trait "FilePDF" non è consentito, mentre "FilePdf" è accettabile.
 
 
 ## Classi astratte
