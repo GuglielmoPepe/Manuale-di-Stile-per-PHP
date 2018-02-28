@@ -13,7 +13,9 @@ Guida alla redazione di programmi in PHP.
   * [Costanti](#costanti)
   * [Variabili](#variabili)
   * [Funzioni](#funzioni)
+  * [Namespaces](#namespaces)
   * [Interfacce](#interfacce)
+  * [Traits](#traits)
   * [Classi astratte](#classi-astratte)
   * [Classi](#classi)
   * [Costanti di classe](#costanti-di-classe)
@@ -107,19 +109,27 @@ I nomi delle funzioni **DEVONO** contenere solo caratteri alfanumerici.
 I nomi delle funzioni **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
 
 
+### Namespaces
+I nomi dei namespace **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi dei namespace **DEVONO** iniziare con una lettera maiuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+
+I nomi dei namespace **DEVONO** essere mappati su directories e files.
+
+
 ### Interfacce
 I nomi delle interfacce **DEVONO** contenere solo caratteri alfanumerici.
 
-I nomi delle interfacce **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+I nomi delle interfacce **DEVONO** iniziare con una lettera maiuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
 
 
 ### Classi astratte
 I nomi delle classi astratte **DEVONO** contenere solo caratteri alfanumerici.
 
-I nomi delle classi astratte **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+I nomi delle classi astratte **DEVONO** iniziare con una lettera maiuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
 
 
 ### Classi
 I nomi delle classi **DEVONO** contenere solo caratteri alfanumerici.
 
-I nomi delle classi **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+I nomi delle classi **DEVONO** iniziare con una lettera maiuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
