@@ -97,7 +97,7 @@ Le costanti possono contenere caratteri alfanumerici e caratteri di sottolineatu
 
 Tutte le lettere utilizzate nel nome di una costante devono essere in maiuscolo, mentre tutte le parole nel nome di una costante devono essere separate da caratteri di sottolineatura. Questo include anche le costanti PHP predefinite come TRUE, FALSE e NULL.
 
-La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente scoraggiata.
+La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata.
 
 Le costanti devono essere denominate in modo da indicare il loro scopo e contenuto.
 
@@ -129,7 +129,7 @@ Le variabili globali sono fortemente scoraggiate.
 
 
 ## Funzioni
-I nomi delle funzioni devono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle funzioni, ma sono scoraggiati nella maggior parte dei casi.
+I nomi delle funzioni devono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle funzioni, ma sono sconsigliati nella maggior parte dei casi.
 
 I nomi delle funzioni devono sempre iniziare con una lettera minuscola. Quando il nome di una funzione è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (formattazione `mixedCase`).
 
@@ -148,13 +148,13 @@ Le funzioni globali sono fortemente scoraggiate.
 
 
 ## Namespaces
-I nomi dei namespaces si mappano direttamente alle directories e possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi dei namespaces, ma sono scoraggiati nella maggior parte dei casi.
+I nomi dei namespaces si mappano direttamente alle directories e possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi dei namespaces, ma sono sconsigliati nella maggior parte dei casi.
 
 Se il nome di un namespace è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un namespace _"FilePDF"_ non è consentito, mentre _"FilePdf"_ è accettabile.
 
 
 ## Interfacce
-I nomi delle interfacce si mappano direttamente ai files in cui sono memorizzate. I nomi delle interfacce possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle interfacce, ma sono scoraggiati nella maggior parte dei casi.
+I nomi delle interfacce si mappano direttamente ai files in cui sono memorizzate. I nomi delle interfacce possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle interfacce, ma sono sconsigliati nella maggior parte dei casi.
 
 Se il nome di un'interfaccia è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un'interfaccia _"FilePDF"_ non è consentita, mentre _"FilePdf"_ è accettabile.
 
@@ -166,11 +166,15 @@ Se il nome di un trait è composto da più di una parola, la prima lettera di og
 
 
 ## Classi astratte
+I nomi delle classi astratte si mappano direttamente ai files in cui sono memorizzate. I nomi delle classi astratte possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle classi astratte, ma sono sconsigliati nella maggior parte dei casi.
 
+Se il nome di una classe astratta è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. una classe astratta _"FilePDF"_ non è consentita, mentre _"FilePdf"_ è accettabile.
 
 
 ## Classi
+I nomi delle classi si mappano direttamente ai files in cui sono memorizzate. I nomi delle classi possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle classi, ma sono sconsigliati nella maggior parte dei casi.
 
+Se il nome di una classe è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. una classe _"FilePDF"_ non è consentita, mentre _"FilePdf"_ è accettabile.
 
 
 ## Costanti di classe
