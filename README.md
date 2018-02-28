@@ -77,11 +77,15 @@ Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponib
 
 
 ## Directories
+I nomi delle directories devono essere di una sola parola e contenere solo caratteri alfanumerici, senza spazi oltre ad essere tutti in minuscolo.
 
+Questa esigenza nasce dal fatto che i nomi delle directories vengono mappati con i nomi del `namespace`, creando un collegamento biunivoco tra nome directory e `namespace` (o `sub-namespace`).
 
 
 ## Files
+I nomi dei files devono essere di una sola parola e contenere solo caratteri alfanumerici, senza spazi oltre ad essere tutti in minuscolo e terminare con l'estensione `.php`.
 
+Questa esigenza nasce dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
 
 
 ## Istruzioni di inclusione
