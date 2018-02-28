@@ -39,9 +39,9 @@ Guida alla redazione di programmi in PHP.
 ## Formattazione dei file PHP
 
 ### Codifica dei caratteri
-
+```
 > Il codice PHP **DEVE** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark).
-
+```
 
 ### Tags del codice PHP
 >
