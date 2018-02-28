@@ -184,3 +184,29 @@ Le stringhe **NON DEVONO** contenere variabili da sostituire.
 
 L'operatore di concatenazione **DEVE** essere preceduto e seguito da un singolo spazio.
 
+L'operatore di concatenazione **DEVE** essere allineato all'operatore di assegnazione `=` quando l'istruzione è suddivisa su più righe.
+
+### Arrays
+Gli arrays **DEVONO** essere dichiarati con la sintassi concisa.
+
+Gli arrays **NON DEVONO** avere indici numerici negativi.
+
+I delimitatori degli elementi di un array **DEVONO** essere seguiti da uno spazio.
+
+Gli operatori di assegnazione di un valore a una chiave **DEVONO** essere preceduti e seguiti da uno spazio.
+
+In un array suddiviso su più righe il primo elemento **DEVE** essere posizionato sulla riga successiva a quella di dichiarazione dell'array.
+
+Ogni elemento di un array suddiviso su più righe **DEVE** essere su una propria riga.
+
+In un array suddiviso su più righe gli elementi **DEVONO** avere un rientro maggiore rispetto alla riga di dichiarazione dell'array.
+
+In un array suddiviso su più righe gli operatori di assegnazione di un valore a una chiave **DEVONO** essere allineati.
+
+In un array suddiviso su più righe l'ultimo elemento **DEVE** essere sempre delimitato da una virgola.
+
+In un array suddiviso su più righe la parentesi di chiusura **DEVE** essere su una propria riga allo stesso livello di indentazione della riga contenente la dichiarazione dell'array.
+
+
+
+
