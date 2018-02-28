@@ -216,3 +216,73 @@ public function longMethodName()
 }
 ```
 
+
+## Stringhe
+Le stringhe letterali, quelle che non contengono sostituzioni di variabili, devono essere delimitate dall'apostrofo o "virgoletta singola". Esempio:
+
+```php
+$string = 'example string';
+```
+
+Quando una stringa letterale contiene apostrofi deve essere delimitata con le virgolette. Questo è particolarmente utile per le istruzioni SQL. Esempio:
+
+```php
+$sql = "SELECT `id`, `name` from `people` "
+     . "WHERE `name`='Mickey' OR `name`='Minnie'";
+```
+
+Questa sintassi è preferibile rispetto agli apostrofi di escape poiché è molto più facile da leggere.
+Sempre per migliorare la leggibilità, sono da evitarsi le stringhe contenenti sostituzioni di variabili, preferendo piuttosto la concatenazione di stringhe.
+
+```php
+// Poco chiaro
+$string = "Hello $name, welcome back!";
+
+$string = "Hello {$name}, welcome back!";
+
+$string = "Hello ${name}, welcome back!";
+
+// Molto meglio
+$string = 'Hello ' . $name . ', welcome back!';
+```
+Le stringhe devono essere concatenate utilizzando l'operatore `.`. L'operatore di concatenzione `.` deve essere sempre preceduto e seguito da uno spazio per migliorare la leggibilità. Esempio:
+
+```php
+$string = 'Mickey' . ' ' . 'Mouse';
+```
+
+Quando si concatenano le stringhe con l'operatore `.`, si consiglia di suddividere l'istruzione in più righe per migliorare la leggibilità. In questi casi, ogni riga successiva deve essere riempita con uno spazio bianco tale che l'operatore di concatenazione `.` sia allineato all'operatore di assegnazione `=`. Esempio:
+
+```php
+$sql = "SELECT `id`, `name` from `people` "
+     . "WHERE `name`='Mickey' OR `name`='Minnie'";
+     . "ORDER BY `name` ASC ";
+```
+
+## Arrays
+Per la dichiarazione di un array usare sempre la sintassi concisa.
+
+Evitare l'uso di numeri negativi come indici di un array a causa di problemi che possono insorgere con alcune funzioni della libreria standard di PHP.
+
+Per migliorare la leggibilità del codice è consigliato far seguire dopo ogni delimitatore `,` di elemento uno spazio. Esempio:
+
+```php
+$arr = ['Mickey', 'Minnie', 1, 2, 3];
+```
+
+Per migliorare la leggibilità del codice è consigliato far precedere e seguire da uno spazio l'operatore di associazione `=>` di un valore ad una chiave negli array associativi. Esempio:
+ 
+```php
+$arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
+```
+
+Negli arrays suddivisi su più righe, l'elemento iniziale dell'array deve essere posizionato sulla riga seguente a quella della dichiarazione dell'array. In tal caso, dovrebbe essere riempito a un livello di rientro maggiore della riga contenente la dichiarazione dell'array e tutte le linee successive dovrebbero avere lo stesso rientro. La parentesi di chiusura deve essere su una propria riga allo stesso livello di indentazione della riga contenente la dichiarazione dell'array. Gli operatori di associazione di valore ad una chiave vanno allineati al fine di migliorare la leggibilità. Esempio:
+
+```php
+$arr = [
+    'firstKey'  => 'firstValue', 
+    'secondKey' => 'secondValue',
+];
+```
+
+Si noti la virgola finale per l'ultimo elemento nell'array. Negli arrays suddivisi su più righe riduce al minimo la possibilità che si verifichino errori di analisi a causa di una virgola mancante per l'aggiunta di nuovi elementi.
