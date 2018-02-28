@@ -150,19 +150,19 @@ Le funzioni globali sono fortemente scoraggiate.
 ## Namespaces
 I nomi dei namespaces si mappano direttamente alle directories e possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi dei namespaces, ma sono scoraggiati nella maggior parte dei casi.
 
-Se il nome di un namespace è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (`CapitalizedWords`). Non sono consentite lettere maiuscole successive, ad es. un namespace "FilePDF" non è consentito, mentre "FilePdf" è accettabile.
+Se il nome di un namespace è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un namespace _"FilePDF"_ non è consentito, mentre _"FilePdf"_ è accettabile.
 
 
 ## Interfacce
 I nomi delle interfacce si mappano direttamente ai files in cui sono memorizzate. I nomi delle interfacce possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle interfacce, ma sono scoraggiati nella maggior parte dei casi.
 
-Se il nome di un'interfaccia è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un'interfaccia "FilePDF" non è consentita, mentre "FilePdf" è accettabile.
+Se il nome di un'interfaccia è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un'interfaccia _"FilePDF"_ non è consentita, mentre _"FilePdf"_ è accettabile.
 
 
 ## Traits
 I nomi dei traits si mappano direttamente ai files in cui sono memorizzati. I nomi dei traits possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi dei traits, ma sono sconsigliati nella maggior parte dei casi.
 
-Se il nome di un trait è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un trait "FilePDF" non è consentito, mentre "FilePdf" è accettabile.
+Se il nome di un trait è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. un trait _"FilePDF"_ non è consentito, mentre _"FilePdf"_ è accettabile.
 
 
 ## Classi astratte
