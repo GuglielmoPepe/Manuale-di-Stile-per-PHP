@@ -22,8 +22,6 @@ Guida alla redazione di programmi in PHP.
   * [Proprietà](#proprietà)
   * [Metodi](#metodi)
 * [Stili per la codifica](#stili-per-la-codifica)
-  * [Demarcazione del codice PHP](#demarcazione-del-codice-php)
-  * [Costanti](#costanti)
   * [Stringhe](#stringhe)
   * [Arrays](#arrays)
   * [Strutture di controllo](#strutture-di-controllo)
@@ -173,3 +171,16 @@ I nomi delle proprietà **DEVONO** iniziare con una lettera minuscola e **DEVONO
 I nomi dei metodi **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi dei metodi **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
+
+
+## Stili per la codifica
+
+### Stringhe
+Le stringhe letterali **DEVONO** essere delimitate dall'apostrofo.
+
+Le stringhe che contengono apostrofi **DEVONO** essere delimitate dalle virgolette.
+
+Le stringhe **NON DEVONO** contenere variabili da sostituire.
+
+L'operatore di concatenazione **DEVE** essere preceduto e seguito da un singolo spazio.
+
