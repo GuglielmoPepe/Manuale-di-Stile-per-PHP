@@ -30,21 +30,21 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 
 ## Codifica dei caratteri
-I file devono essere salvati con la codifica Unicode (UTF-8). Il BOM (Byte Order Mark) non deve essere utilizzato. A differenza di UTF-16 e UTF-32, non esiste un ordine di byte da indicare in un file con codifica UTF-8 e il BOM (Byte Order Mark) può avere un effetto collaterale negativo nell'invio dell'output, impedendo all'applicazione di impostare le proprie intestazioni.
+> I file devono essere salvati con la codifica Unicode (UTF-8). Il BOM (Byte Order Mark) non deve essere utilizzato. 
+
+A differenza di UTF-16 e UTF-32, non esiste un ordine di byte da indicare in un file con codifica UTF-8 e il BOM (Byte Order Mark) può avere un effetto collaterale negativo nell'invio dell'output, impedendo all'applicazione di impostare le proprie intestazioni.
 
 La codifica può essere dichiarata usando `declare(encoding = 'utf-8');` nella parte superiore del file.
 
 
 ## Indentazione
-Per l'indentazione devono essere utilizzati esclusivamente gli spazi che non devono mai essere mescolati con la tabulazione. 
+> Per l'indentazione devono essere utilizzati esclusivamente gli spazi che non devono mai essere mescolati con la tabulazione. 
 
 Ciò aiuta ad evitare problemi con diff, patch, cronologia e annotazioni. L'uso degli spazi rende anche facile inserire una sub-indentazione a grana fine per l'allineamento tra le righe.
 
 
 ## Lunghezza massima delle righe
- > 
  > La lunghezza massima di una riga deve essere di 72 caratteri e righe più lunghe devono essere divise in più righe successive di non più di 72 caratteri. Alla fine di una riga non vuota non devono esserci spazi bianchi. 
-> 
 
 Limitando la larghezza delle righe a 72 caratteri si migliora la leggibilità del codice.
 
