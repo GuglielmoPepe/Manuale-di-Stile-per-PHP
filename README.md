@@ -36,15 +36,31 @@ La codifica può essere dichiarata usando `declare(encoding = 'utf-8');` nella p
 
 
 ## Indentazione
+Per l'indentazione devono essere utilizzati esclusivamente gli spazi che non devono mai essere mescolati con la tabulazione. 
 
+Ciò aiuta ad evitare problemi con diff, patch, cronologia e annotazioni. L'uso degli spazi rende anche facile inserire una sub-indentazione a grana fine per l'allineamento tra le righe.
 
 
 ## Lunghezza massima delle righe
+ > 
+ > La lunghezza massima di una riga deve essere di 72 caratteri e righe più lunghe devono essere divise in più righe successive di non più di 72 caratteri. Alla fine di una riga non vuota non devono esserci spazi bianchi. 
+> 
 
+Limitando la larghezza delle righe a 72 caratteri si migliora la leggibilità del codice.
+
+Un limite di 72 caratteri rende necessario distribuire la logica o le espressioni complesse in funzioni, nonché assegnare nomi più brevi e più espressivi a funzioni ed oggetti.
+
+Limitando la larghezza della finestra dell'editor a 72 caratteri, è possibile avere diversi file aperti fianco a fianco e funziona bene quando si utilizzano gli strumenti di revisione del codice che presentano le due versioni nelle colonne adiacenti.
+
+Il wrapping predefinito nella maggior parte degli strumenti interrompe la struttura visiva del codice, rendendolo più difficile da capire. Il limite è stato scelto per evitare il wrapping degli editor con la larghezza della finestra impostata su 80, anche se lo strumento posiziona un glifo marcatore nella colonna finale quando effettua il wrapping delle linee. Alcuni strumenti basati sul Web potrebbero non offrire affatto il ritorno a capo automatico della linea.
 
 
 ## Fine riga
+Le righe dei file PHP devono terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
 
+La terminazione della riga segue la convenzione del file di testo Unix. I caratteri di avanzamento riga sono rappresentati come numero ordinale 10 oppure come numero esadecimale 0x0A.
+
+Questo è più un problema per gli sviluppatori che lavorano in un ambiente Windows, ma in ogni caso assicurarsi che l'editor di testo sia configurato per salvare i file con interruzioni di riga Unix.
 
 
 ## Tags del codice PHP
