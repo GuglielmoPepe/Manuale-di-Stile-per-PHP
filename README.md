@@ -123,6 +123,12 @@ I nomi delle interfacce **DEVONO** contenere solo caratteri alfanumerici.
 I nomi delle interfacce **DEVONO** iniziare con una lettera maiuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
 
 
+### Traits
+I nomi dei traits **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi dei traits **DEVONO** iniziare con una lettera maiuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+
+
 ### Classi astratte
 I nomi delle classi astratte **DEVONO** contenere solo caratteri alfanumerici.
 
