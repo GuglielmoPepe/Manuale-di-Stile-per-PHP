@@ -74,6 +74,7 @@ I nomi delle directories **DEVONO** essere tutti in minuscolo.
 
 I nomi delle directories **DEVONO** essere di una sola parola.
 
+
 ### Files
 I nomi dei files **DEVONO** contenere solo caratteri alfanumerici.
 
@@ -93,13 +94,32 @@ Tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiusc
 
 Tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura (underscore).
 
+
 ### Variabili
 I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi delle variabili **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
+
 
 ### Funzioni
 I nomi delle funzioni **DEVONO** contenere solo caratteri alfanumerici.
 
 I nomi delle funzioni **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `mixedCase` in caso di più parole.
 
+
+### Interfacce
+I nomi delle interfacce **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi delle interfacce **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+
+
+### Classi astratte
+I nomi delle classi astratte **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi delle classi astratte **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
+
+
+### Classi
+I nomi delle classi **DEVONO** contenere solo caratteri alfanumerici.
+
+I nomi delle classi **DEVONO** iniziare con una lettera minuscola e **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole.
