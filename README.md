@@ -6,6 +6,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Indentazione](#indentazione)
 * [Lunghezza massima delle righe](#lunghezza-massima-delle-righe) 
 * [Fine riga](#fine-riga) 
+* [Documentazione](#documentazione)
 * [Tags del codice PHP](#tags-del-codice-php)
 * [Directories](#directories)
 * [Files](#files)
@@ -63,6 +64,12 @@ Le righe dei file PHP devono terminare con un singolo carattere di avanzamento r
 La terminazione della riga segue la convenzione del file di testo Unix. I caratteri di avanzamento riga sono rappresentati come numero ordinale 10 oppure come numero esadecimale 0x0A.
 
 Questo è più un problema per gli sviluppatori che lavorano in un ambiente Windows, ma in ogni caso assicurarsi che l'editor di testo sia configurato per salvare i file con interruzioni di riga Unix.
+
+
+## Documentazione
+Tutti i blocchi della documentazione (`docblocks`) devono essere compatibili con il formato phpDocumentor. La descrizione del formato phpDocumentor va oltre lo scopo di questo documento. Per ulteriori informazioni, visitare: http://phpdoc.org/
+
+Tutti i file di classe devono contenere un `docblock` >a livello di file< nella parte superiore di ciascun file e un `docblock` di >livello di classe< immediatamente sopra ogni classe. Esempi di tali `docblock` possono essere trovati di seguito nelle singole sezioni di queso documento.
 
 
 ## Tags del codice PHP
@@ -337,6 +344,33 @@ class Foo
 ```
 
 > quando un metodo ha più di tre argomenti "puzza" di codice scritto male!!!
+
+Il valore restituito non deve essere racchiuso tra parentesi. Questo può ostacolare la leggibilità, in aggiunta alla rottura del codice se un metodo viene successivamente modificato per restituire per riferimento.
+```php
+/**
+ * Documentation Block Here
+ */
+class Foo
+{
+    /**
+     * Sbagliato
+     */
+    public function bar()
+    {
+        return($this->bar);
+    }
+
+    /**
+     * Corretto
+     */
+    public function bar()
+    {
+        return $this->bar;
+    }
+}
+```
+
+
 
 ## Stringhe
 Le stringhe letterali, quelle che non contengono sostituzioni di variabili, devono essere delimitate dall'apostrofo o "virgoletta singola". Esempio:
