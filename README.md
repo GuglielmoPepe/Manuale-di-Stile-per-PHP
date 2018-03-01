@@ -213,7 +213,7 @@ class Person extends People implements Employee
     // must be indented four spaces
 }
 ```
-Nel caso in cui la dichiarazione delle dipendenze di classe comportino il superamento della lunghezza massima della riga (72 caratteri, vedi **link**), la dihiarazione va interrotta prima delle parole chiave `extends` e / o `implements` applicando un livello di rientro.
+Nel caso in cui la dichiarazione delle dipendenze di classe comportino il superamento della lunghezza massima della riga (72 caratteri, vedi [Lunghezza massima della riga](#lunghezza-massima-della-riga)), la dihiarazione va interrotta prima delle parole chiave `extends` e / o `implements` applicando un livello di rientro.
 ```php
 /**
  * Documentation Block
