@@ -355,8 +355,8 @@ La parentesi graffa di apertura è scritta sulla riga successiva a quella dell'e
 
 Nel caso in cui l'espressione condizionale superi il limite massimo della riga e abbia diverse clausole, deve essere suddivisa su più righe. L'espressione condizionale deve essere interrotta prima di un operatore logico, allineando le altre espressioni condizionali. La parentesi tonda di chiusura sarà posta, con un un livello di indentazione equivalente all'istruzione di controllo di apertura. Si tenta così di prevenire problemi durante l'aggiunta o la rimozione di clausole dall'espressione condizionale durante le revisioni successive.
 
-Le espressioni `break`, `return` e `continue` devono sempre essere precedute da una riga vuota quando sono precedute da istruzioni allo stesso livello di indentazione. 
-Le espressioni `declare`, `require`, `require_once` devono sempre essere seguite oltre che precedute da una riga vuota quando sono precedute da istruzioni allo stesso livello di indentazione. 
+Le espressioni `break`, `return` e `continue` devono sempre essere precedute da una riga vuota quando sono precedute da istruzioni con lo stesso livello di indentazione. 
+Le espressioni `declare`, `require`, `require_once` devono sempre essere seguite oltre che precedute da una riga vuota quando sono precedute e / o seguite da istruzioni  con lo stesso livello di indentazione. 
 
 Le espressioni `include`, `include_once` e `goto` non devono mai essere usate.
 
