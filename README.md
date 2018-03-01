@@ -430,7 +430,7 @@ else
 
 ```
 
-Nei file che non contengono solo codice PHP, deve essere usata la sintassi alternativa per le istruzioni `if`, `elseif`, `else`.
+Per migliorare la leggibilità nei file che non contengono solo codice PHP, deve essere usata la sintassi alternativa per le istruzioni `if`, `elseif`, `else`.
 
 ```php
 
