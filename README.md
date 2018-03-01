@@ -1,6 +1,7 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
+* [Introduzione](#introduzione)
 * [Tags del codice PHP](#tags-del-codice-php)
 * [Separazioni delle istruzioni](#separazione-delle-istruzioni)
 * [Stringhe](#stringhe)
@@ -12,6 +13,15 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Strutture di controllo](#strutture-di-controllo)
 * [Funzioni](#funzioni)
 * [Closures](#closures)
+* [Namespaces](#namespaces)
+* [Interfacce](#interfacce)
+* [Traits](#traits)
+* [Classi astratte](#classi-astratte)
+* [Classi](#classi)
+* [Costanti di classe](#costanti-di-classe)
+* [Proprietà](#proprietà)
+* [Metodi](#metodi)
+
 
 ## Tags del codice PHP
 Quando PHP analizza un file, cerca i tag di apertura `<?php` e di chiusura `?>`, che non fanno altro che indicare a PHP di avviare e interrompere l'interpretazione del codice presente tra di essi. In questo modo PHP può essere incorporato in documenti di diverso tipo, poiché tutto ciò che è esterno a una coppia di tag di apertura e chiusura viene ignorato dal parser PHP.
