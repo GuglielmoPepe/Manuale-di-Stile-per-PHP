@@ -251,36 +251,92 @@ I nomi delle costanti dovrebbero essere quanto più descrittivi possibile, ma an
 
 
 ## Proprietà
-I nomi delle proprietà possono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle proprietà ma sono scoraggiati nella maggior parte dei casi.
+I nomi delle proprietà possono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle proprietà, ma sono sconsigliati nella maggior parte dei casi.
 
-Tutte le proprietà dovrebbero iniziare con una lettera minuscola e dovrebbero essere scritte in `mixedCase` in caso di più parole.
+Tutte le proprietà devono iniziare con una lettera minuscola e devono essere scritte in `mixedCase` in caso di più parole.
 
 I nomi delle proprietà dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.  
 
-Le proprietà dovrebbero essere sempre prolisse per descrivere i dati che lo sviluppatore intende memorizzare in essi.
+Le proprietà dovrebbero essere sempre prolisse quanto basta per descrivere i dati che lo sviluppatore intende memorizzare in essi.
 
 Le proprietà che fanno riferimento agli oggetti dovrebbero in qualche modo essere associate alla classe di cui la proprietà è un oggetto. Esempio:
 
 ```php
 $this->person = new Person();
 ```
+Qualsiasi proprietà dichiarata in una classe deve essere elencata all'inizio della classe, sopra la dichiarazione di qualsiasi metodo.
+
+Il costrutto `var` non è permesso. Le proprietà devono essere dichiarate sempre la loro visibilità, utilizzando uno dei modificatori `private`, `protected`. L'accesso diretto alle variabili membro dichiarandole come pubbliche è vietato preferendogli i metodi di accesso (`getProperty()` e `setProperty()`).
+
 
 ## Metodi
-I nomi dei metodi possono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi dei metodi ma sono scoraggiati nella maggior parte dei casi.
+I nomi dei metodi devono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi dei metodi, ma sono sconsigliati nella maggior parte dei casi.
 
 I nomi dei metodi devono sempre iniziare con una lettera minuscola. Quando il nome di un metodo è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (formattazione `mixedCase`).
 
 La verbosità è generalmente incoraggiata. I nomi dei metodi dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
 
+I metodi all'interno delle classi devono sempre dichiarare la loro visibilità utilizzando uno dei modificatori `private`, `protected` o `public`.
+
+Lo spazio tra il nome del metodo e la parentesi tonda aperta per gli argomenti non è permesso.
+Come per le classi, le parentesi graffe che delimitano il corpo del metodo devono sempre essere scritte su una propia riga, successiva alla dichiarazione del metodo per quella di apertura e successiva al corpo del metodo per quella di chiusura.
+
 Questo è un esempio di nome accettabile per un metodo:
 
 ```php
-public function longMethodName()
+/**
+ * Documentation Block
+ */
+class Person
+     extends People
+     implements Employee,
+                Manager
 {
+    private $firstName;
+    private $lastName;
 
+    public function getFirstName()
+    {
+        return $firstName;
+    }
+    
+    public function getLastName()
+    {
+        return $lastName;
+    }
+    
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+    
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
 }
 ```
 
+Nei casi in cui l'elenco degli argomenti supera la [lunghezza massima della riga](#lunghezza-massima-della-riga), è possibile introdurre interruzioni di riga. Gli argomenti aggiuntivi al metodo devono essere rientrati di un ulteriore livello oltre la dichiarazione del metodo. Dovrebbe quindi verificarsi un'interruzione di riga prima della parentesi tonda di chiusura dell'elenco degli argomenti. La parentesi tonda di chiusura dovrebbe quindi essere posizionato sulla stessa riga della parentesi graffa di apertura del corpo del metodo con uno spazio che separa i due e allo stesso livello di indentazione della dichiarazione del metodo. Quello che segue è un esempio di una di queste situazioni:
+```php
+/**
+ * Documentation Block Here
+ */
+class Foo
+{
+    /**
+     * Documentation Block Here
+     */
+    public function bar($arg1, $arg2, $arg3,
+        $arg4, $arg5, $arg6
+    ) {
+        // all contents of method
+        // must be indented four spaces
+    }
+}
+```
+
+> quando un metodo ha più di tre argomenti "puzza" di codice scritto male!!!
 
 ## Stringhe
 Le stringhe letterali, quelle che non contengono sostituzioni di variabili, devono essere delimitate dall'apostrofo o "virgoletta singola". Esempio:
