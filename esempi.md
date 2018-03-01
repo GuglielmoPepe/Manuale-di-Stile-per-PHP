@@ -93,6 +93,19 @@ switch ($a)
 
 ```
 
+Esempio per il costrutto `try`, `catch`:
+```php
+try
+{
+    $a = 'foo';
+}
+catch (\Exception $e)
+{
+    echo $e->getMessage();
+}
+
+```
+
 Esempio per interfaccia:
 ```php
 
