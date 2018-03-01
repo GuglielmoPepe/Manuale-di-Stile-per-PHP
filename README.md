@@ -431,7 +431,7 @@ else
 ```
 
 Nei file che non contengono solo codice PHP, deve essere usata la sintassi alternativa per le istruzioni `if`, `elseif`, `else`.
-```php 
+``` 
 
 <p>This is going to be ignored by PHP and displayed by the browser.</p>
 
