@@ -46,6 +46,8 @@ Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponib
 <?php echo 'While this is going to be parsed.'; ?>
 <p>This will also be ignored by PHP and displayed by the browser.</p>
 ```
+
+
 ## Separazione delle istruzioni
 PHP richiede che le istruzioni vengano terminate con un punto e virgola alla fine di ogni istruzione. Il tag di chiusura di un blocco di codice PHP implica automaticamente un punto e virgola.
 
@@ -428,7 +430,22 @@ else
 
 ```
 
+Nei file che non contengono solo codice PHP, deve essere usata la sintassi alternativa per le istruzioni `if`, `elseif`, `else`.
+```php 
 
+<p>This is going to be ignored by PHP and displayed by the browser.</p>
+
+<?php if ($a > $b): ?>
+     <?php echo 'a is bigger than b';?>
+<?php elseif ($a < $b): ?>
+     <?php echo 'b is bigger than a';?>
+<?php else: ?>
+     <?php echo 'b is equal to a';?>
+<?php endif; ?>
+
+<p>This will also be ignored by PHP and displayed by the browser.</p>
+
+```
 
 
 
