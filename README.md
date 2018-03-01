@@ -288,4 +288,4 @@ $arr = [
 ];
 ```
 
-Si noti la virgola finale per l'ultimo elemento nell'array. Negli arrays suddivisi su più righe riduce al minimo la possibilità che si verifichino errori di analisi a causa di una virgola mancante per l'aggiunta di nuovi elementi.
+Si noti la virgola finale per l'ultimo elemento nell'array: ciò riduce al minimo la possibilità che si verifichino errori di analisi a causa di una virgola mancante per l'aggiunta di nuovi elementi.
