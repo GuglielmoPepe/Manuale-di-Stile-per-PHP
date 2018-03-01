@@ -1,12 +1,12 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
-[Tags del codice PHP](#tags-del-codice-php)
-[Separazioni delle istruzioni](#separazione-delle-istruzioni)
-[Stringhe](#stringhe)
-[Arrays](#arrays)
-[TRUE, FALSE e NULL](#true-false-e-null)
-[Variabili](#variabili)
+* [Tags del codice PHP](#tags-del-codice-php)
+* [Separazioni delle istruzioni](#separazione-delle-istruzioni)
+* [Stringhe](#stringhe)
+* [Arrays](#arrays)
+* [TRUE, FALSE e NULL](#true-false-e-null)
+* [Variabili](#variabili)
 
 ## Tags del codice PHP
 Quando PHP analizza un file, cerca i tag di apertura `<?php` e di chiusura `?>`, che non fanno altro che indicare a PHP di avviare e interrompere l'interpretazione del codice presente tra di essi. In questo modo PHP può essere incorporato in documenti di diverso tipo, poiché tutto ciò che è esterno a una coppia di tag di apertura e chiusura viene ignorato dal parser PHP.
