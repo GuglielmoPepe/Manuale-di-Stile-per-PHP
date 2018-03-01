@@ -67,7 +67,7 @@ Questo è più un problema per gli sviluppatori che lavorano in un ambiente Wind
 
 
 ## Documentazione
-Tutti i blocchi della documentazione (`docblocks`) devono essere compatibili con il formato phpDocumentor. La descrizione del formato phpDocumentor va oltre lo scopo di questo documento. Per ulteriori informazioni, visitare: http://phpdoc.org/
+Tutti i blocchi della documentazione (_docblocks_) devono essere compatibili con il formato phpDocumentor. La descrizione del formato phpDocumentor va oltre lo scopo di questo documento. Per ulteriori informazioni, visitare: http://phpdoc.org/
 
 Tutti i file di classe devono contenere un _docblock_ a livello di file nella parte superiore di ciascun file e un _docblock_ di livello di classe immediatamente sopra ogni classe, metodo o funzione. Esempi di tali _docblock_ possono essere trovati di seguito nelle singole sezioni di queso documento.
 
@@ -95,6 +95,20 @@ Questa esigenza nasce dal fatto che i nomi delle directories vengono mappati con
 I nomi dei files devono contenere solo caratteri alfanumerici, senza spazi oltre ad avere la prima lettera in maiuscolo. Se il nome di una directory è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (CapitalizedWords). I nomi dei files devono terminare con l'estensione `.php`.
 
 Questa esigenza nasce dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
+
+Ogni file che contiene codice PHP deve avere un _dockblock_ nella parte superiore del file che contenga almeno tag phpDocumentor:
+```php
+/**
+ * Example Framework (http://www.exampleframework.com/)
+ *
+ * Long description for file (if any)...
+ *
+ * @link      http://github.com/exampleframework/ for the canonical source repository
+ * @copyright Copyright (c) 2005-2013 Example Technologies USA Inc. (http://www.example.com)
+ * @license   http://framework.example.com/license/new-bsd New BSD License
+ * @since     File available since Release 1.5.0
+ */
+```
 
 
 ## Istruzioni di inclusione
@@ -189,7 +203,17 @@ Se il nome di una classe è composto da più di una parola, la prima lettera di 
 
 È consentita una sola classe in ogni file PHP che avrà lo stesso nome della classe con l'aggiunta dell'estensione `.php`.
 
-Ogni classe deve avere un blocco di documentazione conforme allo standard PHPDocumentor.
+Ogni classe deve avere un blocco di documentazione conforme allo standard PHPDocumentor contenente almeno le seguenti etichette:
+```php
+/**
+ * Short description for class
+ *
+ * Long description for class (if any)...
+ *
+ * @since      Class available since Release 1.5.0
+ * @deprecated Class deprecated in Release 2.0.0
+ */
+```
 
 L'inserimento di codice aggiuntivo in un file di classe è vietato.
 
@@ -370,6 +394,21 @@ class Foo
 }
 ```
 
+Ogni metodo deve avere un blocco di documentazione conforme allo standard PHPDocumentor contenente almeno le seguenti etichette:
+```php
+/**
+ * Short description for method
+ *
+ * Long description for method (if any)...
+ *
+ * @param  string    $firstName    The first name of employee
+ * @return  null
+ */
+ public function setFirstName($firstName)
+ {
+    $this->firstName = $firstName;
+ }
+```
 
 
 ## Stringhe
