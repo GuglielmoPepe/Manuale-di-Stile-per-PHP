@@ -510,6 +510,7 @@ foreach ($arr as $key => $value)
         break;
     }
 }
+```
 
 Tutto il contenuto all'interno dell'istruzione `switch` deve essere rientrato utilizzando quattro spazi. Il contenuto sotto ogni istruzione `case` deve essere rientrato usando altri quattro spazi.
 Esempi col costrutto `switch`:
