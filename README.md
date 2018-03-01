@@ -345,9 +345,9 @@ echo $a instanceOf $a2; // true
 ## Strutture di controllo
 Le strutture di controllo devono essere precedute da una riga vuota al fine di migliorare la leggibilità del codice quando sono precedute da istruzioni allo stesso livello di indentazione. 
 
-Le espressioni condizionali all'interno delle strutture di controllo devono avere un singolo spazio prima della parentesi tonda di apertura e un singolo spazio dopo la parentesi tonda di chiusura.
+Le espressioni condizionali delle strutture di controllo devono essere delimitate da parentesi tonde che abbiano un singolo spazio prima della parentesi tonda di apertura ed un singolo spazio dopo la parentesi tonda di chiusura.
 
-Gli operatori all'interno delle espressioni condizionali tra parentesi, devono essere separati da spazi per migliorare la leggibilità. Al fine di migliorare la leggibilità dei raggruppamenti logici per espressioni condizionali più ampie, devono essere usate tutte le parentesi interne alle espressioni condizionali che sono necessarie.
+Gli operatori all'interno delle espressioni condizionali, devono essere separati da spazi. Al fine di migliorare la leggibilità dei raggruppamenti logici, per espressioni condizionali più ampie, devono essere usate tutte le parentesi che sono necessarie all'interno delle espressioni condizionali.
 
 Sebbene sia possibile omettere le parentesi graffe quando queste racchiudano una singola istruzione, il blocco di istruzioni deve essere sempre racchiuso all'interno di parentesi graffe al fine di aumentare la leggibilità, oltre che per consistenza nella scrittura del codice.
 
