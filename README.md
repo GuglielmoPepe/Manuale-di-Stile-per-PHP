@@ -10,6 +10,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Costanti](#costanti)
 * [Operatori](#operatori)
 * [Strutture di controllo](#strutture-di-controllo)
+* [Funzioni](#funzioni)
 
 ## Tags del codice PHP
 Quando PHP analizza un file, cerca i tag di apertura `<?php` e di chiusura `?>`, che non fanno altro che indicare a PHP di avviare e interrompere l'interpretazione del codice presente tra di essi. In questo modo PHP può essere incorporato in documenti di diverso tipo, poiché tutto ciò che è esterno a una coppia di tag di apertura e chiusura viene ignorato dal parser PHP.
@@ -553,4 +554,25 @@ La sintassi alternativa delle strutture di controllo deve essere utilizzata escl
 
 ```
 
+
+## Funzioni
+I nomi delle funzioni devono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle funzioni, ma sono sconsigliati nella maggior parte dei casi.
+
+I nomi delle funzioni devono sempre iniziare con una lettera minuscola. Quando il nome di una funzione è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (formattazione `mixedCase`).
+
+La verbosità è generalmente incoraggiata. I nomi delle funzioni dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
+
+Le parentesi tonde che racchiudono gli argomenti della funzione devono essere seguiti da uno spazio.
+
+Questo è un esempio di nome accettabile per una funzione:
+```php
+function longFunctionName()
+{
+     // code php
+     
+     return $value;
+}
+```
+
+Le funzioni globali sono fortemente sconsigliate.
 
