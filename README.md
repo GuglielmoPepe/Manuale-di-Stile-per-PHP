@@ -360,6 +360,9 @@ Sebbene sia possibile omettere le parentesi graffe quando queste racchiudano una
 // errato
 if ($a > $b)
   echo 'a is bigger than b';
+  
+// errato
+if (3 == $foo) bar();
  
  // corretto
 if ($a > $b)
@@ -367,7 +370,6 @@ if ($a > $b)
   echo 'a is bigger than b';
 }
 ```
-
 
 Nel caso in cui l'espressione condizionale superi il limite massimo della riga e abbia diverse clausole, deve essere suddivisa su più righe. L'espressione condizionale deve essere interrotta prima di un operatore logico, allineando le altre espressioni condizionali. La parentesi tonda di chiusura sarà posta, con un un livello di indentazione equivalente all'istruzione di controllo di apertura.
 ```php
