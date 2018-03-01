@@ -70,7 +70,7 @@ Devono sempre essere usati esclusivamente i tag PHP estesi `<?php ?>` e mai quel
 
 Nei file che contengono esclusivamente codice PHP, il tag di apertura `<?php` deve essere seguito da una singola riga vuota al fine di migliorare la leggibilità del codice.
 
-Nei file che contengono esclusivamente codice PHP, il tag di chiusura `?>` deve essere omesso facendo teminare i files con una singola riga vuota.
+Nei file che contengono esclusivamente codice PHP, il tag di chiusura `?>` deve essere omesso, terminando i files con una singola riga vuota.
 
 Il tag di chiusura PHP `?>` in un documento PHP é facoltativo per il parser PHP. Tuttavia, se utilizzato, qualsiasi spazio vuoto successivo al tag di chiusura, introdotto dallo sviluppatore, dall'utente o da un'applicazione FTP, può causare output indesiderati, errori PHP o, se questi ultimi vengono soppressi, pagine vuote. Per questo motivo, tutti i file PHP devono omettere il tag di chiusura PHP e terminare con una singola riga vuota.
 
@@ -168,16 +168,78 @@ Se il nome di un trait è composto da più di una parola, la prima lettera di og
 
 
 ## Classi astratte
-I nomi delle classi astratte si mappano direttamente ai files in cui sono memorizzate. I nomi delle classi astratte possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle classi astratte, ma sono sconsigliati nella maggior parte dei casi.
+I nomi delle classi astratte possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle classi astratte, ma sono sconsigliati nella maggior parte dei casi.
 
 Se il nome di una classe astratta è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. una classe astratta _"FilePDF"_ non è consentita, mentre _"FilePdf"_ è accettabile.
 
+È consentita una sola classe in ogni file PHP che avrà lo stesso nome della classe con l'aggiunta dell'estensione `.php`.
+
 
 ## Classi
-I nomi delle classi si mappano direttamente ai files in cui sono memorizzate. I nomi delle classi possono contenere solo caratteri alfanumerici con la prima lettera in maiuscolo. I numeri sono consentiti nei nomi delle classi, ma sono sconsigliati nella maggior parte dei casi.
+I nomi delle classi possono contenere solo caratteri alfanumerici tutti in minuscolo eccetto la prima lettera che deve essere in maiuscolo. I numeri sono consentiti nei nomi delle classi, ma sono sconsigliati nella maggior parte dei casi.
 
 Se il nome di una classe è composto da più di una parola, la prima lettera di ogni nuova parola deve essere in maiuscolo (_CapitalizedWords_). Non sono consentite lettere maiuscole successive, ad es. una classe _"FilePDF"_ non è consentita, mentre _"FilePdf"_ è accettabile.
 
+È consentita una sola classe in ogni file PHP che avrà lo stesso nome della classe con l'aggiunta dell'estensione `.php`.
+
+Ogni classe deve avere un blocco di documentazione conforme allo standard PHPDocumentor.
+
+L'inserimento di codice aggiuntivo in un file di classe è vietato.
+
+Le parentesi graffe che delimitano il corpo della classe devono sempre essere scritta su una propia riga, successiva alla dichiarazione di classe per quella di apertura e successiva al corpo della classe per quella di chiusura.
+
+Il corpo della classe deve essere indentato di 4 spazi.
+
+Esempio di codice di classe accettabile:
+```php
+/**
+ * Documentation Block
+ */
+class Person
+{
+    // all contents of class
+    // must be indented four spaces
+}
+```
+
+Le classi che estendono altre classi o che implementano interfacce dovrebbero dichiarare le loro dipendenze sulla stessa linea quando possibile.
+```php
+/**
+ * Documentation Block
+ */
+class Person extends People implements Employee 
+{
+    // all contents of class
+    // must be indented four spaces
+}
+```
+Nel caso in cui la dichiarazione delle dipendenze di classe comportino il superamento della lunghezza massima della riga (72 caratteri, vedi **link**), la dihiarazione va interrotta prima delle parole chiave `extends` e / o `implements` applicando un livello di rientro.
+```php
+/**
+ * Documentation Block
+ */
+class Person
+     extends People
+     implements Employee 
+{
+    // all contents of class
+    // must be indented four spaces
+}
+```
+
+Se la classe implementa più interfacce e la dichiarazione supera la lunghezza massima della riga, la dichiarazione va interrotta dopo ogni virgola che separi le interfacce i cui nomi vanno rientrati in modo tale che si allineino.
+```php
+/**
+ * Documentation Block
+ */
+class Person
+     extends People
+     implements Employee,
+                Manager
+{
+    // all contents of class
+    // must be indented four spaces
+}
 
 ## Costanti di classe
 Le costanti possono contenere caratteri alfanumerici e caratteri di sottolineatura. I numeri sono consentiti nei nomi delle costanti.
