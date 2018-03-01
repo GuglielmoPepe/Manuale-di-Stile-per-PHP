@@ -6,6 +6,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 [Stringhe](#stringhe)
 [Arrays](#arrays)
 [TRUE, FALSE e NULL](#true-false-e-null)
+[Variabili](#variabili)
 
 ## Tags del codice PHP
 Quando PHP analizza un file, cerca i tag di apertura `<?php` e di chiusura `?>`, che non fanno altro che indicare a PHP di avviare e interrompere l'interpretazione del codice presente tra di essi. In questo modo PHP può essere incorporato in documenti di diverso tipo, poiché tutto ciò che è esterno a una coppia di tag di apertura e chiusura viene ignorato dal parser PHP.
@@ -169,5 +170,21 @@ Le parole chiave `TRUE`, `FALSE` e `NULL` devono sempre essere completamente mai
   ```
 
 
+## Variabili
+I nomi delle variabili possono contenere solo caratteri alfanumerici. I caratteri di sottolineatura non sono consentiti. I numeri sono consentiti nei nomi delle variabili, ma sono scoraggiati nella maggior parte dei casi.
+
+Tutte le variabili dovrebbero iniziare con una lettera minuscola e dovrebbero essere scritte in `mixedCase` in caso di più parole.
+
+I nomi delle variabili dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.  
+
+Le variabili dovrebbero essere sempre prolisse, per descrivere i dati che lo sviluppatore intende memorizzare in essi. I nomi di variabili di una sola lettera, come `$i` e `$k`, sono scoraggiati tranne che nei cicli più piccoli. Se un ciclo contiene più di 20 righe di codice, le variabili dell'indice dovrebbero avere nomi più descrittivi.
+
+Le variabili che fanno riferimento agli oggetti dovrebbero in qualche modo essere associate alla classe di cui la variabile è un oggetto. Esempio:
+
+```php
+$person = new Person();
+```
+
+Le variabili globali sono fortemente scoraggiate.
 
 
