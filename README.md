@@ -293,6 +293,46 @@ $c = $a || $b;
 
 
 ```
-Devono essere utilizzati solo l'operatori di incremento `++$a` e l'operatore di decremento `--$a` per motivi di leggibilità.
+Sebben esistano due varianti per gli operatori logici "and" e "or", devono essere utilizzati esclusivamente l'operatore `&&` e `||`.
 
 
+Operatori su stringhe:
+```php
+
+$a = 'Hello ';
+$b = $a . 'World!'; // now $b contains "Hello World!"
+
+$a = 'Hello ';
+$a .= 'World!';     // now $a contains "Hello World!"
+
+```
+Operatori su arrays:
+```php
+
+$a = ['a' => 'apple', 'b' => 'banana'];
+$b = ['a' => 'pear', 'b' => 'strawberry'], 'c' => 'cherry'];
+
+$c = $a + $b;
+$c = $a == $b;
+$c = $a === $b;
+$c = $a != $b;
+$c = $a <> $b;
+$c = $a !== $b;
+
+```
+
+Operatore di tipo:
+```php
+
+class A { }
+class B { }
+
+$a = new A;
+$b = new B;
+$a2 = new A;
+
+echo $a instanceOf $a; // true
+echo $a instanceOf $b; // false
+echo $a instanceOf $a2; // true
+
+```
