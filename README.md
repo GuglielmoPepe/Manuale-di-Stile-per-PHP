@@ -69,7 +69,7 @@ Questo è più un problema per gli sviluppatori che lavorano in un ambiente Wind
 ## Documentazione
 Tutti i blocchi della documentazione (`docblocks`) devono essere compatibili con il formato phpDocumentor. La descrizione del formato phpDocumentor va oltre lo scopo di questo documento. Per ulteriori informazioni, visitare: http://phpdoc.org/
 
-Tutti i file di classe devono contenere un `docblock` >a livello di file< nella parte superiore di ciascun file e un `docblock` di >livello di classe< immediatamente sopra ogni classe. Esempi di tali `docblock` possono essere trovati di seguito nelle singole sezioni di queso documento.
+Tutti i file di classe devono contenere un _docblock_ a livello di file nella parte superiore di ciascun file e un _docblock_ di livello di classe immediatamente sopra ogni classe, metodo o funzione. Esempi di tali _docblock_ possono essere trovati di seguito nelle singole sezioni di queso documento.
 
 
 ## Tags del codice PHP
