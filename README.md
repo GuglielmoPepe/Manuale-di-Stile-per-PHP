@@ -240,6 +240,7 @@ class Person
     // all contents of class
     // must be indented four spaces
 }
+```
 
 ## Costanti di classe
 Le costanti possono contenere caratteri alfanumerici e caratteri di sottolineatura. I numeri sono consentiti nei nomi delle costanti.
