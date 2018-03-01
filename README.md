@@ -343,6 +343,215 @@ echo $a instanceOf $a2; // true
 
 
 ## Strutture di controllo
+Le strutture di controllo devono essere precedute da una riga vuota al fine di migliorare la leggibilità del codice quando sono precedute da istruzioni allo stesso livello di indentazione. 
+
+Le espressioni condizionali all'interno delle strutture di controllo devono avere un singolo spazio prima della parentesi tonda di apertura e un singolo spazio dopo la parentesi tonda di chiusura.
+
+Gli operatori all'interno delle espressioni condizionali tra parentesi, devono essere separati da spazi per migliorare la leggibilità. Al fine di migliorare la leggibilità dei raggruppamenti logici per espressioni condizionali più ampie, devono essere usate tutte le parentesi interne alle espressioni condizionali che sono necessarie.
+
+Sebbene sia possibile omettere le parentesi graffe quando queste racchiudano una singola istruzione, il blocco di istruzioni deve essere sempre racchiuso all'interno di parentesi graffe al fine di aumentare la leggibilità, oltre che per consistenza nella scrittura del codice.
+
+La parentesi graffa di apertura è scritta sulla riga successiva a quella dell'espressone condizionale. La parentesi di chiusura è sempre scritta su una riga separata. Qualsiasi contenuto all'interno delle parentesi graffe deve essere rientrato utilizzando quattro spazi.
+
+Nel caso in cui l'espressione condizionale superi il limite massimo della riga e abbia diverse clausole, deve essere suddivisa su più righe. L'espressione condizionale deve essere interrotta prima di un operatore logico, allineando le altre espressioni condizionali. La parentesi tonda di chiusura sarà posta, con un un livello di indentazione equivalente all'istruzione di controllo di apertura. Si tenta così di prevenire problemi durante l'aggiunta o la rimozione di clausole dall'espressione condizionale durante le revisioni successive.
+
+Le espressioni `break`, `return` e `continue` devono sempre essere precedute da una riga vuota quando sono precedute da istruzioni allo stesso livello di indentazione. 
+Le espressioni `declare`, `require`, `require_once` devono sempre essere seguite oltre che precedute da una riga vuota quando sono precedute da istruzioni allo stesso livello di indentazione. 
+
+Le espressioni `include`, `include_once` e `goto` non devono mai essere usate.
+
+Esempi con i costrutti `if`, `elseif` e `else`:
+```php
+// errato
+if ($a > $b)
+  echo 'a is bigger than b';
+  
+// errato
+if (3 == $foo) bar();
+
+// corretto
+if ($a != 2) 
+{
+    $a = 2;
+}
+
+// corretto
+if (($a == $b)
+    && ($b == $c)
+    || (Foo::CONST == $d)
+) 
+{
+    $a = $d;
+}
+
+// corretto
+if ($a != 2)
+{
+    $a = 2;
+}
+elseif ($a == 3)
+{
+    $a = 4;
+}
+else
+{
+    $a = 7;
+}
+
+// corretto
+if (($a == $b)
+    && ($b == $c)
+    || (Foo::CONST == $d)
+)
+{
+    $a = $d;
+}
+elseif (($a != $b)
+        || ($b != $c)
+)
+{
+    $a = $c;
+}
+else
+{
+    $a = $b;
+}
+```
+
+Esempi con i costrutti `while` e `do... while`:
+```php
+// errato
+$i = 1;
+
+while ($i <= 10) {
+    echo ++$i;
+}
+
+// corretto
+$i = 1;
+
+while ($i <= 10)
+{
+    echo ++$i;
+}
+
+// errato
+$i = 10;
+
+do {
+    echo --$i;
+} while ($i > 0)
+
+// corretto
+$i = 10;
+
+do
+{
+    echo --$i;
+}
+while ($i > 0)
+
+```
+
+Esempi col costrutto `for`:
+```php
+// errato
+for ($i = 1; $i <= 10; $i++) {
+    echo $i;
+}
+
+// corretto
+for ($i = 1; $i <= 10; ++$i)
+{
+    echo $i;
+}
+
+// errato
+for ($i = 1; $i <= 10; $i++) {
+    if ($i > 10) {
+        break;
+    }
+    echo $i;
+}
+
+// corretto
+for ($i = 1; $i <= 10; ++$i)
+{
+    if ($i > 5)
+    {
+        break;
+    }
+    
+    echo $i;
+}
+```
+Il costrutto `foreach` deve essere utilizzato esclusivamente con la sintassi che assegna la chiave oltre al valore dell'iterabile. 
+
+Esempi col costrutto `foreach`:
+```php
+// errato
+foreach ($arr as $value) {
+    echo $value;
+}
+
+// errato
+foreach ($arr as $value)
+{
+    echo $value;
+}
+
+// corretto
+foreach ($arr as $key => $value)
+{
+    if ('foo' == $value)
+    {
+        echo $value;
+        
+        break;
+    }
+}
+
+Tutto il contenuto all'interno dell'istruzione `switch` deve essere rientrato utilizzando quattro spazi. Il contenuto sotto ogni istruzione `case` deve essere rientrato usando altri quattro spazi.
+Esempi col costrutto `switch`:
+```php
+// errato
+switch ($numPeople) {
+    case (1):
+    
+        break;
+        
+    case (2):
+    
+        break;
+        
+    default:
+    
+        break;
+}
+
+// corretto
+switch ($numPeople)
+{
+    case (1):
+    
+        break;
+
+    case (2):
+    
+        break;
+
+    default:
+    
+        break;
+}
+```
+
+
+
+
+
+
+
 Le istruzioni di controllo basate sui costrutti `if` e `elseif` devono avere un singolo spazio prima della parentesi tonda di apertura dell'espressione condizionale e un singolo spazio dopo la parentesi tonda di chiusura.
 
 All'interno delle istruzioni condizionali tra parentesi, gli operatori devono essere separati da spazi per la leggibilità. Le parentesi interne sono incoraggiate a migliorare il raggruppamento logico per espressioni condizionali più ampie.
@@ -448,6 +657,20 @@ Per migliorare la leggibilità nei file che non contengono solo codice PHP, deve
 
 ```
 
+
+
+Per migliorare la leggibilità nei file che non contengono solo codice PHP, deve essere usata la sintassi alternativa per l'istruzione `while`.
+
+```php
+
+<p>This is going to be ignored by PHP and displayed by the browser.</p>
+
+<?php while ($i < 10): ?>
+     <?php ++$i;?>
+     <?php echo $i;?>
+<?php endwhile; ?>
+
+<p>This will also be ignored by PHP and displayed by the browser.</p>
 
 
 
