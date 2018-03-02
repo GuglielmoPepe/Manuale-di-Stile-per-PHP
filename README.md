@@ -22,3 +22,24 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Proprietà](#proprietà)
 * [Metodi](#metodi)
 
+
+## Introduzione
+## Tags del codice PHP
+## Separazioni delle istruzioni
+## Stringhe
+## Arrays
+## Variabili
+## Costanti
+## TRUE, FALSE e NULL
+## Operatori
+## Strutture di controllo
+## Funzioni
+## Closures
+## Namespaces
+## Interfacce
+## Traits
+## Classi astratte
+## Classi
+## Costanti di classe
+## Proprietà
+## Metodi
