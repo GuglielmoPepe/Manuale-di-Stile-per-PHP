@@ -36,6 +36,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
     $b = 'bar'; // code php
             // blank line
     ```
+    
     Motivation, background and additional information.
     
 >   n. Guideline short description 
@@ -47,6 +48,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
     $b = 'bar'; // code php
             // blank line
     ```
+    
     Motivation, background and additional information.
 
 
