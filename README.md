@@ -27,9 +27,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Tags del codice PHP
 
 1. foo
-    1. foo
-    1. foo
-    1. foo
+    1.1. foo
+    1.1. foo
+    1.1. foo
 1. foo
 1. foo
 
