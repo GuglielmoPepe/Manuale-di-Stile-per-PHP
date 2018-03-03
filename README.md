@@ -1,7 +1,7 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
-[Introduzione](#introduzione)
+   [Introduzione](#introduzione)
 1. [Tags del codice PHP](#tags-del-codice-php)
 1. [Separazioni delle istruzioni](#separazione-delle-istruzioni)
 1. [Stringhe](#stringhe)
