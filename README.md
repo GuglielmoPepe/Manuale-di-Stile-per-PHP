@@ -32,7 +32,8 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 | Content Cell  |
 
 
-| n. Guideline short description| 
+| n. Guideline short description|
+| ------------- |
 | ```
   <?php // blank space
                 // blank line
