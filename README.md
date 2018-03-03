@@ -1,6 +1,7 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
+## Table of Contents
 * [Introduzione](#introduzione)
 * [Tags del codice PHP](#tags-del-codice-php)
 * [Separazioni delle istruzioni](#separazione-delle-istruzioni)
@@ -27,9 +28,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Tags del codice PHP
 
 1. foo
-    1.1. foo
-    1.1. foo
-    1.1. foo
+    1. foo
+    1. foo
+    1. foo
 1. foo
 1. foo
 
@@ -42,6 +43,7 @@ $b = 'bar'; // code php
             // blank line
 ```
 
+[⬆ back to top](#table-of-contents)
 
 ## Separazioni delle istruzioni
 ## Stringhe
