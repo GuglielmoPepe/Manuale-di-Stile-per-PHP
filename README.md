@@ -27,6 +27,16 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Tags del codice PHP
 
 
+| First Header |
+| ------------ |
+|     <?php // blank space
+            // blank line
+$a = 'foo'; // code php
+$b = 'bar'; // code php
+            // blank line |
+| Motivation, background and additional information. |
+
+
 > n. Guideline short description 
 
 ```
