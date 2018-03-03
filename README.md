@@ -39,7 +39,7 @@ $b = 'bar'; // code php
     
 Motivation, background and additional information.
 
----------------
+---------------  
 
 > n. Guideline short description 
 
