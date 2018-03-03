@@ -25,6 +25,16 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Introduzione
 ## Tags del codice PHP
+
+```
+<?php // blank space
+            // blank line
+$a = 'foo'; // code php
+$b = 'bar'; // code php
+            // blank line
+```
+
+
 ## Separazioni delle istruzioni
 ## Stringhe
 ## Arrays
@@ -33,6 +43,68 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## TRUE, FALSE e NULL
 ## Operatori
 ## Strutture di controllo
+
+Esempio per le istruzioni `if`, `elseif` e `else`:
+```php
+
+if ($a == 1) 
+{
+    echo 'one';
+}
+elseif ($a == 2) 
+{
+    echo 'two';
+}
+else
+{
+    echo 'zero';
+}
+
+```
+
+Esempio per l'istruzione `for`:
+```php
+
+for ($i = 0; $i < 10; ++$i) 
+{
+    echo $i;
+}
+
+```
+
+Esempio per l'istruzione `foreach`:
+```php
+
+foreach ($arr as $key => $value) 
+{
+    echo $key . ' => ' . $value;
+}
+
+```
+Esempio per l'istruzione `while`:
+```php
+$i = 0;
+
+while ($i < 10) 
+{
+    echo ++$i;
+}
+
+```
+
+Esempio per l'istruzione `do-while`:
+```php
+$i = 0;
+
+do
+{
+    echo ++$i;
+}
+while ($i < 10) 
+
+```
+
+
 ## Funzioni
 ## Closures
 ## Namespaces
