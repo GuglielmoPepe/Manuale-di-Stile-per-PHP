@@ -37,6 +37,18 @@ $b = 'bar'; // code php
 ```
 Motivation, background and additional information.
 
+---------------------------------------------------------
+> n. Guideline short description 
+
+```
+<?php // blank space
+            // blank line
+$a = 'foo'; // code php
+$b = 'bar'; // code php
+            // blank line
+```
+Motivation, background and additional information.
+
 
 ```
 <?php // blank space
