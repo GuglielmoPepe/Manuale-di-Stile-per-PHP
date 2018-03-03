@@ -26,12 +26,6 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Introduzione
 ## Tags del codice PHP
-### Usa solo tags php estesi
-```php
-$a = 'foo';
-```
-nkjbfv jefvke ejvbe nkjbfv jefvke ejvbe nkjbfv jefvke ejvbenkjbfv jefvke ejvbe nkjbfv jefvke ejvbe nkjbfv jefvke ejvbenkjbfv jefvke ejvbe nkjbfv jefvke ejvbe nkjbfv jefvke ejvbenkjbfv jefvke ejvbe nkjbfv jefvke ejvbe nkjbfv jefvke ejvbe 
-
 
 
 [⬆ vai all'indice](#indice)
