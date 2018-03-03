@@ -26,9 +26,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Introduzione
 ## Tags del codice PHP
-> 
-> qualcosa
-> 
+
 
 [⬆ vai all'indice](#indice)
 
