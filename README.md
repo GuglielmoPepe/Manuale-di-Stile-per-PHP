@@ -103,7 +103,6 @@ while ($i < 10)
 
 Esempio per l'istruzione `switch`:
 ```php
-
 switch ($a)  
 {
     case (1): 
