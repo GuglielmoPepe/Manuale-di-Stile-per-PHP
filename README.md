@@ -26,14 +26,10 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Introduzione
 ## Tags del codice PHP
 
-> Regola sui tags php
-```php
-            // blank line
-$a = 'foo'; // code php
-$b = 'bar'; // code php
-            // blank line
-```
-Spiegazione della regola sui tags php
+ n. Guideline short description |
+ --------------------------------
+Example if applicable |
+Motivation, background and additional information. |
 
 
 ```
