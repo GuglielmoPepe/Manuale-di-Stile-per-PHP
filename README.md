@@ -26,10 +26,15 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Introduzione
 ## Tags del codice PHP
 
-First Header
-------------
-Content from cell 1
-Content in the first column
+> Regola sui tags php
+```php
+            // blank line
+$a = 'foo'; // code php
+$b = 'bar'; // code php
+            // blank line
+```
+Spiegazione della regola sui tags php
+
 
 ```
 <?php // blank space
