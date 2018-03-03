@@ -34,13 +34,11 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 | n. Guideline short description|
 | ------------- |
+| ```php  <?php // blank space<br>    // blank line<br>    $a = 'foo'; // code php<br>    $b = 'bar'; // code php<br>    // blank line  ```|
 | Motivation, background and additional information.|
-| ```php  <?php // blank space
-// blank line    
-$a = 'foo'; // code php    
-$b = 'bar'; // code php            
-// blank line  ```|
-    
+
+
+
 *   n. Guideline short description 
     ```
     <?php // blank space
