@@ -27,7 +27,7 @@ PHP richiede che le istruzioni vengano terminate con un punto e virgola alla fin
 
 Sebbene non sia necessario avere un punto e virgola per terminare l'ultima riga di un blocco PHP, le istruzioni devono terminare sempre con un punto e virgola per migliorare la leggibilità del codice oltre che per consistanza nella scrittura dello stesso.
 
-1.  ### Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+1.  ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
     ```php
     <?php /1.php followed by space1./
 
