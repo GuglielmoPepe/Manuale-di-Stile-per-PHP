@@ -28,6 +28,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 
 >   n. Guideline short description 
+
     ```
     <?php // blank space
             // blank line
@@ -38,6 +39,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
     Motivation, background and additional information.
     
 >   n. Guideline short description 
+
     ```
     <?php // blank space
             // blank line
