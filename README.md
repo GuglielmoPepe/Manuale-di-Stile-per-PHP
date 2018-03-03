@@ -28,7 +28,7 @@ PHP richiede che le istruzioni vengano terminate con un punto e virgola alla fin
 Sebbene non sia necessario avere un punto e virgola per terminare l'ultima riga di un blocco PHP, le istruzioni devono terminare sempre con un punto e virgola per migliorare la leggibilità del codice oltre che per consistanza nella scrittura dello stesso.
 
 
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+## 1. Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
     ```php
     <?php /1.php followed by space1./
 
@@ -47,92 +47,7 @@ Sebbene non sia necessario avere un punto e virgola per terminare l'ultima riga 
     Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
 
 
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-    ```php
-    <?php /1.php followed by space1./
-
-    echo "Hello world";
-
-    // ... more code
-
-    echo "Last statement";
-
-    // the script ends here with no PHP closing tag and blank line
-
-    ```
-    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
-
-    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
-
-
-
-
-
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-    ```php
-    <?php /1.php followed by space1./
-
-    echo "Hello world";
-
-    // ... more code
-
-    echo "Last statement";
-
-    // the script ends here with no PHP closing tag and blank line
-
-    ```
-    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
-
-    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
-
-
-
-
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-    ```php
-    <?php /1.php followed by space1./
-
-    echo "Hello world";
-
-    // ... more code
-
-    echo "Last statement";
-
-    // the script ends here with no PHP closing tag and blank line
-
-    ```
-    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
-
-    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
-
-
-
-
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-    ```php
-    <?php /1.php followed by space1./
-
-    echo "Hello world";
-
-    // ... more code
-
-    echo "Last statement";
-
-    // the script ends here with no PHP closing tag and blank line
-
-    ```
-    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
-
-    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
-
-
-
-
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+## 1. Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
     ```php
     <?php /1.php followed by space1./
 
@@ -154,231 +69,86 @@ Sebbene non sia necessario avere un punto e virgola per terminare l'ultima riga 
 
 
 
+## 1. Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+    ```php
+    <?php /1.php followed by space1./
 
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-```php
-<?php /1.php followed by space1./
+    echo "Hello world";
 
-echo "Hello world";
+    // ... more code
 
-// ... more code
+    echo "Last statement";
 
-echo "Last statement";
+    // the script ends here with no PHP closing tag and blank line
 
-// the script ends here with no PHP closing tag and blank line
+    ```
+    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
 
-```
-Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
+    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
+    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
 
-L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
 
 
 
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-```php
-<?php /1.php followed by space1./
+## 1. Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+    ```php
+    <?php /1.php followed by space1./
 
-echo "Hello world";
+    echo "Hello world";
 
-// ... more code
+    // ... more code
 
-echo "Last statement";
+    echo "Last statement";
 
-// the script ends here with no PHP closing tag and blank line
+    // the script ends here with no PHP closing tag and blank line
 
-```
-Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
+    ```
+    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
 
-L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
+    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
+    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
 
 
 
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-```php
-<?php /1.php followed by space1./
 
-echo "Hello world";
+## 1. Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+    ```php
+    <?php /1.php followed by space1./
 
-// ... more code
+    echo "Hello world";
 
-echo "Last statement";
+    // ... more code
 
-// the script ends here with no PHP closing tag and blank line
+    echo "Last statement";
 
-```
-Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
+    // the script ends here with no PHP closing tag and blank line
 
-L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
+    ```
+    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
 
+    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
+    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
 
 
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-```php
-<?php /1.php followed by space1./
 
-echo "Hello world";
 
-// ... more code
+## 1. Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+    ```php
+    <?php /1.php followed by space1./
 
-echo "Last statement";
+    echo "Hello world";
 
-// the script ends here with no PHP closing tag and blank line
+    // ... more code
 
-```
-Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
+    echo "Last statement";
 
-L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
+    // the script ends here with no PHP closing tag and blank line
 
+    ```
+    Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
 
+    L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
+    Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
 
-1. ## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
-```php
-<?php /1.php followed by space1./
 
-echo "Hello world";
 
-// ... more code
-
-echo "Last statement";
-
-// the script ends here with no PHP closing tag and blank line
-
-```
-Il codice PHP deve essere sempre delimitato dai tag PHP standard completi anche nei file che non contengono solo codice PHP.
-
-L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
-Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
-
-
-elseif ($a == 2) 
-{
-    echo 'two';
-}
-else
-{
-    echo 'zero';
-}
-
-```
-
-Esempio per l'istruzione `for`:
-```php
-for ($i = 0; $i < 10; ++$i) 
-{
-    echo $i;
-}
-
-```
-
-Esempio per l'istruzione `foreach`:
-```php
-foreach ($arr as $key => $value) 
-{
-    echo $key . ' => ' . $value;
-}
-
-```
-Esempio per l'istruzione `while`:
-```php
-$i = 0;
-
-while ($i < 10) 
-{
-    echo ++$i;
-}
-
-```
-
-Esempio per l'istruzione `do-while`:
-```php
-$i = 0;
-
-do
-{
-    echo ++$i;
-}
-while ($i < 10) 
-
-```
-
-Esempio per l'istruzione `switch`:
-```php
-switch ($a)  
-{
-    case (1): 
-        $a = 'foo'; // code php
-        $b = 'bar'; // code php
-        break;
-    case (2): 
-        $a = 'bar'; // code php
-        $b = 'foo'; // code php
-        break;
-    default: 
-        $a = 'no-foo'; // code php
-        $b = 'no-bar'; // code php
-        break;
-}
-
-```
-
-Esempio per il costrutto `try`, `catch`:
-```php
-try
-{
-    $a = 'foo';
-}
-catch (\Exception $e)
-{
-    echo $e->getMessage();
-}
-
-```
-
-
-## Funzioni
-## Closures
-## Namespaces
-## Interfacce
-Esempio per interfaccia:
-```php
-
-namespace 'Foo';
-
-interface Bar
-{
-    public function execute() : type;
-}
-
-```
-
-
-## Traits
-## Classi astratte
-Esempio per classe astratta:
-```php
-
-namespace 'Foo';
-
-abstract class Baz implements Bar
-{
-    abstract public function run();
-
-    public function execute() : type
-    {
-        $a = 'foo';     // code php
-        $b = 'baz';     // code php
-                        // blank line
-        return $type;
-    }
-}
-```
-
-
-## Classi
-## Costanti di classe
-## Proprietà
-## Metodi
