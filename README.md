@@ -26,6 +26,12 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Introduzione
 ## Tags del codice PHP
 
+| First Header  |
+| ------------- |
+| Content Cell  |
+| Content Cell  |
+
+
 *   n. Guideline short description 
     ```
     <?php // blank space
