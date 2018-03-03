@@ -26,11 +26,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Introduzione
 ## Tags del codice PHP
-1. Stop by to see Anakin on Death Star
 
-    1. Get a ride
-
-    1. Wash robe
 
 [⬆ vai all'indice](#indice)
 
