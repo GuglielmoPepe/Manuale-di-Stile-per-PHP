@@ -26,25 +26,25 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Introduzione
 ## Tags del codice PHP
-### Regola 1
+### 1. Regola
     pinco paloo blah blah
 
-### Regola 1
+### 1. Regola
     pinco paloo blah blah
     
-### Regola 1
+### 1. Regola
     pinco paloo blah blah
 
 [⬆ vai all'indice](#indice)
 
 ## Separazioni delle istruzioni
-### Regola 1
+### 1. Regola
     pinco paloo blah blah
 
-### Regola 1
+### 1. Regola
     pinco paloo blah blah
     
-### Regola 1
+### 1. Regola
     pinco paloo blah blah
 ## Stringhe
 ## Arrays
