@@ -83,6 +83,7 @@ foreach ($arr as $key => $value)
 ```
 Esempio per l'istruzione `while`:
 ```php
+
 $i = 0;
 
 while ($i < 10) 
