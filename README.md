@@ -26,10 +26,16 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Introduzione
 ## Tags del codice PHP
 
- n. Guideline short description |
- --------------------------------
-Example if applicable |
-Motivation, background and additional information. |
+> n. Guideline short description 
+
+```
+<?php // blank space
+            // blank line
+$a = 'foo'; // code php
+$b = 'bar'; // code php
+            // blank line
+```
+Motivation, background and additional information.
 
 
 ```
