@@ -27,8 +27,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Introduzione
 ## Tags del codice PHP
 
-
-
+### Usa solo tag estesi
 ```
 <?php // blank space
             // blank line
@@ -36,6 +35,17 @@ $a = 'foo'; // code php
 $b = 'bar'; // code php
             // blank line
 ```
+Usa solo tag estesi perchè...
+
+### Usa solo tag estesi
+```
+<?php // blank space
+            // blank line
+$a = 'foo'; // code php
+$b = 'bar'; // code php
+            // blank line
+```
+Usa solo tag estesi perchè...
 
 [⬆ back to top](#table-of-contents)
 
