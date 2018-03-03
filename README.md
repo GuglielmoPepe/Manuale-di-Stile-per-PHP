@@ -35,11 +35,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 1. foo
 
 
-1. Item1
-  1. SubItemA
-  1. SubItemB
-    - wat
-      - inception noise
+1. List item    
+ 1.1 List item
+2. List item
 
 ```
 <?php // blank space
