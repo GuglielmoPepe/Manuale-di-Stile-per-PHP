@@ -109,22 +109,17 @@ Esempio per l'istruzione `switch`:
 
 switch ($a)  
 {
-    case (1) : 
+    case (1): 
         $a = 'foo'; // code php
         $b = 'bar'; // code php
-                    // blank line
         break;
-        
-    case (2) : 
+    case (2): 
         $a = 'bar'; // code php
         $b = 'foo'; // code php
-                    // blank line
         break;
-        
-    default : 
+    default: 
         $a = 'no-foo'; // code php
         $b = 'no-bar'; // code php
-                       // blank line
         break;
 }
 
