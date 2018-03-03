@@ -22,13 +22,13 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 1. [Proprietà](#proprietà)
 1. [Metodi](#metodi)
 
-## Introduzione
+### Introduzione
 PHP richiede che le istruzioni vengano terminate con un punto e virgola alla fine di ogni istruzione. Il tag di chiusura di un blocco di codice PHP implica automaticamente un punto e virgola.
 
 Sebbene non sia necessario avere un punto e virgola per terminare l'ultima riga di un blocco PHP, le istruzioni devono terminare sempre con un punto e virgola per migliorare la leggibilità del codice oltre che per consistanza nella scrittura dello stesso.
 
 
-### Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
+## Usa solo i tags PHP standard completi, anche nei file che non contengono solo codice PHP.
 ```php
 <?php /1.php followed by space1./
 
