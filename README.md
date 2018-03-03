@@ -31,6 +31,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Separazioni delle istruzioni
 
+
 ## Stringhe
 ## Arrays
 ## Variabili
