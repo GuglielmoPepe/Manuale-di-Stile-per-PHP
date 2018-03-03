@@ -26,6 +26,11 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Introduzione
 ## Tags del codice PHP
 
+1. foo
+1. foo
+1. foo
+
+
 ```
 <?php // blank space
             // blank line
