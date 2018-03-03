@@ -27,19 +27,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Introduzione
 ## Tags del codice PHP
 
-1. foo
-    1. foo
-    1. foo
-    1. foo
-1. foo
-1. foo
 
-
-1. List item    
- 1.1 List item
- 1.1 List item
- 1.1 List item
-2. List item
 
 ```
 <?php // blank space
