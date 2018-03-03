@@ -104,13 +104,85 @@ while ($i < 10)
 
 ```
 
+Esempio per l'istruzione `switch`:
+```php
+
+switch ($a)  
+{
+    case (1) : 
+        $a = 'foo'; // code php
+        $b = 'bar'; // code php
+                    // blank line
+        break;
+        
+    case (2) : 
+        $a = 'bar'; // code php
+        $b = 'foo'; // code php
+                    // blank line
+        break;
+        
+    default : 
+        $a = 'no-foo'; // code php
+        $b = 'no-bar'; // code php
+                       // blank line
+        break;
+}
+
+```
+
+Esempio per il costrutto `try`, `catch`:
+```php
+try
+{
+    $a = 'foo';
+}
+catch (\Exception $e)
+{
+    echo $e->getMessage();
+}
+
+```
+
 
 ## Funzioni
 ## Closures
 ## Namespaces
 ## Interfacce
+Esempio per interfaccia:
+```php
+
+namespace 'Foo';
+
+interface Bar
+{
+    public function execute() : type;
+}
+
+```
+
+
 ## Traits
 ## Classi astratte
+Esempio per classe astratta:
+```php
+
+namespace 'Foo';
+
+abstract class Baz implements Bar
+{
+    abstract public function run();
+
+    public function execute() : type
+    {
+        $a = 'foo';     // code php
+        $b = 'baz';     // code php
+                        // blank line
+        return $type;
+    }
+}
+```
+
+
 ## Classi
 ## Costanti di classe
 ## Proprietà
