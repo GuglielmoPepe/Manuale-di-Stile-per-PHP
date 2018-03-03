@@ -38,6 +38,8 @@ const a = 1;
 const b = 2;
 ```
 > Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+> Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+> Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
 
 ### Use `const` for all of your references; avoid using `var`. eslint: [`prefer-const`](https://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign.html)
 
@@ -50,6 +52,10 @@ var b = 2;
 const a = 1;
 const b = 2;
 ```
+> Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+> Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+> Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+> Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
 > Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
 
 [⬆ vai all'indice](#indice)
