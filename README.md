@@ -46,7 +46,6 @@ $b = 'bar'; // code php
 
 Esempio per le istruzioni `if`, `elseif` e `else`:
 ```php
-
 if ($a == 1) 
 {
     echo 'one';
@@ -64,7 +63,6 @@ else
 
 Esempio per l'istruzione `for`:
 ```php
-
 for ($i = 0; $i < 10; ++$i) 
 {
     echo $i;
@@ -74,7 +72,6 @@ for ($i = 0; $i < 10; ++$i)
 
 Esempio per l'istruzione `foreach`:
 ```php
-
 foreach ($arr as $key => $value) 
 {
     echo $key . ' => ' . $value;
@@ -83,7 +80,6 @@ foreach ($arr as $key => $value)
 ```
 Esempio per l'istruzione `while`:
 ```php
-
 $i = 0;
 
 while ($i < 10) 
