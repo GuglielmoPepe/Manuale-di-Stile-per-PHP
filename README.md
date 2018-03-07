@@ -22,9 +22,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 * Gli array disposti su più riighe devono seguire le seguenti raccomandazioni:
   1. ### L'operatore di associazione di un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
-  1. ### L'operatore di associazione di un valore ad una chiaveseguito da uno spazio.
-  1. ### L'operatore di associazione di un valore ad una chiave un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
-  1. ### L'operatore di associazione di un valo chiave `=>` deve essere preceduto e seguito da uno spazio.
+  2. ### L'operatore di associazione di un valore ad una chiaveseguito da uno spazio.
+  3. ### L'operatore di associazione di un valore ad una chiave un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
+  4. ### L'operatore di associazione di un valo chiave `=>` deve essere preceduto e seguito da uno spazio.
 
   ```php
   $arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
