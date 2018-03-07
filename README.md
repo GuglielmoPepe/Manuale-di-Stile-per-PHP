@@ -6,12 +6,19 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Arrays](#arrays)
 
 ## Costanti
-
-### I nomi delle costanti **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura (underscore).
-
-### Tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiuscolo.
-
-### Tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura (underscore).
+### I nomi delle costanti **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle costanti **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura;
+* tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiuscolo;
+* tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura;
+* le costanti devono essere denominate in modo da indicare il loro scopo e contenuto;
+```php
+define('DATABASE_HOST', 'dbhost');
+define('DATABASE_NAME', 'dbname');
+define('DATABASE_USER', 'dbuser');
+define('DATABASE_PASSWORD', 'dbpwd');
+```
+> Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
+> La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e se proprio sono necessarie le costanti globali meglio inserirle nel punto di ingresso dello script o meglio ancora in un file separato.
 
 ## Stringhe
 ### Le stringhe letterali **DEVONO** essere delimitate dalle virgolette singole.
