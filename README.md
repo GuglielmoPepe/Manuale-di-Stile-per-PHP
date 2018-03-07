@@ -20,10 +20,11 @@ Guida alla redazione di programmi in PHP (in lavorazione).
   > L'uso di numeri negativi come indici può causare dei problemi con alcune funzioni della libreria standard di PHP.
 
 
-* ### L'operatore di associazione di un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
-* ### L'operatore di associazione di un valore ad una chiaveseguito da uno spazio.
-* ### L'operatore di associazione di un valore ad una chiave un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
-* ### L'operatore di associazione di un valo chiave `=>` deve essere preceduto e seguito da uno spazio.
+* 
+  * ### L'operatore di associazione di un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
+  * ### L'operatore di associazione di un valore ad una chiaveseguito da uno spazio.
+  * ### L'operatore di associazione di un valore ad una chiave un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
+  * ### L'operatore di associazione di un valo chiave `=>` deve essere preceduto e seguito da uno spazio.
 
   ```php
   $arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
