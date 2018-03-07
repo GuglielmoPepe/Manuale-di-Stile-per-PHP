@@ -25,7 +25,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 > Queste raccomandazioni nascono dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
 
-### Ogni file che contiene codice PHP deve avere un _dockblock_ nella parte superiore del file, che contenga almeno i seguenti tags _phpDocumentor_:
+### Ogni file che contiene codice PHP **DEVE** avere un _dockblock_ nella parte superiore del file, che contenga almeno i seguenti tags _phpDocumentor_:
 ```php
 /**
  * Example Framework (http://www.exampleframework.com/)
