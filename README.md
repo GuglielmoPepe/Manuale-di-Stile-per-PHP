@@ -1,3 +1,38 @@
+# Manuale di Stile per PHP
+Guida alla redazione di programmi in PHP.
+
+* [Formattazione dei file PHP](#formattazione-dei-file-php)
+  * [Codifica dei caratteri](#codifica-dei-caratteri)
+  * [Tags del codice PHP](#tags-del-codice-php)
+  * [Indentazione](#indentazione)
+  * [Lunghezza massima delle righe](#lunghezza-massima-delle-righe) 
+  * [Fine riga](#fine-riga) 
+* [Convenzione di denominazione](#convenzione-di-denominazione)
+  * [Directories](#directories)
+  * [Files](#files)
+  * [Costanti](#costanti)
+  * [Variabili](#variabili)
+  * [Funzioni](#funzioni)
+  * [Namespaces](#namespaces)
+  * [Interfacce](#interfacce)
+  * [Traits](#traits)
+  * [Classi astratte](#classi-astratte)
+  * [Classi](#classi)
+  * [Costanti di classe](#costanti-di-classe)
+  * [Proprietà](#proprietà)
+  * [Metodi](#metodi)
+* [Stili per la codifica](#stili-per-la-codifica)
+  * [Stringhe](#stringhe)
+  * [Arrays](#arrays)
+  * [Strutture di controllo](#strutture-di-controllo)
+  * [Funzioni](#funzioni)
+  * [Interfacce](#interfacce)
+  * [Traits](#traits)
+  * [Classi astratte](#classi-astratte)
+  * [Classi](#classi)
+  * [Proprietà](#proprietà)
+  * [Metodi](#metodi)
+
 ## Formattazione dei file PHP
 
 ### Codifica dei caratteri
