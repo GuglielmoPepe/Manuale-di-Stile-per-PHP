@@ -45,7 +45,7 @@ $sql = "SELECT `id`, `name` from `people` "
      . "WHERE `name`='Mickey' OR `name`='Minnie'";
      . "ORDER BY `name` ASC ";
 ```
-Quando si concatenano le stringhe con l'operatore `.`, è meglio suddividere l'istruzione in più righe per migliorarne la leggibilità. In questi casi, ogni riga successiva deve essere riempita con tanti spazi bianchi, tali che l'operatore di concatenazione `.` sia allineato all'operatore di assegnazione `=`. 
+> Quando si concatenano le stringhe con l'operatore `.`, è meglio suddividere l'istruzione in più righe per migliorarne la leggibilità. In questi casi, ogni riga successiva deve essere riempita con tanti spazi bianchi, tali che l'operatore di concatenazione `.` sia allineato all'operatore di assegnazione `=`. 
 
 ## Arrays
 ### Gli arrays **DEVONO** essere dichiarati con la sintassi concisa.
