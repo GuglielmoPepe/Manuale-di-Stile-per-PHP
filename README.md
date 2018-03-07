@@ -1,8 +1,29 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
+* [Stringhe](#stringhe)
 * [Arrays](#arrays)
 
+
+## Stringhe
+### Le stringhe letterali **DEVONO** essere delimitate dalle virgolette singole.
+```php
+$string = 'example string';
+```
+
+### Le stringhe che contengono virgolette singole **DEVONO** essere delimitate dalle virgolette doppie.
+> Questo è particolarmente utile per le istruzioni SQL:
+
+    ```php
+    $sql = "SELECT `id`, `name` from `people` "
+         . "WHERE `name`='Mickey' OR `name`='Minnie'";
+    ```
+
+### Le stringhe **NON DEVONO** contenere variabili da sostituire.
+
+### L'operatore di concatenazione **DEVE** essere preceduto e seguito da un singolo spazio.
+
+### L'operatore di concatenazione `.` **DEVE** essere allineato all'operatore di assegnazione `=` quando l'istruzione è suddivisa su più righe.
 
 ## Arrays
 ### Gli arrays **DEVONO** essere dichiarati con la sintassi concisa.
