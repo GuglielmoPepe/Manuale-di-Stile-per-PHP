@@ -45,12 +45,14 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiuscolo;
 * tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura;
 * le costanti devono essere denominate in modo da indicare il loro scopo e contenuto;
+
 ```php
 define('DATABASE_HOST', 'dbhost');
 define('DATABASE_NAME', 'dbname');
 define('DATABASE_USER', 'dbuser');
 define('DATABASE_PASSWORD', 'dbpwd');
 ```
+
 > Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
 
 > La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e se proprio sono necessarie le costanti globali meglio inserirle nel punto di ingresso dello script o meglio ancora in un file separato.
@@ -61,6 +63,7 @@ define('DATABASE_PASSWORD', 'dbpwd');
 * i nomi delle variabili **NON DEVONO** contenere caratteri di sottolineatura non sono consentiti;
 * i nomi delle variabili **DEVONO** iniziare con una lettera minuscola;
 * i nomi delle variabili **DEVONO** essere scritte in `mixedCase` in caso di più parole;
+
 ```php
 $firstName = 'Mickey';
 ```
