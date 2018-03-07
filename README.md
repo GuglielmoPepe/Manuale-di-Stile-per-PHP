@@ -13,11 +13,10 @@ $string = 'example string';
 
 ### Le stringhe che contengono virgolette singole **DEVONO** essere delimitate dalle virgolette doppie.
 > Questo è particolarmente utile per le istruzioni SQL:
-
-    ```php
-    $sql = "SELECT `id`, `name` from `people` "
-         . "WHERE `name`='Mickey' OR `name`='Minnie'";
-    ```
+> ```php
+> $sql = "SELECT `id`, `name` from `people` "
+>     . "WHERE `name`='Mickey' OR `name`='Minnie'";
+> ```
 
 ### Le stringhe **NON DEVONO** contenere variabili da sostituire.
 
