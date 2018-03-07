@@ -1,10 +1,43 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
+* [Directories](#directories)
+* [Files](#files)
 * [Costanti](#costanti)
 * [Variabili](#variabili)
 * [Stringhe](#stringhe)
 * [Arrays](#arrays)
+
+## Directories
+### I nomi delle directories **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle directories **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi delle directories **NON DEVONO** contenere spazi;
+* i nomi delle directories **DEVONO** essere in formato `CapitalizedWords`;
+> Queste raccomandazioni nascono dal fatto che i nomi dei files vengono mappati con i nomi dei namespaces, creando un collegamento biunivoco con questi ultimi.
+
+## Files
+### I nomi dei files **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi dei files **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi dei files **NON DEVONO** contenere spazi;
+* i nomi dei files **DEVONO** essere in formato `CapitalizedWords`;
+* nomi dei files **DEVONO** terminare con l'estensione `.php`;
+> Queste raccomandazioni nascono dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
+
+### Ogni file che contiene codice PHP deve avere un _dockblock_ nella parte superiore del file, che contenga almeno i seguenti tags _phpDocumentor_:
+```php
+/**
+ * Example Framework (http://www.exampleframework.com/)
+ *
+ * Long description for file (if any)...
+ *
+ * @link      http://github.com/exampleframework/ for the canonical source repository
+ * @copyright Copyright (c) 2005-2013 Example Technologies USA Inc. (http://www.example.com)
+ * @license   http://framework.example.com/license/new-bsd New BSD License
+ * @since     File available since Release 1.5.0
+ */
+ 
+```
+> Migliora la documentazione del codice.
 
 ## Costanti
 ### I nomi delle costanti **DEVONO** seguire le seguenti raccomandazioni:
