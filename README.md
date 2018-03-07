@@ -2,6 +2,7 @@
 Guida alla redazione di programmi in PHP (in lavorazione).
 
 * [Costanti](#costanti)
+* [Variabili](#variabili)
 * [Stringhe](#stringhe)
 * [Arrays](#arrays)
 
@@ -19,6 +20,27 @@ define('DATABASE_PASSWORD', 'dbpwd');
 ```
 > Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
 > La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e se proprio sono necessarie le costanti globali meglio inserirle nel punto di ingresso dello script o meglio ancora in un file separato.
+
+## Variabili
+### I nomi delle variabili **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi delle variabili **NON DEVONO** contenenre caratteri di sottolineatura non sono consentiti;
+* i nomi delle variabili **DEVONO** iniziare con una lettera minuscola;
+* i nomi delle variabili **DEVONO** essere scritte in `mixedCase` in caso di più parole;
+
+> I numeri sono consentiti nei nomi delle variabili, ma sono da evitarsi nella maggior parte dei casi.
+
+> I nomi delle variabili dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.  
+
+> Le variabili dovrebbero essere sempre prolisse, per descrivere i dati che lo sviluppatore intende memorizzare in essi. I nomi di variabili di una sola lettera, come `$i` e `$k`, sono scoraggiati tranne che nei cicli più piccoli. Se un ciclo contiene più di 20 righe di codice, le variabili dell'indice dovrebbero avere nomi più descrittivi.
+
+### Le variabili che fanno riferimento agli oggetti dovrebbero in qualche modo essere associate alla classe di cui la variabile è un oggetto.
+```php
+$person = new Person();
+```
+> Migliora la leggibilità del codice.
+
+### Le variabili globali **NON DEVONO** essere usate.
 
 ## Stringhe
 ### Le stringhe letterali **DEVONO** essere delimitate dalle virgolette singole.
