@@ -12,6 +12,10 @@ $string = 'example string';
 ```
 
 ### Le stringhe che contengono virgolette singole **DEVONO** essere delimitate dalle virgolette doppie.
+```php
+$str = "That's a 'magic' sock.";
+```
+
 > Questo è particolarmente utile per le istruzioni SQL:
 > ```php
 > $sql = "SELECT `id`, `name` from `people` "
