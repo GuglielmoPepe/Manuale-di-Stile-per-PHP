@@ -19,6 +19,7 @@ define('DATABASE_USER', 'dbuser');
 define('DATABASE_PASSWORD', 'dbpwd');
 ```
 > Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
+
 > La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e se proprio sono necessarie le costanti globali meglio inserirle nel punto di ingresso dello script o meglio ancora in un file separato.
 
 ## Variabili
