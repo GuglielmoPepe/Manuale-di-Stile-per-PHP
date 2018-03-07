@@ -115,11 +115,11 @@ $arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
 * gli operatori di assegnazione di un valore a una chiave `=>` **DEVONO** essere allineati;
 * l'ultimo elemento **DEVE** essere sempre delimitato da una virgola;
 * la parentesi di chiusura **DEVE** essere su una propria riga allo stesso livello di indentazione della riga contenente la dichiarazione dell'array;
+
 ```php
 $arr = [
     'firstKey'  => 'firstValue', 
     'secondKey' => 'secondValue',
 ];
-
 ```
 > L'uso della virgola finale dopo l'ultimo elemento nell'array riduce al minimo la possibilità che si verifichino errori di analisi a causa di una virgola mancante per l'aggiunta di nuovi elementi.
