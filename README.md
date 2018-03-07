@@ -6,14 +6,12 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 * ### Usare la sintassi concisa per la dichiarazione di un array
   ```php
-
   $arr = [];
 
   ```
 
 * ### Il delimitatore di elemento `,` deve essere seguito da uno spazio.
   ```php
-
   $arr = ['Mickey', 'Minnie', 1, 2, 3];
 
   ```
@@ -24,7 +22,6 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 * ### L'operatore di associazione di un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
   ```php
-
   $arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
 
   ```
