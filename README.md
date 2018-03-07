@@ -17,7 +17,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
   ```
 
 * ### Mai usare numeri negativi come indici.
-  L'uso di numeri negativi come indici può causare dei problemi con alcune funzioni della libreria standard di PHP.
+  > L'uso di numeri negativi come indici può causare dei problemi con alcune funzioni della libreria standard di PHP.
 
 
 * ### L'operatore di associazione di un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
@@ -29,4 +29,4 @@ Guida alla redazione di programmi in PHP (in lavorazione).
   $arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
 
   ```
-  Migliora la leggibilità del codice.
+  > Migliora la leggibilità del codice.
