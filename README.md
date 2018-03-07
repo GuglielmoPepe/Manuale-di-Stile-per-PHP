@@ -5,27 +5,27 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ## Arrays
 
 * ### Usare la sintassi concisa per la dichiarazione di un array
-```php
+  ```php
 
-$arr = [];
+  $arr = [];
 
-```
+  ```
 
 * ### Il delimitatore di elemento `,` deve essere seguito da uno spazio.
-```php
+  ```php
 
-$arr = ['Mickey', 'Minnie', 1, 2, 3];
+  $arr = ['Mickey', 'Minnie', 1, 2, 3];
 
-```
+  ```
 
 * ### Mai usare numeri negativi come indici.
-L'uso di numeri negativi come indici può causare dei problemi con alcune funzioni della libreria standard di PHP.
+  L'uso di numeri negativi come indici può causare dei problemi con alcune funzioni della libreria standard di PHP.
 
 
 * ### L'operatore di associazione di un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
-```php
+  ```php
 
-$arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
+  $arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
 
-```
-Migliora la leggibilità del codice.
+  ```
+  Migliora la leggibilità del codice.
