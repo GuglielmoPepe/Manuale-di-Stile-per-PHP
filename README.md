@@ -15,16 +15,29 @@ $string = 'example string';
 ```php
 $str = "That's a 'magic' sock.";
 ```
-
-> Questo è particolarmente utile per le istruzioni SQL:
+> Questa sintassi è preferibile rispetto al carattere di escape `\` poiché è molto più facile da leggere.
+> Inoltre è particolarmente utile per le istruzioni SQL:
 > ```php
 > $sql = "SELECT `id`, `name` from `people` "
 >     . "WHERE `name`='Mickey' OR `name`='Minnie'";
 > ```
 
 ### Le stringhe **NON DEVONO** contenere variabili da sostituire.
+```php
+$string = 'Hello ' . $name . ', welcome back!';
+```
+> Questa sintassi migliora le leggibilità del codice rispetto ai seguenti esempi:
+> ```php
+> $string = "Hello $name, welcome back!";
+> $string = "Hello {$name}, welcome back!";
+> $string = "Hello ${name}, welcome back!";
+> ```
 
 ### L'operatore di concatenazione **DEVE** essere preceduto e seguito da un singolo spazio.
+```php
+$string = 'Mickey' . ' ' . 'Mouse';
+```
+> Migliora la leggibilità del codice.
 
 ### L'operatore di concatenazione `.` **DEVE** essere allineato all'operatore di assegnazione `=` quando l'istruzione è suddivisa su più righe.
 
