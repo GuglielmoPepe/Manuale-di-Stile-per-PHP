@@ -60,7 +60,7 @@ $str = "That's a 'magic' sock.";
 > Inoltre è particolarmente utile per le istruzioni SQL:
 > ```php
 > $sql = "SELECT `id`, `name` from `people` "
->     . "WHERE `name`='Mickey' OR `name`='Minnie'";
+>      . "WHERE `name`='Mickey' OR `name`='Minnie'";
 > ```
 
 ### Le stringhe **NON DEVONO** contenere variabili da sostituire.
