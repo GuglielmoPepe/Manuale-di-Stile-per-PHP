@@ -1,9 +1,17 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
+* [Costanti](#costanti)
 * [Stringhe](#stringhe)
 * [Arrays](#arrays)
 
+## Costanti
+
+### I nomi delle costanti **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura (underscore).
+
+### Tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiuscolo.
+
+### Tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura (underscore).
 
 ## Stringhe
 ### Le stringhe letterali **DEVONO** essere delimitate dalle virgolette singole.
