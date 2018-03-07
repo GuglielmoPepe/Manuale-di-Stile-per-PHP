@@ -4,7 +4,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Arrays
 
-* ### Usare la sintassi concisa per la dichiarazione di un array
+* ### Usare la sintassi concisa per la dichiarazione di un array.
   ```php
   $arr = [];
 
@@ -21,6 +21,10 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 
 * ### L'operatore di associazione di un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
+* ### L'operatore di associazione di un valore ad una chiaveseguito da uno spazio.
+* ### L'operatore di associazione di un valore ad una chiave un valore ad una chiave `=>` deve essere preceduto e seguito da uno spazio.
+* ### L'operatore di associazione di un valo chiave `=>` deve essere preceduto e seguito da uno spazio.
+
   ```php
   $arr = ['firstKey'  => 'firstValue', 'secondKey' => 'secondValue'];
 
