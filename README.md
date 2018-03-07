@@ -97,7 +97,8 @@ $str = "That's a 'magic' sock.";
 > Questa sintassi è preferibile rispetto al carattere di escape `\` poiché è molto più facile da leggere.
 > Inoltre è particolarmente utile per le istruzioni SQL:
 > ```php
-> $sql = "SELECT `id`, `name` from `people` "
+> $sql = "SELECT `id`, `name` "
+>      . "FROM `people` "
 >      . "WHERE `name`='Mickey' OR `name`='Minnie'";
 > ```
 
@@ -120,7 +121,8 @@ $string = 'Mickey' . ' ' . 'Mouse';
 
 ### L'operatore di concatenazione `.` **DEVE** essere allineato all'operatore di assegnazione `=` quando l'istruzione è suddivisa su più righe.
 ```php
-$sql = "SELECT `id`, `name` from `people` "
+$sql = "SELECT `id`, `name` "
+     . "FROM `people` "
      . "WHERE `name`='Mickey' OR `name`='Minnie'";
      . "ORDER BY `name` ASC ";
 ```
