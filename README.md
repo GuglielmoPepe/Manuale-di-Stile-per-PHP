@@ -25,9 +25,12 @@ define('DATABASE_PASSWORD', 'dbpwd');
 ## Variabili
 ### I nomi delle variabili **DEVONO** seguire le seguenti raccomandazioni:
 * i nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici;
-* i nomi delle variabili **NON DEVONO** contenenre caratteri di sottolineatura non sono consentiti;
+* i nomi delle variabili **NON DEVONO** contenere caratteri di sottolineatura non sono consentiti;
 * i nomi delle variabili **DEVONO** iniziare con una lettera minuscola;
 * i nomi delle variabili **DEVONO** essere scritte in `mixedCase` in caso di più parole;
+```php
+$firstName = 'Mickey';
+```
 
 > I numeri sono consentiti nei nomi delle variabili, ma sono da evitarsi nella maggior parte dei casi.
 
