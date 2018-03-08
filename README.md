@@ -194,3 +194,5 @@ function longFunctionName()
 * i nomi dei namespace **DEVONO** iniziare con una lettera maiuscola;
 * i nomi dei namespace **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
 * i nomi dei namespace **DEVONO** essere mappati su directories e files;
+
+> Queste raccomandazioni nascono dal fatto che i nomi dei namespaces vengono mappati con i nomi delle directories, creando un collegamento biunivoco con questi ultimi.
