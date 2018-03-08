@@ -190,9 +190,11 @@ function longFunctionName()
 
 ## Namespaces
 ### I nomi dei namespaces **DEVONO** seguire le seguenti raccomandazioni:
-* i nomi dei namespace **DEVONO** contenere solo caratteri alfanumerici;
-* i nomi dei namespace **DEVONO** iniziare con una lettera maiuscola;
-* i nomi dei namespace **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
-* i nomi dei namespace **DEVONO** essere mappati su directories e files;
+* i nomi dei namespaces **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi dei namespaces **DEVONO** iniziare con una lettera maiuscola;
+* i nomi dei namespaces **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
+* i nomi dei namespaces **DEVONO** essere mappati su directories;
 
-> Queste raccomandazioni nascono dal fatto che i nomi dei namespaces vengono mappati con i nomi delle directories, creando un collegamento biunivoco con questi ultimi.
+> I numeri sono consentiti nei nomi dei namespaces, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi dei namespaces vengono mappati con i nomi delle directories, creando un collegamento biunivoco con queste ultime.
