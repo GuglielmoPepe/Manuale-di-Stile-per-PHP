@@ -7,6 +7,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Variabili](#variabili)
 * [Stringhe](#stringhe)
 * [Arrays](#arrays)
+* [Funzioni](#funzioni)
 
 ## Directories
 ### I nomi delle directories **DEVONO** seguire le seguenti raccomandazioni:
@@ -166,3 +167,21 @@ $arr = [
 ];
 ```
 > L'uso della virgola finale dopo l'ultimo elemento nell'array riduce al minimo la possibilità che si verifichino errori di analisi a causa di una virgola mancante per l'aggiunta di nuovi elementi.
+
+## Funzioni
+### I nomi delle funzioni **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle funzioni **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi delle funzioni **DEVONO** iniziare con una lettera minuscola;
+* i nomi delle funzioni **DEVONO** essere scritte in `mixedCase` in caso di più parole;
+```php
+function longFunctionName()
+{
+
+}
+```
+
+> I numeri sono consentiti nei nomi delle variabili, ma sono da evitarsi nella maggior parte dei casi.
+
+>La verbosità è generalmente incoraggiata. I nomi delle funzioni dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
+
+
