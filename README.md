@@ -180,7 +180,7 @@ function longFunctionName()
 }
 ```
 
-> I numeri sono consentiti nei nomi delle variabili, ma sono da evitarsi nella maggior parte dei casi.
+> I numeri sono consentiti nei nomi delle funzioni, ma sono da evitarsi nella maggior parte dei casi.
 
 >La verbosità è generalmente incoraggiata. I nomi delle funzioni dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
 
