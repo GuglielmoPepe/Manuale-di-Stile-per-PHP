@@ -59,6 +59,7 @@ define('DATABASE_HOST', 'dbhost');
 define('DATABASE_NAME', 'dbname');
 define('DATABASE_USER', 'dbuser');
 define('DATABASE_PASSWORD', 'dbpwd');
+
 ```
 
 > Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
@@ -178,11 +179,13 @@ $arr = [
 * i nomi delle funzioni **DEVONO** contenere solo caratteri alfanumerici;
 * i nomi delle funzioni **DEVONO** iniziare con una lettera minuscola;
 * i nomi delle funzioni **DEVONO** essere scritte in `mixedCase` in caso di più parole;
+
 ```php
 function longFunctionName()
 {
 
 }
+
 ```
 
 > I numeri sono consentiti nei nomi delle funzioni, ma sono da evitarsi nella maggior parte dei casi.
