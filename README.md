@@ -9,6 +9,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Arrays](#arrays)
 * [Funzioni](#funzioni)
 * [Namespaces](#namespaces)
+* [Interfacce](#interfacce)
 * [Classi](#classi)
 * [Costanti di classe](#costanti-di-classe)
 
@@ -200,6 +201,16 @@ function longFunctionName()
 
 > Queste raccomandazioni nascono dal fatto che i nomi dei namespaces vengono mappati con i nomi delle directories, creando un collegamento biunivoco con queste ultime.
 
+## Intefacce
+### I nomi delle interfacce **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle interfacce **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi delle interfacce **DEVONO** iniziare con una lettera maiuscola;
+* i nomi delle interfacce **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
+
+> I numeri sono consentiti nei nomi delle interfacce, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi delle interfacce vengono mappati con i nomi dei files che le contengono, creando un collegamento biunivoco con questi ultimi.
+
 ## Traits
 ### I nomi dei traits **DEVONO** seguire le seguenti raccomandazioni:
 * i nomi dei traits **DEVONO** contenere solo caratteri alfanumerici;
@@ -219,6 +230,8 @@ function longFunctionName()
 > I numeri sono consentiti nei nomi delle classi, ma sono da evitarsi nella maggior parte dei casi.
 
 > Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei files che le contengono, creando un collegamento biunivoco con questi ultimi.
+
+
 
 ## Costanti di classe
 ### I nomi delle costanti di classe **DEVONO** seguire le seguenti raccomandazioni:
