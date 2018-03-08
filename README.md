@@ -9,6 +9,8 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Arrays](#arrays)
 * [Funzioni](#funzioni)
 * [Namespaces](#namespaces)
+* [Classi](#classi)
+* [Costanti di classe](#costanti-di-classe)
 
 
 ## Directories
@@ -218,6 +220,7 @@ function longFunctionName()
 
 > Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei files che le contengono, creando un collegamento biunivoco con questi ultimi.
 
+## Costanti di classe
 ### I nomi delle costanti di classe **DEVONO** seguire le seguenti raccomandazioni:
 * i nomi delle costanti di classe **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura;
 * tutte le lettere utilizzate nel nome di una costante di classe **DEVONO** essere in maiuscolo;
@@ -234,4 +237,17 @@ class Foo
 
 }
 ```
+
+### Proprietà
+#### I nomi delle proprietà di una classe **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle proprietà **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi delle proprietà **DEVONO** iniziare con una lettera minuscola; 
+* i nomi delle proprietà **DEVONO** essere scritte in `mixedCase` in caso di più parole;
+
+
+### Metodi
+#### I nomi dei metodi di una classe **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi dei metodi **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi dei metodi **DEVONO** iniziare con una lettera minuscola; 
+* i nomi dei metodi **DEVONO** essere scritte in `mixedCase` in caso di più parole;
 
