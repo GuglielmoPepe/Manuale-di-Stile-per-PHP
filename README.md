@@ -8,6 +8,8 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Stringhe](#stringhe)
 * [Arrays](#arrays)
 * [Funzioni](#funzioni)
+* [Namespaces](#namespaces)
+
 
 ## Directories
 ### I nomi delle directories **DEVONO** seguire le seguenti raccomandazioni:
@@ -186,4 +188,9 @@ function longFunctionName()
 
 ### Le funzioni nel namespace globale **NON DEVONO** essere usate.
 
-
+## Namespaces
+### I nomi dei namespaces **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi dei namespace **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi dei namespace **DEVONO** iniziare con una lettera maiuscola;
+* i nomi dei namespace **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
+* i nomi dei namespace **DEVONO** essere mappati su directories e files;
