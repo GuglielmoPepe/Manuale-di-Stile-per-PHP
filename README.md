@@ -193,8 +193,45 @@ function longFunctionName()
 * i nomi dei namespaces **DEVONO** contenere solo caratteri alfanumerici;
 * i nomi dei namespaces **DEVONO** iniziare con una lettera maiuscola;
 * i nomi dei namespaces **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
-* i nomi dei namespaces **DEVONO** essere mappati su directories;
 
 > I numeri sono consentiti nei nomi dei namespaces, ma sono da evitarsi nella maggior parte dei casi.
 
 > Queste raccomandazioni nascono dal fatto che i nomi dei namespaces vengono mappati con i nomi delle directories, creando un collegamento biunivoco con queste ultime.
+
+## Traits
+### I nomi dei traits **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi dei traits **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi dei traits **DEVONO** iniziare con una lettera maiuscola;
+* i nomi dei traits **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
+
+> I numeri sono consentiti nei nomi dei traits, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi dei traits vengono mappati con i nomi dei files che li contengono, creando un collegamento biunivoco con questi ultimi.
+
+## Classi
+### I nomi delle classi **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle classi **DEVONO** contenere solo caratteri alfanumerici;
+* i nomi delle classi **DEVONO** iniziare con una lettera maiuscola;
+* i nomi delle classi **DEVONO** essere scritte in `CapitalizedWords` in caso di più parole;
+
+> I numeri sono consentiti nei nomi delle classi, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei files che le contengono, creando un collegamento biunivoco con questi ultimi.
+
+### I nomi delle costanti di classe **DEVONO** seguire le seguenti raccomandazioni:
+* i nomi delle costanti di classe **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura;
+* tutte le lettere utilizzate nel nome di una costante di classe **DEVONO** essere in maiuscolo;
+* tutte le parole nel nome di una costante di classe **DEVONO** essere separate da caratteri di sottolineatura;
+* le costanti devono essere denominate in modo da indicare il loro scopo e contenuto;
+
+```php
+class Foo
+{
+ const DATABASE_HOST = 'dbhost';
+ const DATABASE_NAME = 'dbname';
+ const DATABASE_USER = 'dbuser';
+ const DATABASE_PASSWORD = ''dbpwd'';
+
+}
+```
+
