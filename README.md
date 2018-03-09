@@ -3,6 +3,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 * [Directories](#directories)
 * [Files](#files)
+  1. [Tags del codice PHP](#tags-del-codice-php)
+  1. [Lunghezza massima delle righe](#lunghezza-massima-delle-righe)
+  1. [Indentazione](#indentazione)
 * [Costanti](#costanti)
 * [Variabili](#variabili)
 * [Stringhe](#stringhe)
