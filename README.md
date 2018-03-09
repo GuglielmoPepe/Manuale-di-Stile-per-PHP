@@ -31,6 +31,37 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 > Queste raccomandazioni nascono dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
 
+### Il codice PHP **DEVE** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark).
+
+### Il codice PHP **DEVE** usare solo rientri di quattro spazi.
+
+### Il codice PHP **NON DEVE** mai usare la tabulazione per i rientri.
+
+### La lunghezza massima di una riga **DEVONO** essere di 72 caratteri.
+
+### Righe più lunghe **DEVONO** essere divise in più righe successive di non più di 72 caratteri.
+
+### Alla fine di una riga non vuota **NON DEVONO** esserci spazi bianchi.
+
+### Le righe dei file PHP **DEVONO** terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
+
+## Tags del codice PHP
+### I files che contengono solo codice PHP **DEVONO** usare il tag esteso `<?php`.
+
+### Il tag di apertura `<?php` **DEVE** essere seguito da una singola riga vuota.
+
+### Il tag di chiusura `?>` **DEVE** essere omesso dai files che contengono solo codice PHP.
+
+### Il tag breve `<?=` **NON DEVE** essere utilizzato.
+
+> Migliora la leggibilità oltre che per consistenza.
+
+### Il codice PHP deve essere delimitato dai tags `<?php ... ?>`.
+### Il tag esteso `<?php` **DEVE** essere immediatamente seguito da un singolo spazio.
+### Il tag di chiusura `?>` **DEVE** essere immediatamente preceduto da un singolo spazio.
+### Tutti i files **DEVONO** terminare con una singola riga vuota.
+
+
 ### Ogni file che contiene codice PHP **DEVE** avere un _dockblock_ nella parte superiore del file, che contenga almeno i seguenti tags _phpDocumentor_:
 ```php
 /**
