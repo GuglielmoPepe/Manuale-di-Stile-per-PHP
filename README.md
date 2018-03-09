@@ -1,7 +1,7 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
-* [Qualsiasi raccomandazione del manuale deve essere violata se migliora la leggibilità.](#qualsiasi-raccomandazione-del-manuale-deve-essere-violata-se-migliora-la-leggibilità)
+* [Qualsiasi raccomandazione del manuale deve essere violata se migliora la leggibilità.](#qualsiasi-raccomandazione-del-manuale-deve-essere-violata-se-migliora-la-leggibilita)
 * [Tutti i nomi devono essere scritti in inglese.](#tutti-i-nomi-devono-essere-scritti in-inglese)
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
