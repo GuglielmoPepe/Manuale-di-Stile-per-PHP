@@ -2,6 +2,7 @@
 Guida alla redazione di programmi in PHP (in lavorazione).
 
 * [Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.](#qualsiasi-raccomandazione-del-manuale-**DEVE**-essere-violata-se-migliora-la-leggibilità.)
+
 * [Tutti i nomi **DEVONO** essere scritti in inglese.](#tutti-i-nomi-**DEVONO**-essere-scritti in-inglese.)
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
