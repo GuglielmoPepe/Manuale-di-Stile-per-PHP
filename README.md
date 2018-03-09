@@ -15,3 +15,8 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 > I numeri sono consentiti nei nomi dei namespaces, ma sono da evitarsi nella maggior parte dei casi.
 
 > Queste raccomandazioni nascono dal fatto che i nomi dei namespaces vengono mappati con i nomi delle directories, creando un collegamento biunivoco con queste ultime.
+
+## I nomi delle interfacce, dei traits e delle classi **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.
+> I numeri sono consentiti nei nomi dei delle interfacce, dei traits e delle classi, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi delle interfacce, dei traits e delle classi vengono mappati con i nomi dei files che li contengono, creando un collegamento biunivoco con questi ultimi.
