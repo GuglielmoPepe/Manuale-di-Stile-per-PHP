@@ -37,3 +37,17 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 > Ciò aiuta ad evitare problemi con diff, patch, cronologia e annotazioni. L'uso degli spazi rende anche facile inserire una sub-indentazione a grana fine per l'allineamento tra le righe.
 > Gli spazi non devono mai essere mescolati con la tabulazione. 
 
+#### Le righe dei file **DEVONO** seguire le seguenti raccomandazioni:
+  * la lunghezza massima di una riga **DEVE** essere di 72 caratteri;
+  * righe più lunghe di 72 caratteri devono essere divise in più righe successive;
+  * alla fine di una riga non vuota non devono esserci spazi bianchi;
+  * le righe dei file PHP **DEVONO** terminare con un singolo carattere di avanzamento riga Unix LF (linefeed);
+  
+> Limitando la larghezza delle righe a 72 caratteri si migliora la leggibilità del codice.
+
+> Un limite di 72 caratteri rende necessario distribuire la logica o le espressioni complesse in funzioni, nonché assegnare nomi più brevi e più espressivi a funzioni ed oggetti.
+
+> Limitando la larghezza della finestra dell'editor a 72 caratteri, è possibile avere diversi file aperti fianco a fianco e funziona bene quando si utilizzano gli strumenti di revisione del codice che presentano le due versioni nelle colonne adiacenti.
+
+> Il wrapping predefinito nella maggior parte degli strumenti interrompe la struttura visiva del codice, rendendolo più difficile da capire. Il limite è stato scelto per evitare il wrapping degli editor con la larghezza della finestra impostata su 80, anche se lo strumento posiziona un glifo marcatore nella colonna finale quando effettua il wrapping delle linee. Alcuni strumenti basati sul Web potrebbero non offrire affatto il ritorno a capo automatico della linea.
+
