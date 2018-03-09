@@ -234,6 +234,17 @@ function longFunctionName()
 
 > Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei files che le contengono, creando un collegamento biunivoco con questi ultimi.
 
+### La dichiarazione di classe **DEVE** seguire le seguenti raccomandazioni:
+* le classi che estendono altre classi o che implementano interfacce **DEVONO** dichiarare le loro dipendenze sulla stessa linea  quando possibile;
+* la dichiarazione di classe **DEVE** essere suddivisa su più righe se supera la lunghezza massima per una riga (inserire link);
+* la dichiarazione di classe **DEVE** essere interrotta prima delle parole chiave `extends` e `implements` se supera la lunghezza massima per una riga(inserire link);
+* le istruzioni `extends` e `implements` **DEVONO** essere dichiarate su una propria riga e con un livelo di rientro;
+* l'istruzione `implements` **DEVE** essere interrotta dopo ogni virgola che separa le interfacce se la dichiarazione di classe  supera la lunghezza massima della riga;
+* i nomi delle interfacce **DEVONO** essere allineate se la dichiarazione di classe  supera la lunghezza massima della riga;
+* la parentesi di apertura **DEVE** essere su una propria riga;
+* la parentesi di chiusura **DEVE** essere su una propria riga, successiva al corpo della classe;
+
+> Migliora la leggibilità del codice.
 
 
 ## Costanti di classe
