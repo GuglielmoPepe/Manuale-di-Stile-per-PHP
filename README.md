@@ -51,6 +51,10 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 > Il wrapping predefinito nella maggior parte degli strumenti interrompe la struttura visiva del codice, rendendolo più difficile da capire. Il limite è stato scelto per evitare il wrapping degli editor con la larghezza della finestra impostata su 80, anche se lo strumento posiziona un glifo marcatore nella colonna finale quando effettua il wrapping delle linee. Alcuni strumenti basati sul Web potrebbero non offrire affatto il ritorno a capo automatico della linea.
 
+> La terminazione della riga segue la convenzione del file di testo Unix. I caratteri di avanzamento riga sono rappresentati come numero ordinale 10 oppure come numero esadecimale 0x0A.
+> Questo è più un problema per gli sviluppatori che lavorano in un ambiente Windows, ma in ogni caso assicurarsi che l'editor di testo sia configurato per salvare i file con interruzioni di riga Unix.
+
+
 #### Tutti i files **DEVONO** terminare con una singola riga vuota.
 
 #### Ogni file **DEVE** avere un _dockblock_ nella parte superiore, che contenga almeno i seguenti tags _phpDocumentor_:
@@ -69,12 +73,27 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 ```
 > Migliora la documentazione del codice ed agevola il lavoro degli sviluppatori.
 
+#### I tags del codice PHP **DEVONO** seguire le seguenti raccomandazioni:
+* i files che contengono codice PHP **DEVONO** usare esclusivamente il tag esteso `<?php`;
+* il tag di apertura `<?php` **DEVE** essere seguito da un singolo spazio;
+* il tag di apertura `<?php` **DEVE** essere seguito da una singola riga vuota;
+* Il tag di chiusura `?>` **DEVE** essere omesso dai files che contengono solo codice PHP.
+
+> Il tag di chiusura PHP `?>` in un documento PHP é facoltativo per il parser PHP. Tuttavia, se utilizzato, qualsiasi spazio vuoto successivo al tag di chiusura, introdotto dallo sviluppatore, dall'utente o da un'applicazione FTP, può causare output indesiderati, errori PHP o, se questi ultimi vengono soppressi, pagine vuote. Per questo motivo, tutti i file che contengono solo codice PHP devono omettere il tag di chiusura PHP e terminare con una singola riga vuota.
+
+#### I files che non contengono solo codice PHP **DEVONO** seguire le seguenti raccomandazioni:
+* il codice PHP deve essere delimitato dai tags `<?php ... ?>`;
+* il tag di chiusura `?>` **DEVE** essere immediatamente preceduto da un singolo spazio;
+
+> L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto `short_open_tag` abilitato. 
+Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag conciso `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza non deve mai essere usato il tag breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
+
+
 ## Costanti
 #### I nomi delle costanti **DEVONO** seguire le seguenti raccomandazioni:
 * i nomi delle costanti **DEVONO** contenere solo caratteri alfanumerici ed il carattere di sottolineatura;
 * tutte le lettere utilizzate nel nome di una costante **DEVONO** essere in maiuscolo;
 * tutte le parole nel nome di una costante **DEVONO** essere separate da caratteri di sottolineatura;
-* le costanti devono essere denominate in modo da indicare il loro scopo e contenuto;
 
 ```php
 define('DATABASE_HOST', 'dbhost');
@@ -83,6 +102,7 @@ define('DATABASE_USER', 'dbuser');
 define('DATABASE_PASSWORD', 'dbpwd');
 
 ```
+> Le costanti devono essere denominate in modo da indicare il loro scopo e contenuto.
 
 > Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
 
@@ -256,6 +276,8 @@ function longFunctionName()
 
 > Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei files che le contengono, creando un collegamento biunivoco con questi ultimi.
 
+> È consentita una sola classe in ogni file PHP che avrà lo stesso nome della classe con l'aggiunta dell'estensione `.php`.
+
 #### La dichiarazione di classe **DEVE** seguire le seguenti raccomandazioni:
 * le classi che estendono altre classi o che implementano interfacce **DEVONO** dichiarare le loro dipendenze sulla stessa linea  quando possibile;
 * la dichiarazione di classe **DEVE** essere suddivisa su più righe se supera la lunghezza massima per una riga (inserire link);
@@ -267,7 +289,6 @@ function longFunctionName()
 * la parentesi di chiusura **DEVE** essere su una propria riga, successiva al corpo della classe;
 
 > Migliora la leggibilità del codice.
-
 
 ### Costanti di classe
 #### I nomi delle costanti di classe **DEVONO** seguire le seguenti raccomandazioni:
