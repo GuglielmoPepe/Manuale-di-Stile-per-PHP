@@ -5,7 +5,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Tutti i nomi **DEVONO** essere scritti in inglese](#tutti-i-nomi-devono-essere-scritti-in-inglese)
 * [I nomi dei namespaces **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-dei-namespaces-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
 * [I nomi delle interfacce, dei traits e delle classi **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-delle-interfacce-dei-traits-e-delle-classi-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
-
+* [I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`](#i-nomi-delle-variabili-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-mixedcase)
 
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
@@ -23,3 +23,21 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 > I numeri sono consentiti nei nomi dei delle interfacce, dei traits e delle classi, ma sono da evitarsi nella maggior parte dei casi.
 
 > Queste raccomandazioni nascono dal fatto che i nomi delle interfacce, dei traits e delle classi vengono mappati con i nomi dei files che li contengono, creando un collegamento biunivoco con questi ultimi.
+
+## I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`.
+```php
+$firstName = 'Mickey';
+```
+
+> I numeri sono consentiti nei nomi delle variabili, ma sono da evitarsi nella maggior parte dei casi.
+
+> I nomi delle variabili dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.  
+
+> Le variabili dovrebbero essere sempre prolisse, per descrivere i dati che lo sviluppatore intende memorizzare in essi. I nomi di variabili di una sola lettera, come `$i` e `$k`, sono scoraggiati tranne che nei cicli più piccoli. Se un ciclo contiene più di 20 righe di codice, le variabili dell'indice dovrebbero avere nomi più descrittivi.
+
+> Le variabili globali sono da evitarsi.
+
+> Le variabili che fanno riferimento agli oggetti dovrebbero in qualche modo essere associate alla classe di cui la variabile è un oggetto.
+> ```php
+> $person = new \Person();
+> ```
