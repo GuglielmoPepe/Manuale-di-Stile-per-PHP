@@ -6,6 +6,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [I nomi dei namespaces **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-dei-namespaces-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
 * [I nomi delle interfacce, dei traits e delle classi **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-delle-interfacce-dei-traits-e-delle-classi-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
 * [I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`](#i-nomi-delle-variabili-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-mixedcase)
+* [Le variabili _generiche_ **DEVONO** avere lo stesso nome del loro tipo](#le-variabili-generiche-devono-avere-lo-stesso-nome-del-loro-tipo)
 * [I nomi delle costanti **DEVONO** contenenre solo caratteri alfanumerici, essere tutte in maiuscolo con le parale separate da caratteri di sottolineatura](#i-nomi-delle-costanti-devono-contenenre-solo-caratteri-alfanumerici-essere-tutte-in-maiuscolo-con-le-parale-separate-da-caratteri-di-sottolineatura)
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
@@ -41,6 +42,27 @@ $firstName = 'Mickey';
 > ```php
 > $person = new \Person();
 > ```
+
+## Le variabili _generiche_ **DEVONO** avere lo stesso nome del loro tipo.
+```php
+public function connect(\PDO $pdo)
+{
+
+}
+```
+
+> Riduce la complessità riducendo il numero di termini e nomi utilizzati. Inoltre rende facile dedurre il tipo dato dal nome della variabile.
+
+> Se per qualche motivo questa convenzione non sembra adattarsi, c'è un forte sospetto che il nome del tipo è scelto male.
+
+> Le variabili non generiche hanno un _ruolo_. Queste variabili possono spesso essere nominate combinando il ruolo e il tipo:
+> ```php
+> public function sendMessage(\Person $fromPerson, \Person $toPerson)
+> {
+> 
+> }
+> ```
+
 
 ## I nomi delle costanti **DEVONO** contenenre solo caratteri alfanumerici, essere tutte in maiuscolo con le parale separate da caratteri di sottolineatura.
 ```php
