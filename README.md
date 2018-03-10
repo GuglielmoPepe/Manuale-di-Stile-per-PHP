@@ -15,7 +15,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [I nomi delle directories **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-delle-directories-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
 * [I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`](#i-nomi-dei-files-devono-contenere-solo-caratteri-alfanumerici-essere-scritti-in-capitalizedwords-e-terminare-con-lestensione-php)
 * [I files PHP **DEVONO** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark)](#i-files-php-devono-usare-esclusivamente-la-codifica-dei-caratteri-utf-8-senza-bom-byte-order-mark))
-
+* [I files **DEVONO** usare un'indentazione di quattro spazi](#i-files-devono-usare-unindentazione-di-quattro-spazi)
 
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
@@ -155,10 +155,24 @@ $person->getFirstName();
 
 > A differenza di UTF-16 e UTF-32, non esiste un ordine di byte da indicare in un file con codifica UTF-8 e il BOM (Byte Order Mark) può avere un effetto collaterale negativo nell'invio dell'output, impedendo all'applicazione di impostare le proprie intestazioni.
 
+## I files **DEVONO** usare un'indentazione di quattro spazi.
+> Ciò aiuta ad evitare problemi con diff, patch, cronologia e annotazioni. L'uso degli spazi rende anche facile inserire una sub-indentazione a grana fine per l'allineamento tra le righe.
+
+> Gli spazi non devono mai essere mescolati con la tabulazione. 
 
 
+## Le righe dei file **DEVONO** avere una lunghezza massima di 72 caratteri e terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
 
+> Un limite di 72 caratteri rende necessario distribuire la logica o le espressioni complesse in funzioni, nonché assegnare nomi più brevi e più espressivi a funzioni ed oggetti.
 
+> Limitando la larghezza delle righe a 72 caratteri si migliora la leggibilità del codice, evitando peraltro interruzioni di riga involontarie quando si passa un file tra i programmatori.
+
+> Limitando la larghezza della finestra dell'editor a 72 caratteri, è possibile avere diversi file aperti fianco a fianco e funziona bene quando si utilizzano gli strumenti di revisione del codice che presentano le due versioni nelle colonne adiacenti.
+
+> Il wrapping predefinito nella maggior parte degli strumenti interrompe la struttura visiva del codice, rendendolo più difficile da capire. Il limite è stato scelto per evitare il wrapping degli editor con la larghezza della finestra impostata su 80 caratteri, anche se lo strumento posiziona un glifo marcatore nella colonna finale quando effettua il wrapping delle linee. Alcuni strumenti basati sul Web potrebbero non offrire affatto il ritorno a capo automatico della linea.
+
+> La terminazione della riga segue la convenzione del file di testo Unix. I caratteri di avanzamento riga sono rappresentati come numero ordinale 10 oppure come numero esadecimale 0x0A.
+> Questo è più un problema per gli sviluppatori che lavorano in un ambiente Windows, ma in ogni caso assicurarsi che l'editor di testo sia configurato per salvare i file con interruzioni di riga Unix.
 
 
 
