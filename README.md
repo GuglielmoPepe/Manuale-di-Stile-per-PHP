@@ -8,6 +8,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`](#i-nomi-delle-variabili-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-mixedcase)
 * [Le variabili _generiche_ **DEVONO** avere lo stesso nome del loro tipo](#le-variabili-generiche-devono-avere-lo-stesso-nome-del-loro-tipo)
 * [I nomi delle costanti **DEVONO** contenenre solo caratteri alfanumerici, essere tutte in maiuscolo con le parale separate da caratteri di sottolineatura](#i-nomi-delle-costanti-devono-contenenre-solo-caratteri-alfanumerici-essere-tutte-in-maiuscolo-con-le-parale-separate-da-caratteri-di-sottolineatura)
+* [I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo](#i-nomi-dei-metodi-di-una-classe-devono-contenere-solo-caratteri-alfanumerici-essere-scritte-in-mixedcase-in-caso-di-più-parole-ed-iniziare-con-un-verbo)
+
+
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
 > L'obiettivo principale delle raccomandazioni è migliorare la leggibilità e di conseguenza la comprensione, la manutenibilità e la qualità generale del codice. Poichè è impossibile coprire tutti i casi specifici, il programmatore dovrebbe essere flessibile.
@@ -83,7 +86,7 @@ define('DATABASE_PASSWORD', 'dbpwd');
 
 > La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e, se proprio sono necessarie, è meglio inserire le costanti globali nel punto di ingresso dello script o meglio ancora in un file separato.
 
-## I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo-
+## I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo.
 
 ```php
 public function getFirstName()
