@@ -12,7 +12,10 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo](#i-nomi-dei-metodi-di-una-classe-devono-contenere-solo-caratteri-alfanumerici-essere-scritte-in-mixedcase-in-caso-di-più-parole-ed-iniziare-con-un-verbo)
 * [I nomi dei metodi di una classe **NON DEVONO** contenere il nome della propria classe](#i-nomi-dei-metodi-di-una-classe-non-devono-contenere-il-nome-della-propria-classe)
 * [Le abbreviazioni e gli acronimi **NON DEVONO** avere tutte lettere maiuscole se usati come nome](#le-abbreviazioni-e-gli-acronimi-non-devono-avere-tutte-lettere-maiuscole-se-usati-come-nome)
-* [I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`](#i-nomi-dei-files-devono-contenere-solo-caratteri-alfanumerici-essere-scritti-in-capitalizedwords-e-terminare-con-lestensione-.php)
+* [I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`](#i-nomi-dei-files-devono-contenere-solo-caratteri-alfanumerici-essere-scritti-in-capitalizedwords-e-terminare-con-lestensione-php)
+* [I files PHP **DEVONO** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark)](#i-files-php-devono-usare-esclusivamente-la-codifica-dei-caratteri-utf-8-senza-bom-byte-order-mark))
+
+
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
 > L'obiettivo principale delle raccomandazioni è migliorare la leggibilità e di conseguenza la comprensione, la manutenibilità e la qualità generale del codice. Poichè è impossibile coprire tutti i casi specifici, il programmatore dovrebbe essere flessibile.
@@ -139,7 +142,11 @@ $person->getFirstName();
 
 > Queste raccomandazioni nascono dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
 
+## I files PHP **DEVONO** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark).
 
+> La codifica può essere dichiarata usando `declare(encoding = 'utf-8');` nella parte superiore del file.
+
+> A differenza di UTF-16 e UTF-32, non esiste un ordine di byte da indicare in un file con codifica UTF-8 e il BOM (Byte Order Mark) può avere un effetto collaterale negativo nell'invio dell'output, impedendo all'applicazione di impostare le proprie intestazioni.
 
 
 
