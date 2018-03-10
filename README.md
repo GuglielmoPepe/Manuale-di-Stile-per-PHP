@@ -9,7 +9,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Le variabili _generiche_ **DEVONO** avere lo stesso nome del loro tipo](#le-variabili-generiche-devono-avere-lo-stesso-nome-del-loro-tipo)
 * [I nomi delle costanti **DEVONO** contenenre solo caratteri alfanumerici, essere tutte in maiuscolo con le parale separate da caratteri di sottolineatura](#i-nomi-delle-costanti-devono-contenenre-solo-caratteri-alfanumerici-essere-tutte-in-maiuscolo-con-le-parale-separate-da-caratteri-di-sottolineatura)
 * [I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo](#i-nomi-dei-metodi-di-una-classe-devono-contenere-solo-caratteri-alfanumerici-essere-scritte-in-mixedcase-in-caso-di-più-parole-ed-iniziare-con-un-verbo)
-
+* [Le abbreviazioni e gli acronimi **NON DEVONO** avere tutte lettere maiuscole se usati come nome](#le-abbreviazioni-e-gli-acronimi-non-devono-avere-tutte-lettere-maiuscole-se-usati-come-nome)
 
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
@@ -100,3 +100,8 @@ public function getFirstName()
 > La verbosità è generalmente incoraggiata. I nomi dei metodi dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
 
 > Questa raccomandazione segue la prassi comune nella comunità di sviluppo PHP. Anche se la raccomandazione è in pratica identica a quella sui nomi delle variabili, i metodi in PHP sono già distinguibili dalle variabili per la loro forma specifica quando vengono invocati.
+
+
+## Le abbreviazioni e gli acronimi **NON DEVONO** avere tutte lettere maiuscole se usati come nome. 
+> L'utilizzo di tutte le maiuscole per il nome di base causerà conflitti con le convenzioni di denominazione. Una vatiabile denominata `$pDF` non è molto leggibile. Inoltre quando un nome è composto da più di una parola (`FilePDF`) la leggibilità viene seriamente ridotta, perchè la parola che segue l'acronimo non spicca come dovrebbe.
+
