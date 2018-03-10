@@ -82,3 +82,18 @@ define('DATABASE_PASSWORD', 'dbpwd');
 > I nomi delle costanti dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.
 
 > La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e, se proprio sono necessarie, è meglio inserire le costanti globali nel punto di ingresso dello script o meglio ancora in un file separato.
+
+## I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo-
+
+```php
+public function getFirstName()
+{
+
+}
+```
+
+> I numeri sono consentiti nei nomi dei metodi, ma sono da evitarsi nella maggior parte dei casi.
+
+> La verbosità è generalmente incoraggiata. I nomi dei metodi dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
+
+> Questa raccomandazione segue la prassi comune nella comunità di sviluppo PHP. Anche se la raccomandazione è in pratica identica a quella sui nomi delle variabili, i metodi in PHP sono già distinguibili dalle variabili per la loro forma specifica quando vengono invocati.
