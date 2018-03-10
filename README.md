@@ -114,7 +114,12 @@ public function getFirstName()
 
 > La verbosità è generalmente incoraggiata. I nomi dei metodi dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
 
-> Questa raccomandazione segue la prassi comune nella comunità di sviluppo PHP. Anche se la raccomandazione è in pratica identica a quella sui nomi delle variabili, i metodi in PHP sono già distinguibili dalle variabili per la loro forma specifica quando vengono invocati.
+> Questa raccomandazione segue la prassi comune nella comunità di sviluppo PHP. Anche se la raccomandazione è in pratica identica a quella sui nomi delle funzioni, i metodi in PHP sono già distinguibili dalle funzioni per la loro forma specifica quando vengono invocati:
+> ```php
+> $person->getFirstName();
+>
+> getFirstName($person);
+> ```
 
 ## I nomi dei metodi di una classe **NON DEVONO** contenere il nome della propria classe.
 ```php
