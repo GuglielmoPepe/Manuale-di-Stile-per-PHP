@@ -16,7 +16,10 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`](#i-nomi-dei-files-devono-contenere-solo-caratteri-alfanumerici-essere-scritti-in-capitalizedwords-e-terminare-con-lestensione-php)
 * [I files PHP **DEVONO** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark)](#i-files-php-devono-usare-esclusivamente-la-codifica-dei-caratteri-utf-8-senza-bom-byte-order-mark))
 * [I files **DEVONO** usare un'indentazione di quattro spazi](#i-files-devono-usare-unindentazione-di-quattro-spazi)
-
+* [Le righe dei files **DEVONO** avere una lunghezza massima di 72 caratteri e terminare con un singolo carattere di avanzamento riga Unix LF (linefeed)](#le-righe-dei-files-devono-avere-una-lunghezza-massima-di-72-caratteri-e-terminare-con-un-singolo-carattere-di-avanzamento-riga-unix-lf-linefeed)
+* [I caratteri speciali come TAB e interruzione di pagina devono essere evitati](#i-caratteri-speciali-cometab-e-interruzione-di-pagina-devono-essere-evitati)
+* [I files **DEVONO** terminare con una singola riga vuota](#i-files-devono-terminare-con-una-singola-riga-vuota)
+* [I files **DEVONO** avere un _dockblock_ nella parte superiore](#i-files-devono-avere-un-dockblock-nella-parte-superiore)
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
 > L'obiettivo principale delle raccomandazioni è migliorare la leggibilità e di conseguenza la comprensione, la manutenibilità e la qualità generale del codice. Poichè è impossibile coprire tutti i casi specifici, il programmatore dovrebbe essere flessibile.
@@ -161,7 +164,7 @@ $person->getFirstName();
 > Gli spazi non devono mai essere mescolati con la tabulazione. 
 
 
-## Le righe dei file **DEVONO** avere una lunghezza massima di 72 caratteri e terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
+## Le righe dei files **DEVONO** avere una lunghezza massima di 72 caratteri e terminare con un singolo carattere di avanzamento riga Unix LF (linefeed).
 
 > Un limite di 72 caratteri rende necessario distribuire la logica o le espressioni complesse in funzioni, nonché assegnare nomi più brevi e più espressivi a funzioni ed oggetti.
 
@@ -174,13 +177,29 @@ $person->getFirstName();
 > La terminazione della riga segue la convenzione del file di testo Unix. I caratteri di avanzamento riga sono rappresentati come numero ordinale 10 oppure come numero esadecimale 0x0A.
 > Questo è più un problema per gli sviluppatori che lavorano in un ambiente Windows, ma in ogni caso assicurarsi che l'editor di testo sia configurato per salvare i file con interruzioni di riga Unix.
 
+## I caratteri speciali come TAB e interruzione di pagina devono essere evitati.
+
+> Questi caratteri sono destinati a causare problemi a editor, stampanti, emulatori di terminali o debugger quando vengono utilizzati in un ambiente multi-programmatore e multipiattaforma.
 
 
+## I files **DEVONO** terminare con una singola riga vuota.
+> Migliora la leggibilità del codice.
 
-
-
-
-
+## I files **DEVONO** avere un _dockblock_ nella parte superiore.
+```php
+/**
+ * Example Framework (http://www.exampleframework.com/)
+ *
+ * Long description for file (if any)...
+ *
+ * @link      http://github.com/exampleframework/ for the canonical source repository
+ * @copyright Copyright (c) 2005-2013 Example Technologies USA Inc. (http://www.example.com)
+ * @license   http://framework.example.com/license/new-bsd New BSD License
+ * @since     File available since Release 1.5.0
+ */
+ 
+```
+> Migliora la documentazione del codice ed agevola il lavoro degli sviluppatori.
 
 
 
