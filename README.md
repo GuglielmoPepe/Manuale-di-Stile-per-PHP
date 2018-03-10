@@ -12,6 +12,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo](#i-nomi-dei-metodi-di-una-classe-devono-contenere-solo-caratteri-alfanumerici-essere-scritte-in-mixedcase-in-caso-di-più-parole-ed-iniziare-con-un-verbo)
 * [I nomi dei metodi di una classe **NON DEVONO** contenere il nome della propria classe](#i-nomi-dei-metodi-di-una-classe-non-devono-contenere-il-nome-della-propria-classe)
 * [Le abbreviazioni e gli acronimi **NON DEVONO** avere tutte lettere maiuscole se usati come nome](#le-abbreviazioni-e-gli-acronimi-non-devono-avere-tutte-lettere-maiuscole-se-usati-come-nome)
+* [I nomi delle directories **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-delle-directories-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
 * [I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`](#i-nomi-dei-files-devono-contenere-solo-caratteri-alfanumerici-essere-scritti-in-capitalizedwords-e-terminare-con-lestensione-php)
 * [I files PHP **DEVONO** usare esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark)](#i-files-php-devono-usare-esclusivamente-la-codifica-dei-caratteri-utf-8-senza-bom-byte-order-mark))
 
@@ -135,6 +136,12 @@ $person->getFirstName();
 
 ## Le abbreviazioni e gli acronimi **NON DEVONO** avere tutte lettere maiuscole se usati come nome. 
 > L'utilizzo di tutte le maiuscole per il nome di base causerà conflitti con le convenzioni di denominazione. Una vatiabile denominata `$pDF` non è molto leggibile. Inoltre quando un nome è composto da più di una parola (`PDFFile`) la leggibilità viene seriamente ridotta, perchè la parola che segue l'acronimo non spicca come dovrebbe.
+
+## I nomi delle directories **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.
+> I numeri sono consentiti nei nomi delle directories, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi delle directories vengono mappati con i nomi dei namespaces, creando un collegamento biunivoco con questi ultimi.
+
 
 
 ## I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`.
