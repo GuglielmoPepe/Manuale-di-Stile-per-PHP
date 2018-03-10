@@ -75,7 +75,6 @@ define('DATABASE_HOST', 'dbhost');
 define('DATABASE_NAME', 'dbname');
 define('DATABASE_USER', 'dbuser');
 define('DATABASE_PASSWORD', 'dbpwd');
-
 ```
 
 > Le costanti devono essere denominate in modo da indicare il loro scopo e contenuto.
@@ -95,7 +94,6 @@ function getFirstName()
 {
 
 }
-
 ```
 >La verbosità è generalmente incoraggiata. I nomi delle funzioni dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
 
