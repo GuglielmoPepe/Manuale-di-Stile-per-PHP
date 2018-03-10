@@ -12,7 +12,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [I nomi dei metodi di una classe **DEVONO** contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo](#i-nomi-dei-metodi-di-una-classe-devono-contenere-solo-caratteri-alfanumerici-essere-scritte-in-mixedcase-in-caso-di-più-parole-ed-iniziare-con-un-verbo)
 * [I nomi dei metodi di una classe **NON DEVONO** contenere il nome della propria classe](#i-nomi-dei-metodi-di-una-classe-non-devono-contenere-il-nome-della-propria-classe)
 * [Le abbreviazioni e gli acronimi **NON DEVONO** avere tutte lettere maiuscole se usati come nome](#le-abbreviazioni-e-gli-acronimi-non-devono-avere-tutte-lettere-maiuscole-se-usati-come-nome)
-
+* [I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`](#i-nomi-dei-files-devono-contenere-solo-caratteri-alfanumerici-essere-scritti-in-capitalizedwords-e-terminare-con-lestensione-.php)
 
 ## Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
 > L'obiettivo principale delle raccomandazioni è migliorare la leggibilità e di conseguenza la comprensione, la manutenibilità e la qualità generale del codice. Poichè è impossibile coprire tutti i casi specifici, il programmatore dovrebbe essere flessibile.
@@ -132,4 +132,30 @@ $person->getFirstName();
 
 ## Le abbreviazioni e gli acronimi **NON DEVONO** avere tutte lettere maiuscole se usati come nome. 
 > L'utilizzo di tutte le maiuscole per il nome di base causerà conflitti con le convenzioni di denominazione. Una vatiabile denominata `$pDF` non è molto leggibile. Inoltre quando un nome è composto da più di una parola (`PDFFile`) la leggibilità viene seriamente ridotta, perchè la parola che segue l'acronimo non spicca come dovrebbe.
+
+
+## I nomi dei files **DEVONO** contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`.
+> I numeri sono consentiti nei nomi dei files, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi dei files vengono mappati con i nomi delle interfacce, dei traits o delle classi, creando un collegamento biunivoco con questi ultimi.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
