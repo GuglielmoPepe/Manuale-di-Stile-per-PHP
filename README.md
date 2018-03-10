@@ -5,6 +5,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Tutti i nomi **DEVONO** essere scritti in inglese](#tutti-i-nomi-devono-essere-scritti-in-inglese)
 * [I nomi dei namespaces **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-dei-namespaces-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
 * [I nomi delle interfacce, dei traits e delle classi **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`](#i-nomi-delle-interfacce-dei-traits-e-delle-classi-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-capitalizedwords)
+* [Le interfacce, i traits e le classi **DEVONO** essere dichiarati in singoli file con il nome del file corrispondente al nome dell'interfaccia, del trait o della classe corrispondente con l'aggiunta dell'estensione `.php`](#le-interfacce-i-traits-e-le-classi-devono-essere-dichiarati-in-singoli-file-con-il-nome-del-file-corrispondente-al-nome-dellinterfaccia-del-trait-o-della-classe-corrispondente-con-laggiunta-dellestensione-php)
 * [I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`](#i-nomi-delle-variabili-devono-contenere-solo-caratteri-alfanumerici-ed-essere-scritti-in-mixedcase)
 * [Le variabili _generiche_ **DEVONO** avere lo stesso nome del loro tipo](#le-variabili-generiche-devono-avere-lo-stesso-nome-del-loro-tipo)
 * [I nomi delle costanti **DEVONO** contenenre solo caratteri alfanumerici, essere tutte in maiuscolo con le parale separate da caratteri di sottolineatura](#i-nomi-delle-costanti-devono-contenenre-solo-caratteri-alfanumerici-essere-tutte-in-maiuscolo-con-le-parale-separate-da-caratteri-di-sottolineatura)
@@ -36,6 +37,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 > I numeri sono consentiti nei nomi dei delle interfacce, dei traits e delle classi, ma sono da evitarsi nella maggior parte dei casi.
 
 > Queste raccomandazioni nascono dal fatto che i nomi delle interfacce, dei traits e delle classi vengono mappati con i nomi dei files che li contengono, creando un collegamento biunivoco con questi ultimi.
+
+## Le interfacce, i traits e le classi **DEVONO** essere dichiarati in singoli file con il nome del file corrispondente al nome dell'interfaccia, del trait o della classe corrispondente con l'aggiunta dell'estensione `.php`.
+> Migliora l'organizzazione del codice.
 
 ## I nomi delle variabili **DEVONO** contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`.
 ```php
