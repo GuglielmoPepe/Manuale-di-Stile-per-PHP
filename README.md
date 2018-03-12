@@ -2,7 +2,7 @@
 Guida alla redazione di programmi in PHP (in lavorazione).
 
 
-Le raccomandazioni sono raggruppate per argomento e seguono questo schema:
+Le raccomandazioni sono raggruppate per elemento e seguono questo schema:
 > #### Raccomandazione
 > ```php
 > $example = 'example'; // example
