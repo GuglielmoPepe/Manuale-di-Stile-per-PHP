@@ -3,6 +3,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 
 Le raccomandazioni sono raggruppate per elemento e seguono questo schema:
+> ## Sezione
 > ### Elemento
 > Raccomandazione
 > ```php
