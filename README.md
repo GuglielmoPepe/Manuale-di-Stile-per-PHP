@@ -211,6 +211,34 @@ while (TRUE)
 [vai all'indice ⬆](#indice)
 
 
+## Tipi
+
+#### I numeri a virgola mobile **DEVONO** sempre essere scritti con il punto decimale ed almeno un decimale.
+```php
+$total = 0.0;
+
+$epsilon = 3.0e8;
+
+$sum = ($a + $b) * 10.0;
+```
+> Questo enfatizza la diversa natura dei numeri interi e in virgola mobile. Matematicamente sono due concetti completamente diversi e non compatibili.
+
+
+#### I numeri a virgola mobile **DEVONO** sempre essere scritti  con una cifra prima del punto decimale.
+```php
+$total = 0.5;
+```
+> Il numero ed il sistema di espressione in PHP è preso in prestito dalla matematica e si dovrebbe aderire alle convenzioni matematiche per la sintassi laddove possibile. 
+
+> Inoltre, 0.5 è molto più leggibile di .5 e non c'è modo che possa essere confuso con l'intero 5. Si veda l'esempio seguente:
+> ```php
+> $total = .5; // bad
+> ```
+
+
+[vai all'indice ⬆](#indice)
+
+
 ## Strutture di controllo
 
 ## Tra la parola chiave di una struttura di controllo e la parentesi aperta **DEVE** esserci uno spazio.
