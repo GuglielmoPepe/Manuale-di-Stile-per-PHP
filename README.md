@@ -449,6 +449,109 @@ const COLOR_BLUE  = '#0000ff';
 
 [vai all'indice ⬆](#indice)
 
+## Operatori
+
+#### Gli operatori binari **DEVONO** essere circondati da uno spazio.
+```php
+if ($a == $b)
+{
+    // code
+}
+```
+> Migliora la leggibilità del codice.
+
+#### Gli operatori unari **DEVONO** essere uniti alla variabile cui afferiscono, fatta eccezione per `!`.
+```php
+@fopen('file/path');
+```
+> Migliora la leggibilità del codice.
+
+> L'operator `!` deve essere diviso dalla variabile cui afferisce da uno spazio, per migliorare la leggibilità del codice, soprattuto quando si trova nelle espressioni condizionali come nel caso che segue:
+> ```php
+> if ( ! $condition)
+> {
+>     // code
+> }
+> ```
+
+> Gli operatori unari di incremento `++` e decremento `--` vanno posizionati prima della variabile piuttosto che successivamente, per ragioni di efficienza.
+
+#### Quando si confrontano una variabile con un'espressione si **DEVE** utilizzare una condizione _Yoda_.
+```php
+if (TRUE == $foo)
+{
+    // code
+}
+```
+> Questa raccomandazione evita un'assegnazione accidentale all'interno dell'istruzione condizionale.
+
+> Quando si eseguono confronti logici che coinvolgono variabili, le variabili vanno messe a destra, mentre costanti, letterali o chiamate di funzione sul lato sinistro. Se nessuna delle due parti è una variabile, l'ordine non è importante.
+
+> Se nell'esempio precedente viene omesso un segno di uguale, si avrà un errore di analisi, perché non è possibile assegnare qualcosa ad a una costante come TRUE. Si veda, _a contrario_ l'esempio seguente:
+```php
+> if ($foo = TRUE)
+> {
+>     // code
+> }
+> ```
+> l'assegnazione è perfettamente valida, generando un bug nel codice.
+
+
+
+## L'operatore di concatenazione **DEVE** essere preceduto e seguito da un singolo spazio.
+```php
+$string = 'Mickey' . ' ' . 'Mouse';
+```
+> Migliora la leggibilità del codice.
+
+
+
+#### L'operatore ternario **DEVE** essere contenuto su una sola riga.
+```php
+$variable = isset($options['variable']) ? $options['variable'] : TRUE;
+```
+> Opzionalmente le parentesi possono essere utilizzate attorno al controllo delle condizioni del ternario per maggiore chiarezza. Ternari più lunghi dovrebbero essere suddivisi in altre dichiarazioni. 
+
+> Gli operatori ternari non dovrebbero mai essere annidati, come nell'esempio seguente:
+> ```php
+> // Nested ternaries are bad
+> $variable = isset($options['variable']) ? isset($options['othervar']) ? TRUE : FALSE : FALSE;
+> ```
+
+
+#### L'operator `@` **DEVE** essere evitato assolutamente.
+L'uso dell'operatore `@` per silenziare i messaggi di errore rende il debug più difficile, oltre a rallentare l'esecuzione del codice.
+
+
+#### Gli operatori di confronto rigorosi **DEVONO** essere preferiti a tutti gli altri.
+```php
+if ($foo === $bar)
+{
+    // code
+}
+
+if ($foo !== $baz)
+{
+    // code
+}
+```
+> Gli operatori di confronto rigorosi vanno preferiti ogni volta che è possibile, per evitare problemi con valori booleani che potrebbero portare ad un comportamento diverso da quello che ci si aspetta, come nei seguenti casi:
+```php
+if ($foo == $bar) // bad, avoid truthy comparisons
+{
+    // code
+}
+
+if ($foo != $baz) // bad, avoid falsy comparisons
+{
+    // code
+}
+```
+[vai all'indice ⬆](#indice)
+
+
+
+
 
 
 ## Strutture di controllo
