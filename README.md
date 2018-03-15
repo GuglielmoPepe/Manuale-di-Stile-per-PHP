@@ -160,6 +160,57 @@ $b = 'bar'; // code php
 [vai all'indice ⬆](#indice)
 
 
+## Commenti
+
+#### Il codice ingannevole **DEVE** essere riscritto, non commentato.
+> In generale, l'uso dei commenti dovrebbe essere minimizzato, rendendo il codice autodocumentante mediante scelte di nome appropriate e una struttura logica esplicita.
+
+#### Tutti i commenti **DEVONO** essere scritti in inglese.
+> A livello internazione l'inglese è la lingua preferita per codificare.
+
+#### L'identificatore di commenti `//` **DEVE** essere seguito da uno spazio.
+```php
+// This is a comment
+```
+> Migliora la leggibilità facendo risaltare il testo.
+
+#### I commenti **DEVONO** utilizzare l'identificatore `//` per tutti i commenti non in formato _phpDocumentor_, inclusi i commenti su più righe.
+```php
+// Comment spanning 
+// more than one line.
+```
+> L'uso dell'identificatore `//` per i commenti garantisce che sia sempre possibile commentare intere sezioni di un file usando `/* */` per scopi di debug.
+
+#### I commentisu più righe **DEVONO** essere seguiti da una riga vuota quando sono molto grandi.
+```php
+// Comment single line
+$foo = 'bar';
+
+// Comment long
+// Comment too long
+// Comment very long
+// Comment very very long
+// Comment really too long
+
+$baz = $object->foo($bar);
+
+```
+> Migliora la leggibilità del codice. E del commento.
+
+#### I commenti **DEVONO** essere indentati allo stesso livello del codice cui si riferiscono.
+```php
+while (TRUE) 
+{
+    // Do something
+    doSomething();
+}
+
+```
+> Questo per evitare che i commenti interrompano la struttura logica del programma.
+
+[vai all'indice ⬆](#indice)
+
+
 ## Strutture di controllo
 
 ## Tra la parola chiave di una struttura di controllo e la parentesi aperta **DEVE** esserci uno spazio.
@@ -171,9 +222,6 @@ foreach ($arr as $key => $value)
 }
 ```
 > Questo è fatto per distinguere le parole chiave di controllo dai nomi di funzioni. Tutte le strutture di controllo devono contenere la loro logica all'interno di parentesi graffe.
-
-
-
 
 
 
