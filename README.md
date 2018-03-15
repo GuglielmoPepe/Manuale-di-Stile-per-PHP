@@ -440,10 +440,12 @@ const COLOR_GREEN = '#00ff00';
 const COLOR_BLUE  = '#0000ff';
 ```
 > Si noti che `const` non funziona con le espressioni PHP, pertanto nel caso in cui debba essere definita una costante in maniera condizionale o con un valore non letterale va utilizzata l'istruzione `define`:
+> ```php
 > if ( ! defined('MAINTENANCE_MODE'))
 > {
 >     define('MAINTENANCE_MODE', 'development');
 > }
+> ```
 
 [vai all'indice ⬆](#indice)
 
