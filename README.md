@@ -392,6 +392,62 @@ $person = new \Person();
 [vai all'indice ⬆](#indice)
 
 
+## Costanti
+
+#### I nomi delle costanti **DEVONO** contenere solo caratteri alfanumerici, essere tutte in maiuscolo con le parole separate da caratteri di sottolineatura.
+```php
+define('DATABASE_HOST', 'dbhost');
+define('DATABASE_NAME', 'dbname');
+define('DATABASE_USER', 'dbuser');
+define('DATABASE_PASSWORD', 'dbpwd');
+```
+
+> Le costanti devono essere denominate in modo da indicare il loro scopo e contenuto.
+
+> Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
+
+> I numeri sono consentiti nei nomi delle costanti, ma sono da evitarsi nella maggior parte dei casi.
+
+> I nomi delle costanti dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.
+
+> La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e, se proprio sono necessarie, è meglio inserire le costanti globali nel punto di ingresso dello script o meglio ancora in un file separato.
+
+
+
+#### I nomi delle costanti che rappresentano un concetto comune **DEVONO** avere un prefisso comune.
+```php
+define('COLOR_RED', '#ff0000');
+define('COLOR_GREEN', '00ff00');
+define('COLOR_BLUE', '0000ff');
+```
+> Ciò indica che le costanti appartengono allo stesso insieme, e quale concetto rappresentino.
+
+> Un'alternativa a questo approccio consiste nel mettere le costanti all'interno di un'interfaccia in modo da utilizzare il nome dell'interfaccia come prefisso:
+> ```php
+> interface Color
+> {
+>   const RED   = '#ff0000';
+>   const GREEN = '#00ff00';
+>   const BLUE  = '#0000ff';
+> }
+> ```
+
+
+#### L'istruzione `const` **DEVE** essere preferita all'istruzione `define` nella dichiarazione di una costante.
+```php
+const COLOR_RED   = '#ff0000';
+const COLOR_GREEN = '#00ff00';
+const COLOR_BLUE  = '#0000ff';
+```
+> Si noti che `const` non funziona con le espressioni PHP, pertanto nel caso in cui debba essere definita una costante in maniera condizionale o con un valore non letterale va utilizzata l'istruzione `define`:
+> if ( ! defined('MAINTENANCE_MODE'))
+> {
+>     define('MAINTENANCE_MODE', 'development');
+> }
+
+[vai all'indice ⬆](#indice)
+
+
 
 ## Strutture di controllo
 
