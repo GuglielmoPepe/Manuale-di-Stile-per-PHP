@@ -1,6 +1,9 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
+* [Tags PHP](#tags-php)
+    * [I files sorgente **DEVONO** essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota](#i-files-sorgente-devono-essere-aperti-dal-tag-php-esteso-<?php-seguito-da-una-riga-vuota)
+    * [Il tag di chiusura **DEVE** essere omesso nei files sorgente](#il-tag-di-chiusura-deve-essere-omesso-nei-files-sorgente)
 
 ## Tags PHP
 
