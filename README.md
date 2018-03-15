@@ -181,7 +181,7 @@ $b = 'bar'; // code php
 ```
 > L'uso dell'identificatore `//` per i commenti garantisce che sia sempre possibile commentare intere sezioni di un file usando `/* */` per scopi di debug.
 
-#### I commentisu più righe **DEVONO** essere seguiti da una riga vuota quando sono molto grandi.
+#### I commenti su più righe **DEVONO** essere seguiti da una riga vuota quando sono molto grandi.
 ```php
 // Comment single line
 $foo = 'bar';
