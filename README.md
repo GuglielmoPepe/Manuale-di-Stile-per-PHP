@@ -105,7 +105,7 @@ error_reporting(E_STRICT);
 
 
 #### Tutto il codice **DEVE** utilizzare le funzionalità avanzate di PHP 7 per la programmazione orientata agli oggetti.
-> Ciò significa che non dovrebbero esserci funzioni al di fuori delle classi, se non assolutamente necessario. Se è necessario un _contenitore_ per alcuni metodi di supporto, prendere in considerazione la creazione di una classe statica.
+> Ciò significa che le funzioni dovrebbero essere ridotte al minimo e non dovrebbero essercene al di fuori di `namespace`, se non assolutamente necessario. Se è necessario un _contenitore_ per alcune funzioni di supporto, prendere in considerazione la creazione di una classe statica.
 
 
 [vai all'indice ⬆](#indice)
