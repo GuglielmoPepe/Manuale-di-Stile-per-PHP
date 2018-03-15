@@ -4,7 +4,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 ## Tags PHP
 
-## I files sorgente **DEVONO** essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota.
+#### I files sorgente **DEVONO** essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota.
 ```
 <?php
             // blank line
