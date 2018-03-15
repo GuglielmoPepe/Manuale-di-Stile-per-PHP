@@ -624,7 +624,7 @@ if ( ! $file)
 
 > Le condizioni con istruzioni eseguibili sono semplicemente molto difficili da leggere. Questo è particolarmente vero per i programmatori nuovi in PHP.
 > ```php
-> if ( ! ($file = fopen($local_file, "r")))
+> if ( ! ($file = fopen($local_file, "r"))) // bad
 > {
 >     // code
 > }
@@ -666,7 +666,7 @@ else
 
 
 
-#### L'istruzione singola **DEVE* essere scritte con le parentesi.
+#### L'istruzione singola **DEVE** essere scritte con le parentesi.
 ```php
 if ($condition)
 {
