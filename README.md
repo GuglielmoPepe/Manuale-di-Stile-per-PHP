@@ -91,7 +91,7 @@ $bat = str_replace($foo, $bar, $bag);
 > $other_var  = ''; // do each on its own line
 > ```
 
-## L'error reporting **DEVE** essere impostato con la costante `E_ALL`.
+#### L'error reporting **DEVE** essere impostato con la costante `E_ALL`.
 ```php
 error\_reporting(E_ALL);
 ```
@@ -104,7 +104,7 @@ error\_reporting(E_STRICT);
 > A partire dalla versione `5.4` la costante `E_ALL` include `E_STRICT`;
 
 
-## Tutto il codice **DEVE** utilizzare le funzionalità avanzate di PHP 7 per la programmazione orientata agli oggetti.
+#### Tutto il codice **DEVE** utilizzare le funzionalità avanzate di PHP 7 per la programmazione orientata agli oggetti.
 > Ciò significa che non dovrebbero esserci funzioni al di fuori delle classi, se non assolutamente necessario. Se è necessario un _contenitore_ per alcuni metodi di supporto, prendere in considerazione la creazione di una classe statica.
 
 
