@@ -93,13 +93,13 @@ $bat = str_replace($foo, $bar, $bag);
 
 #### L'error reporting **DEVE** essere impostato con la costante `E_ALL`.
 ```php
-error\_reporting(E_ALL);
+error_reporting(E_ALL);
 ```
 > Consente di suggerire le modifiche al codice che garantiscano la migliore interoperabilità e compatibilità all'indietro del codice.
 
 > Il livello di error reporting richiesto è `E_STRICT`, pertanto se viene utilizzata una versione precedente alla `5.4` l'error_reporting deve essere deve essere impostato come segue:
 ```php
-error\_reporting(E_STRICT);
+error_reporting(E_STRICT);
 ```
 > A partire dalla versione `5.4` la costante `E_ALL` include `E_STRICT`;
 
