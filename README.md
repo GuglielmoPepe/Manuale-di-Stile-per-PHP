@@ -466,7 +466,7 @@ if ($a == $b)
 ```
 > Migliora la leggibilità del codice.
 
-> L'operator `!` deve essere diviso dalla variabile cui afferisce da uno spazio, per migliorare la leggibilità del codice, soprattuto quando si trova nelle espressioni condizionali come nel caso che segue:
+> L'operatore logico `!` deve essere circondato da uno spazio prima e dopo, dividendolo dalla variabile cui afferisce per migliorare la leggibilità del codice, soprattuto quando si trova nelle espressioni condizionali come nel caso che segue:
 > ```php
 > if ( ! $condition)
 > {
@@ -488,7 +488,7 @@ if (TRUE == $foo)
 > Quando si eseguono confronti logici che coinvolgono variabili, le variabili vanno messe a destra, mentre costanti, letterali o chiamate di funzione sul lato sinistro. Se nessuna delle due parti è una variabile, l'ordine non è importante.
 
 > Se nell'esempio precedente viene omesso un segno di uguale, si avrà un errore di analisi, perché non è possibile assegnare qualcosa ad a una costante come TRUE. Si veda, _a contrario_ l'esempio seguente:
-```php
+> ```php
 > if ($foo = TRUE)
 > {
 >     // code
@@ -498,7 +498,7 @@ if (TRUE == $foo)
 
 
 
-## L'operatore di concatenazione **DEVE** essere preceduto e seguito da un singolo spazio.
+#### L'operatore di concatenazione **DEVE** essere preceduto e seguito da un singolo spazio.
 ```php
 $string = 'Mickey' . ' ' . 'Mouse';
 ```
@@ -536,17 +536,19 @@ if ($foo !== $baz)
 }
 ```
 > Gli operatori di confronto rigorosi vanno preferiti ogni volta che è possibile, per evitare problemi con valori booleani che potrebbero portare ad un comportamento diverso da quello che ci si aspetta, come nei seguenti casi:
-```php
-if ($foo == $bar) // bad, avoid truthy comparisons
-{
-    // code
-}
+> ```php
+> if ($foo == $bar) // bad, avoid truthy comparisons
+> {
+>     // code
+> }
+>
+> if ($foo != $baz) // bad, avoid falsy comparisons
+> {
+>     // code
+> }
+> ```
 
-if ($foo != $baz) // bad, avoid falsy comparisons
-{
-    // code
-}
-```
+
 [vai all'indice ⬆](#indice)
 
 
