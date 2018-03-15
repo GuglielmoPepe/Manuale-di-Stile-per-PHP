@@ -4,42 +4,6 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 #### Indice
 
 
-* [Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità](#qualsiasi-raccomandazione-del-manuale-deve-essere-violata-se-migliora-la-leggibilità)
-* [ La lingua utilizzata per i nomi **DEVE** essere l'inglese](#-la-lingua-utilizzata-per-i-nomi-deve-essere-l'inglese)
-* [Le abbreviazioni e gli acronimi **DEVONO** avere tutte lettere in minuscolo eccetto la prima se usati come nome](#le-abbreviazioni-e-gli-acronimi-devono-avere-tutte-lettere-in-minuscolo-eccetto-la-prima-se-usati-come-nome)
-* [Le unità logiche all'interno di un blocco di codice **DEVONO** essere separate da una riga vuota](#le-unità-logiche-all'interno-di-un-blocco-di-codice-devono-essere-separate-da-una-riga-vuota)
-* [Per l'indentazione **DEVE** essere utilizzato lo stile Allman](#per-l'indentazione-deve-essere-utilizzato-lo-stile-allman)
-* [Le parentesi **DEVONO** essere prive si spazi aggiuntivi al loro interno](#le-parentesi-devono-essere-prive-si-spazi-aggiuntivi-al-loro-interno)
-* [Le istruzioni **DEVONO** essere tutte su una propria riga](#le-istruzioni-devono-essere-tutte-su-una-propria-riga)
-* [L'error reporting **DEVE** essere impostato con la costante `E_ALL`](#l'error-reporting-deve-essere-impostato-con-la-costante-eall)
-* [Tutto il codice **DEVE** utilizzare le funzionalità avanzate di PHP 7 per la programmazione orientata agli oggetti](#tutto-il-codice-deve-utilizzare-le-funzionalità-avanzate-di-php-7-per-la-programmazione-orientata-agli-oggetti)
-
-* [I files sorgente **DEVONO** essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota](#i-files-sorgente-devono-essere-aperti-dal-tag-php-esteso-php-seguito-da-una-riga-vuota)
-* [Il tag di chiusura **DEVE** essere omesso nei files sorgente](#il-tag-di-chiusura-deve-essere-omesso-nei-files-sorgente)
-* [Nei files che mescolano PHP e HTML **DEVONO** essere usati i tag estesi `<?php ?>`](#nei-files-che-mescolano-php-e-html-devono-essere-usati-i-tag-estesi-)
-
-* [Il codice ingannevole **DEVE** essere riscritto, non commentato](#il-codice-ingannevole-deve-essere-riscritto,-non-commentato)
-* [Tutti i commenti **DEVONO** essere scritti in inglese](#tutti-i-commenti-devono-essere-scritti-in-inglese)
-* [L'identificatore di commenti `//` **DEVE** essere seguito da uno spazio](#l'identificatore-di-commenti-//-deve-essere-seguito-da-uno-spazio)
-* [I commenti **DEVONO** utilizzare l'identificatore `//` per tutti i commenti non in formato _phpDocumentor_, inclusi i commenti su più righe](#i-commenti-devono-utilizzare-l'identificatore-//-per-tutti-i-commenti-non-in-formato-phpdocumentor,-inclusi-i-commenti-su-più-righe)
-* [I commenti su più righe **DEVONO** essere seguiti da una riga vuota quando sono molto grandi](#i-commenti-su-più-righe-devono-essere-seguiti-da-una-riga-vuota-quando-sono-molto-grandi)
-* [I commenti **DEVONO** essere indentati allo stesso livello del codice cui si riferiscono](#i-commenti-devono-essere-indentati-allo-stesso-livello-del-codice-cui-si-riferiscono)
-
-* [I numeri a virgola mobile **DEVONO** sempre essere scritti con il punto decimale ed almeno un decimale](#i-numeri-a-virgola-mobile-devono-sempre-essere-scritti-con-il-punto-decimale-ed-almeno-un-decimale)
-* [I numeri a virgola mobile **DEVONO** sempre essere scritti con una cifra prima del punto decimale](#i-numeri-a-virgola-mobile-devono-sempre-essere-scritti--con-una-cifra-prima-del-punto-decimale)
-
-* [Le stringhe letterali **DEVONO** essere delimitate dalle virgolette singole](#le-stringhe-letterali-devono-essere-delimitate-dalle-virgolette-singole)
-* [Le stringhe che contengono virgolette singole **DEVONO** essere delimitate dalle virgolette doppie](#le-stringhe-che-contengono-virgolette-singole-devono-essere-delimitate-dalle-virgolette-doppie)
-* [Le stringhe **DEVONO** essere scritte senza variabili da sostituire](#le-stringhe-devono-essere-scritte-senza-variabili-da-sostituire)
-* [La riga **DEVE** essere divisa dopo l'operatore di concatenazione quando l'istruzione è supera il limite di 72 caratteri, allineando la nuova riga con l'inizio dell'espressione sulla riga precedente](#la-riga-deve-essere-divisa-dopo-l'operatore-di-concatenazione-quando-l'istruzione-è-supera-il-limite-di-72-caratteri,-allineando-la-nuova-riga-con-l'inizio-dell'espressione-sulla-riga-precedente)
-
-* [Gli arrays **DEVONO** essere dichiarati con la sintassi concisa](#gli-arrays-devono-essere-dichiarati-con-la-sintassi-concisa)
-* [Gli arrays **DEVONO** avere indici numerici positivi](#gli-arrays-devono-avere-indici-numerici-positivi)
-* [I delimitatori degli elementi `,` di un array **DEVONO** essere seguiti da uno spazio](#i-delimitatori-degli-elementi-,-di-un-array-devono-essere-seguiti-da-uno-spazio)
-* [Gli operatori di assegnazione di un valore a una chiave `=>` **DEVONO** essere preceduti e seguiti da uno spazio](#gli-operatori-di-assegnazione-di-un-valore-a-una-chiave-=>-devono-essere-preceduti-e-seguiti-da-uno-spazio)
-
-* [Tra la parola chiave di una struttura di controllo e la parentesi aperta **DEVE** esserci uno spazio](#tra-la-parola-chiave-di-una-struttura-di-controllo-e-la-parentesi-aperta-deve-esserci-uno-spazio)
-
 
 ## Raccomandazioni generali
 
