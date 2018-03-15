@@ -2,12 +2,20 @@
 Guida alla redazione di programmi in PHP (in lavorazione).
 
 #### Indice
+
+
+* [Raccomandazioni generali](#raccomandazioni-generali)
+   * [Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità](#qualsiasi-raccomandazione-del-manuale-deve-essere-violata-se-migliora-la-leggibilità)
+
 * [Tags PHP](#tags-php)
-    * [I files sorgente **DEVONO** essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota](#i-files-sorgente-devono-essere-aperti-dal-tag-php-esteso-<?php-seguito-da-una-riga-vuota)
-    * [Il tag di chiusura **DEVE** essere omesso nei files sorgente](#il-tag-di-chiusura-deve-essere-omesso-nei-files-sorgente)
-    * [Nei files che mescolano PHP e HTML **DEVONO** essere usati i tag estesi `<?php ?>`](#nei-files-che-mescolano-php-e-html-devono-essere-usati-i-tag-estesi-<?php-?>)
+   * [I files sorgente **DEVONO** essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota](#i-files-sorgente-devono-essere-aperti-dal-tag-php-esteso-<?php-seguito-da-una-riga-vuota)
+   * [Il tag di chiusura **DEVE** essere omesso nei files sorgente](#il-tag-di-chiusura-deve-essere-omesso-nei-files-sorgente)
+   * [Nei files che mescolano PHP e HTML **DEVONO** essere usati i tag estesi `<?php ?>`](#nei-files-che-mescolano-php-e-html-devono-essere-usati-i-tag-estesi-<?php-?>)
 
+## Raccomandazioni generali
 
+#### Qualsiasi raccomandazione del manuale **DEVE** essere violata se migliora la leggibilità.
+> L'obiettivo principale delle raccomandazioni è migliorare la leggibilità e di conseguenza la comprensione, la manutenibilità e la qualità generale del codice. Poichè è impossibile coprire tutti i casi specifici, il programmatore dovrebbe essere flessibile.
 
 
 ## Tags PHP
