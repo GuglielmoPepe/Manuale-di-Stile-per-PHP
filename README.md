@@ -568,6 +568,158 @@ foreach ($arr as $key => $value)
 ```
 > Questo è fatto per distinguere le parole chiave di controllo dai nomi di funzioni. Tutte le strutture di controllo devono contenere la loro logica all'interno di parentesi graffe.
 
+### Struttura `if-else`
+
+#### Le espressioni condizionali complesse **DEVONO** essere evitate. Introdurre variabili booleane temporanee piuttosto.
+```php
+$isFinished = ($elementNo < 0) || ($elementNo > $maxElement);
+$isRepeatedEntry = $elementNo == $lastElement; 
+
+if ($isFinished || $isRepeatedEntry)
+{
+    // code
+}
+```
+> Assegnando le espressioni booleane a delle variabili, lo script si auto-documenta.
+> Sarà più facile eseguire il debug oltre che leggere e mantenere lo script.
+
+
+ 
+#### L'istruzione condizionale **DEVE** essere su una riga separata.
+```php
+$isFinished = ($elementNo < 0) || ($elementNo > $maxElement);
+
+if ($isFinished)
+{
+    doExecute();
+}
+```
+
+> Questa raccomandazione è per scopi di debug. Quando si scrive su una singola riga, non è chiaro se il test sia realmente vero o meno.
+> ```php 
+> if ($isFinished) doExecute(); // bad
+> ```
+
+> Se l'espressione condizionale supera il limite massimo della riga (72 caratteri), la riga va divisa dopo un operatore logico, allineando la nuova riga con l'inizio dell'espressione sulla riga precedente e con la parentesi di chiusura che deve essere sulla stessa riga dell'ultima condizione.
+> ```php
+> if ($test1 &&
+>     $test2 ||
+> 	  $test3)
+> {
+> 	// code
+> }
+> ```
+
+> Si segue la regola generale INSERIRE LINK QUI a files.
+
+#### Le dichiarazioni eseguibili **DEVONO** essere evitate nelle istruzioni condizionali.
+```php
+$file = fopen($local_file, "r");
+
+if ( ! $file)
+{
+    // code
+}
+```
+
+> Le condizioni con istruzioni eseguibili sono semplicemente molto difficili da leggere. Questo è particolarmente vero per i programmatori nuovi in PHP.
+> ```php
+> if ( ! ($file = fopen($local_file, "r")))
+> {
+>     // code
+> }
+> ```
+
+#### Il blocco di codice di una struttura di controllo `if-else` **DEVE** seguire l'indentazione di Allman.
+```php
+if ($condition)
+{
+    // code block
+}
+
+if ($condition)
+{
+    // code block
+}
+else
+{
+    // code block
+}
+
+if ($condition)
+{
+    // code block
+}
+elseif ($condition)
+{
+    // code block
+}
+else
+{
+    // code block
+}
+```
+> L'approccio scelto è considerato migliore nel modo in cui ogni parte dell'istruzione if-else viene scritta su righe separate del file. Ciò rende più semplice la manipolazione dell'istruzione, ad esempio quando si spostano altre clausole.
+
+#### L'istruzione `elseif` **DEVE** essere sempre preferita a `else if`.
+> L'istruzione `else if` non è compatibile con la sintassi alternativa dell'istruzione `if else`, pertanto, per consistenza col resto del codice, va utilizzata solo l'istruzione `elseif`.
+
+
+
+#### L'istruzione singola **DEVE* essere scritte con le parentesi.
+```php
+if ($condition)
+{
+    // code block
+}
+```
+> Le parentesi sono superflue su una singola istruzione, ma c'è il rischio che il codice si interrompi se viene aggiunta un'istruzione dimenticando le parentesi, sebbene il codice non dovrebbe mai essere scritto per adattarsi ai cambiamenti che potrebbero insorgere.
+
+#### Le parole chiave della struttura di controllo **DEVONO** essere seguite da uno spazio.
+> Migliora la leggibilità del codice.
+
+#### Il corpo di una struttura di controllo **DEVE** essere sempre racchiuso tra parentesi graffe. 
+> Questo standardizza l'aspetto delle strutture e riduce la probabilità di introdurre errori man mano che nuove linee vengono aggiunte al corpo della struttura di controllo.
+
+
+#### L'espressione condizionale di una struttura di controllo **DEVE** essere preceduta e seguita solo ed esclusivamente dalle parentesi tonde.
+> Inutile evidenziare ulteriormente quanto contenuto dalle parentesi tonde di una struttura di controllo.
+
+> Le espressioni che iniziano con l'operatore `!` seguono la raccomandazione generale per gli spazi bianchi intorno agli operatori e pertanto non è un'eccezione alla regola il seguente esempio:
+> ```php
+> if ( ! $condition)
+> {
+>     // code
+> }
+> ```
+
+
+
+
+#### Nei files dove PHP è mescolato all'Html **DEVE** essere utilizzata la sintassi alternativa per la struttura di controllo `if-else`.
+```php
+<div>
+
+    <?php if ($alpha) : ?>
+
+        <p>true alpha condition</p>
+
+    <?php elseif ($beta) : ?>
+
+        <p>true beta condition</p>
+
+    <?php else : ?>
+
+        <p>default condition</p>
+
+    <?php endif;>
+
+</div>
+```
+> La sintassi alternativa migliora la leggibilità all'interno del codice Html.
+
+> Si notino gli spazi che circondano i due punti `:`.
+
 
 
 [vai all'indice ⬆](#indice)
