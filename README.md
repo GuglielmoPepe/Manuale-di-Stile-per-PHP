@@ -20,7 +20,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Traits](#traits)
 * [Classi](#classi)
 * [Costanti di classe](#costanti-di-classe)
-* [Proprietà](#proprieta)
+* [Proprietà](#proprietà)
 * [Metodi](#metodi)
 
 Questo documento elenca le raccomandazioni per redazione di codice PHP sulla base di standard raccolti da una serie di fonti, esperienze individuali, requisiti/bisogni specifici della comunità PHP.
