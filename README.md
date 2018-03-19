@@ -569,14 +569,14 @@ if (TRUE == $foo)
 > Quando si eseguono confronti logici che coinvolgono variabili, le variabili vanno messe a destra, mentre costanti, letterali o chiamate di funzione sul lato sinistro. Se nessuna delle due parti è una variabile, l'ordine non è importante.
 
 > Se nell'esempio precedente viene omesso un segno di uguale, si avrà un errore di analisi, perché non è possibile assegnare qualcosa ad a una costante come TRUE. Si veda, _a contrario_ l'esempio seguente:
-```php
+> ```php
 > if ($foo = TRUE)
 > {
 >     // code
 > }
 > ```
 > l'assegnazione è perfettamente valida, generando un bug nel codice.
-```
+
 
 
 **L'operatore di concatenazione deve essere preceduto e seguito da un singolo spazio.**
