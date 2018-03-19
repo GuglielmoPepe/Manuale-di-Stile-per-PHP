@@ -321,10 +321,113 @@ foreach ($arr as $key => $value)
 
 ## Tipi
 
+**I numeri a virgola mobile devono sempre essere scritti con il punto decimale ed almeno un decimale.**
+```php
+$total = 0.0;
+
+$epsilon = 3.0e8;
+
+$sum = ($a + $b) * 10.0;
+```
+> Questo enfatizza la diversa natura dei numeri interi e in virgola mobile. Matematicamente sono due concetti completamente diversi e non compatibili.
 
 
+**I numeri a virgola mobile devono sempre essere scritti  con una cifra prima del punto decimale.**
+```php
+$total = 0.5;
+```
+> Il numero ed il sistema di espressione in PHP è preso in prestito dalla matematica e si dovrebbe aderire alle convenzioni matematiche per la sintassi laddove possibile. 
+
+> Inoltre, 0.5 è molto più leggibile di .5 e non c'è modo che possa essere confuso con l'intero 5. Si veda l'esempio seguente:
+> ```php
+> $total = .5; // bad
+> ```
+
+**Le stringhe letterali devono essere delimitate dalle virgolette singole.**
+```php
+$string = 'example string';
+```
 
 
+**Le stringhe che contengono virgolette singole devono essere delimitate dalle virgolette doppie.**
+```php
+$str = "That's a 'magic' sock.";
+```
+> Questa sintassi è preferibile rispetto al carattere di escape `\` poiché è molto più facile da leggere.
+> Inoltre è particolarmente utile per le istruzioni SQL:
+> ```php
+> $sql = "SELECT `id`, `name` " . 
+>        "FROM `people` " . 
+>        "WHERE `name`='Mickey' OR `name`='Minnie'";
+> ```
+
+
+**Le stringhe devono essere scritte senza variabili da sostituire.**
+```php
+$string = 'Hello ' . $name . ', welcome back!';
+```
+> Questa sintassi migliora le leggibilità del codice rispetto ai seguenti esempi:
+> ```php
+> $string = "Hello $name, welcome back!";   // bad
+> $string = "Hello {$name}, welcome back!"; // bad
+> $string = "Hello ${name}, welcome back!"; // bad
+> ```
+
+
+**La riga deve essere divisa dopo l'operatore di concatenazione quando l'istruzione è supera il limite di 72 caratteri, allineando la nuova riga con l'inizio dell'espressione sulla riga precedente.**
+```php
+$sql = "SELECT `id`, `name` " . 
+       "FROM `people` " . 
+       "WHERE `name`='Mickey' OR `name`='Minnie'" . 
+       "ORDER BY `name` ASC ";
+```
+> Quando si concatenano le stringhe con l'operatore `.`, è meglio suddividere l'istruzione in più righe per migliorarne la leggibilità. In questi casi, ogni riga successiva deve essere riempita con tanti spazi bianchi, tali da allinearla con la riga precedente. 
+
+
+**Gli arrays devono essere dichiarati con la sintassi concisa.**
+```php
+$arr = [];
+```
+
+
+**Gli arrays devono avere indici numerici positivi.**
+> L'uso di numeri negativi come indici di un array può causare problemi con alcune funzioni della libreria standard di PHP.
+
+
+**I delimitatori degli elementi `,` di un array devono essere seguiti da uno spazio.**
+```php
+$arr = ['Mickey', 'Minnie', 1, 2, 3];
+
+```
+> Migliora la leggibilità del codice.
+
+
+**Gli operatori di assegnazione di un valore a una chiave, `=>`, devono essere preceduti e seguiti da uno spazio.**
+```php
+$arr = ['firstKey' => 'firstValue', 'secondKey' => 'secondValue'];
+
+```
+> Migliora la leggibilità del codice.
+
+
+**Gli array suddivisi su più righe devono avere il seguente formato:**
+```php
+$arr = [
+    'firstKey'  => 'firstValue', 
+    'secondKey' => 'secondValue',
+];
+```
+> Riepilogando:
+> * il primo elemento **DEVE** essere posizionato sulla riga successiva a quella della dichiarazione dell'array;
+> * ogni elemento **DEVE** essere su una propria riga;
+> * gli elementi **DEVONO** avere un'indentazione maggiore rispetto alla riga di dichiarazione dell'array;
+> * gli operatori di assegnazione di un valore a una chiave `=>` **DEVONO** essere allineati;
+> * l'ultimo elemento **DEVE** essere sempre delimitato da una virgola;
+> * la parentesi di chiusura **DEVE** essere su una propria riga allo stesso livello di indentazione della riga contenente la dichiarazione dell'array;
+
+> L'uso della virgola finale dopo l'ultimo elemento nell'array riduce al minimo la possibilità che si verifichino errori di analisi a causa di una virgola mancante per l'aggiunta di nuovi elementi.
+
+[vai all'indice ⬆](#indice)
 
 
 
