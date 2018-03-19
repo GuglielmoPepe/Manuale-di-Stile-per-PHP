@@ -781,12 +781,113 @@ if ($condition)
 
 > Si notino gli spazi che circondano i due punti `:`.
 
+### while
+
+**Le variabili di loop devono essere inizializzate immediatamente prima del ciclo.**
+```php
+$i = 0;
+
+while ($i < 10) 
+{
+    echo ++$i;
+}
+```
 
 
+**Il blocco di codice di una struttura di controllo `while` deve seguire l'indentazione di Allman.**
+```php
+while ($i < 10) 
+{
+    // code
+}
+```
+> Questo deriva dalla regola generale sull'indentazione.
 
 
+**L'istruzione singola deve essere scritte con le parentesi.**
+```php
+while ($condition)
+{
+    // code block
+}
+```
+> Le parentesi sono per definizione superflue su una singola affermazione, ma c'è il rischio che il codice si interrompi se viene aggiunta un'istruzione aggiuntiva senza aggiungere le parentesi, sebbene il codice non dovrebbe mai essere scritto per adattarsi ai cambiamenti che potrebbero insorgere.
 
 
+### do-while
+
+**L'uso della struttura di controllo `do-while` deve essere evitata.**
+```php
+
+$i = 0;
+
+do
+{
+    echo ++$i;
+}
+while ($i < 10) 
+```
+> La struttura di controllo `do-while` è meno leggibile di un `while` ordinario o di un ciclo `for`, perché l'istruzione condizionale si trova nella parte inferiore del ciclo. Il lettore deve eseguire la scansione dell' intero ciclo per comprendere lo scopo del ciclo.
+
+> Inoltre, i cicli `do-while` non sono necessari. Qualsiasi ciclo `do-while` può essere facilmente riscritto in un ciclo `while` o in ciclo `for`. Ridurre il numero di costrutti utilizzati migliora la leggibilità.
+
+
+**Il blocco di codice di una struttura di controllo `do-while` deve seguire l'indentazione di Allman.**
+```php
+do
+{
+    // code
+}
+while ($condition) 
+```
+> Questo deriva dalla regola generale sull'indentazione.
+
+
+### for
+
+**Solo le istruzioni di controllo del ciclo devono essere incluse nell'istruzione `for()`.**
+```php
+$sum = 0;
+
+for ($i = 0; $i < 10; ++$i) 
+{
+    $sum += $value[$i];
+}
+```
+> Aumenta la manutenibilità e la leggibilità, creando una chiara distinzione tra istruzioni di controllo e istruzioni contenute nel ciclo.
+
+
+**Il blocco di codice di una struttura di controllo `for` devono seguire l'indentazione di Allman.**
+```php
+for ($i = 0; $i < 10; ++$i) 
+{
+    // code
+}
+```
+> Questo segue dalla regola generale di blocco (inserisci link).
+
+
+**L'istruzione singola deve essere scritte con le parentesi.**
+```php
+if ($condition)
+{
+    // code block
+}
+```
+> Le parentesi sono per definizione superflue su una singola affermazione, ma c'è il rischio che il codice si interrompi se viene aggiunta un'istruzione aggiuntiva senza aggiungere le parentesi, sebbene il codice non dovrebbe mai essere scritto per adattarsi ai cambiamenti che potrebbero insorgere.
+
+### foreach
+
+**Il blocco di codice di una struttura di controllo `foreach` deve seguire l'indentazione di Allman.**
+```php
+
+foreach ($iterable as $key => $value) 
+{
+    echo $key . ' => ' . $value;
+}
+
+```
+> Questo segue dalla regola generale di blocco (inserisci link).
 
 [vai all'indice ⬆](#indice)
 
