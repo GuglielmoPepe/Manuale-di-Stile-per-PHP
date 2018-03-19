@@ -23,7 +23,32 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Proprietà](#proprieta)
 * [Metodi](#metodi)
 
+Questo documento elenca le raccomandazioni per redazione di codice PHP sulla base di standard raccolti da una serie di fonti, esperienze individuali, requisiti/bisogni specifici della comunità PHP.
 
+Ci sono diversi motivi per introdurre nuove raccomandazioni, piuttosto che riferirsi solo a quelli già esistenti. La ragione principale è che queste guide sono troppo generiche nel loro ambito e che devono essere stabilite regole più specifiche (specialmente le regole di denominazione). 
+
+Inoltre, le raccomandazioni presenti in questo manuale sono annotate in modo da facilitarne l'uso, rispetto alla maggior parte delle altre linee guida esistenti. 
+
+In generale, le raccomandazioni di programmazione tendono a mescolare i problemi di stile con le questioni tecniche del linguaggio in un modo alquanto confuso. Il presente documento si concentra principalmente sullo stile di programmazione.
+
+Mentre un dato ambiente di sviluppo (IDE) può migliorare la leggibilità del codice tramite visibilità dell'accesso, codifica a colori, formattazione automatica e così via, il programmatore non dovrebbe mai fare affidamento su tali caratteristiche. Il codice sorgente dovrebbe essere scritto in modo da massimizzare la sua leggibilità indipendentemente da qualsiasi IDE.
+
+
+Le raccomandazioni sono raggruppate per argomento e seguono questo schema:
+> #### Raccomandazione
+> ```php
+>     $example = 'example'; // example
+> ```
+> 
+> > Motivazione, riferimenti ed informazioni aggiuntive. 
+
+La sezione motivazione è importante. Gli standard e le linee guida di codifica tendono ad avviare "guerre di religione", ed è importante indicare il contesto per la raccomandazione.
+
+Si è scelto di usare solo raccomandazioni _obbligatorie_ per ridurre al minimo il rischio di avere più stili di codifica per singoli elementi di codice.
+
+Questo Manuale di Stile è pensato per essere utilizzato con PHP 7 e successivi, ma nel caso si utilizzi una versione precedente le raccomandazioni possono essere facilmente adattate per una versione precendente di PHP.
+
+[vai all'indice ⬆](#indice)
 
 ## Raccomandazione generale
 
@@ -31,8 +56,6 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 > L'obiettivo principale delle raccomandazioni è migliorare la leggibilità e di conseguenza la comprensione, la manutenibilità e la qualità generale del codice. Poichè è impossibile coprire tutti i casi specifici, il programmatore dovrebbe essere flessibile.
 
 [vai all'indice ⬆](#indice)
-
-
 
 ## Directories
 
