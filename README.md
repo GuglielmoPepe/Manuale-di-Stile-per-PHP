@@ -14,14 +14,14 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Costanti](#costanti)
 * [Operatori](#operatori)
 * [Strutture di controllo](#strutture-di-controllo)
-* Funzioni
-* Namespaces
-* Interfacce
-* Traits
-* Classi
-* Costanti di classe
-* Proprietà
-* Metodi
+* [Funzioni](#funzioni)
+* [Namespaces](#namespaces)
+* [Interfacce](#interfacce)
+* [Traits](#traits)
+* [Classi](#classi)
+* [Costanti di classe](#costanti-di-classe)
+* [Proprietà](#proprieta)
+* [Metodi](#metodi)
 
 
 
@@ -1111,69 +1111,582 @@ $object = new \Namespace\ClassName();
 
 [vai all'indice ⬆](#indice)
 
+## Funzioni
 
+**I nomi delle funzioni devono contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo.**
+```php
+function getFirstName() : string
+{
 
+}
+```
+> La verbosità è generalmente incoraggiata. I nomi delle funzioni dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
 
+> I numeri sono consentiti nei nomi delle funzioni, ma sono da evitarsi nella maggior parte dei casi.
 
+> Le funzioni _user defined_ nel namespace globale sono da evitarsi nella maggior parte dei casi.
 
 
+**Le funzioni devono essere sempre dichiarate in un `namespace`.**
+> Migliora l'organizzazione del codice, oltre che la portabilità dello stesso.
 
 
+**Il corpo di una funzione deve seguire l'indentazione di Allman.**
+```php
+function getFirstName() : string
+{
+    // code
+}
+```
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
+**Le funzioni devono essere chiamate senza spazio tra il nome della funzione e la parentesi iniziale.**
+```php
+$var = foo($bar, $bar2, $bar3);
+```
+> Tra ogni parametro du una funzione c'è uno spazio, come detta la raccomandazione generale.
 
 
+**Il corpo di una closure deve seguire l'indentazione di Allman.**
+```php
+$doExecute = function () : mixed
+{
+    // code
+};
+```
+> Migliora la leggibilità.
 
 
+**Gli argomenti con valori predefiniti devono essere posti alla fine dell'elenco degli argomenti.**
+```php
+$var = foo($bar, $baz = 'string', $quux = NULL);
+```
 
 
+**Il costrutto `use` di una closure deve essere preceduto e seguito da uno spazio.**
+```php
+$doExecute = function () use ($arg) : mixed
+{
+    // code
+};
+```
+> Migliora la leggibilità.
 
+[vai all'indice ⬆](#indice)
 
+## Namespaces
 
+**I nomi dei namespaces devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi dei namespaces, ma sono da evitarsi nella maggior parte dei casi.
 
+> Queste raccomandazioni nascono dal fatto che i nomi dei namespaces vengono mappati con i nomi delle directories, creando un collegamento biunivoco con queste ultime.
 
 
+**La definizione del namespace deve essere la prima dichiarazione del file.**
+```php
+<?php 
 
+namespace MyProject;
 
+const CONNECT_OK = 1;
 
+class Connection
+{
+    // code
+}
 
+function connect()
+{
+    // code
+}
+```
 
+> L'unico costrutto di codice consentito prima che una dichiarazione dello spazio dei nomi sia l'istruzione `declare`, per definire la codifica di un file sorgente. Inoltre, nessun codice non-PHP può precedere una dichiarazione dello spazio dei nomi, inclusi spazi extra:
+> ```php
+> <html>
+> <?php
+> namespace MyProject; // fatal error - namespace must be the first statement in the script
+> ?>
+> ```
 
 
+**L'importazione di altri `namespace` deve essere effettuata utilizzando l'istruzione `use`.**
+```php
+<?php 
 
+namespace MyProject;
 
+use \OtherNamespace;
 
+```
+> Migliora la leggibilità del codice, oltre a renderlo portabile.
 
+> Se l'importazione di `namespace` crea conflitti tra i nomi, si può usare la parola chiave `as` per creare degli alias. In questo caso l'alias deve essere creato componendo i nomi dei sub-namespace, come nell'esempio che segue:
+```php
+use Baz\Qux\Quux as BazQuxQuux;
+```
 
+> Sempre per migliorare la leggibilità del codice, va utilizzata una sola dichiarazione `use` per riga ed una sola per ogni spazio dei nomi importato.
 
+[vai all'indice ⬆](#indice)
 
+## Interfacce
 
+**I nomi delle interfacce devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi delle interfacce, ma sono da evitarsi nella maggior parte dei casi.
 
+> Queste raccomandazioni nascono dal fatto che i nomi delle interfacce vengono mappati con i nomi dei files, creando un collegamento biunivoco con questi ultimi.
 
 
+**Le interfacce devono essere dichiarati in singoli file con il nome del file corrispondente al nome della interfaccia con l'aggiunta dell'estensione `.php`.**
+> Migliora l'organizzazione del codice.
 
 
+**Il corpo di un'interfaccia deve seguire l'indentazione di Allman.**
+```php
+interface Person
+{
+    // code
+}
+```
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
+**La posizione di ciascun elemento all'interno dell'interfaccia deve essere prevedibile.**
+```php
+interface Person
+{
+    public function getFirstName() : string;
+    public function getLastName() : string;
+}
+```
+> La raccomandazione tenta di ridurre la complessità, rendendo prevedibile la posizione di ciascun elemento dell'interfaccia.
 
+> In generale i metodi vanno ordinati alfabeticamente per nome, ma si veda anche la raccomandazione per ordinare i metodi in base ai modificatori.
 
+[vai all'indice ⬆](#indice)
 
 
+## Traits
 
+**I nomi dei traits devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi dei traits, ma sono da evitarsi nella maggior parte dei casi.
 
+> Queste raccomandazioni nascono dal fatto che i nomi dei traits vengono mappati con i nomi dei files, creando un collegamento biunivoco con questi ultimi.
 
+**I traits devono essere dichiarati in singoli file con il nome del file corrispondente al nome del trait con l'aggiunta dell'estensione `.php`.**
+> Migliora l'organizzazione del codice.
 
+**Il corpo di un `trait` deve seguire l'indentazione di Allman.**
+```php
+trait Employee
+{
+    // code
+}
+```
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
+[vai all'indice ⬆](#indice)
 
 
+## Classi
 
+**I nomi delle classi devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi delle classi, ma sono da evitarsi nella maggior parte dei casi.
 
+> Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei files, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione di un file.
 
 
+**Le classi devono essere dichiarati in singoli file con il nome del file corrispondente al nome della classe con l'aggiunta dell'estensione `.php`.**
+> Migliora l'organizzazione del codice.
 
 
+**Le classi devono essere sempre dichiarate in un namespace.**
+> Migliora l'organizzazione del codice, oltre che la portabilità dello stesso.
 
 
+**Le classi devono essere dichiarate ognuna in un proprio file sorgente.**
+> Migliora l'organizzazione del codice, oltre al fatto che i file sorgenti vanno mappati alle classi.
 
 
+**Il corpo di una classe deve seguire l'indentazione di Allman.**
+```php
+class Person extends People implements Employee 
+{
+    // all contents of class
+}
+```
+> Deriva dalla raccomandazione generale sull'indentazione.
+
+**La posizione di ciascun elemento all'interno della classe deve essere prevedibile.**
+```php
+abstract class Person
+{
+    const FEMALE_TITLE = 'Mrs.';
+    const MALE_TITLE = 'Mr.';
+
+    private static $gender;
+
+    private $firstName;
+    private $lastName;
+
+    abstract public function getFormalName() : string;
+
+    public function __construct(string $firstName, string $lastName, string $gender)
+    {
+        $self::gender = $gender;
+
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+    }
+
+
+
+    public function getFirstName() : string
+    {
+        return $this->firstName;
+    }
+
+
+
+    public function getLastName() : string
+    {
+        return $this->lastName;
+    }
+
+
+
+    protected function getTitle()
+    {
+        if ('female' == $self::gender)
+        {
+            return self::FEMALE_TITLE;
+        }
+
+        return self::MALE_TITLE;
+    }
+}
+```
+> La raccomandazione tenta di ridurre la complessità, rendendo prevedibile la posizione di ciascun elemento della classe.
+> Gli elementi della classe vanno raggruppati e, all'interno di ciascun gruppo, ordinati alfabeticamente per nome:
+> * costanti;
+> * proprietà;
+> * metodi;
+> si vedano anche le raccomandazioni per ordinare proprietà e metodi.
+
+> Per migliorare la leggibilità il gruppo delle costanti ed il gruppo delle proprietà terminano con una riga vuota. I metodi sono seguiti da tre righe vuote eccetto l'ultimo metodo della classe dove sarebbe superfluo.
+
+
+**I metodi devono essere separati da tre righe vuote.**
+> Separando i metodi con uno spazio più grande di quello utilizzato all'interno degli stessi, i metodi si distingueranno meglio all'interno della classe.
+
+
+**Le classi che estendono altre classi o che implementano interfacce devono* dichiarare le loro dipendenze sulla stessa riga quando possibile.**
+```php
+class Person extends People implements Employee 
+{
+    // all contents of class
+    // must be indented four spaces
+}
+```
+> Migliora la leggibilità.
+
+> Nel caso in cui la dichiarazione delle dipendenze di classe comportino il superamento della lunghezza massima della riga (72 caratteri, vedi [Lunghezza massima della riga](#lunghezza-massima-della-riga)), la dihiarazione va interrotta prima delle parole chiave `extends` e / o `implements` applicando un livello di rientro.
+> ```php
+> class Person
+>      extends People
+>      implements Employee 
+> {
+>     // all contents of class
+>     // must be indented four spaces
+> }
+> ```
+
+> Se la classe implementa più interfacce e la dichiarazione supera la lunghezza massima della riga, la dichiarazione va interrotta dopo ogni virgola che separi le interfacce i cui nomi vanno rientrati in modo tale che si allineino.
+> ```php
+> class Person
+>      extends People
+>      implements Employee,
+>                 Manager
+> {
+>     // all contents of class
+>     // must be indented four spaces
+> }
+> ```
+
+
+**Le classi devono essere istanziate utilizzando le parentesi indipendentemente dal numero di argomenti del costruttore.**
+```php
+$person = new Person();
+```
+> Migliora la leggibilità del codice, oltre a renderlo consistente.
+
+[vai all'indice ⬆](#indice)
+
+## Costanti di classe
+
+**I nomi delle costanti di classe devono contenere solo caratteri alfanumerici, essere tutte in maiuscolo con le parole separate da caratteri di sottolineatura.**
+```php
+class Foo
+{
+ const DATABASE_HOST = 'dbhost';
+ const DATABASE_NAME = 'dbname';
+ const DATABASE_USER = 'dbuser';
+ const DATABASE_PASSWORD = ''dbpwd'';
+
+}
+```
+
+> Le costanti devono essere denominate in modo da indicare il loro scopo e contenuto.
+
+> I numeri sono consentiti nei nomi delle costanti, ma sono da evitarsi nella maggior parte dei casi.
+
+> I nomi delle costanti dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.
+
+[vai all'indice ⬆](#indice)
+
+
+## Proprietà
+
+**I nomi delle proprietà devono contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`.**
+```php
+class Person
+{
+    private $firstName = 'Mickey';
+    private $lastName = 'Mouse';
+}
+```
+
+> I numeri sono consentiti nei nomi delle proprietà, ma sono da evitarsi nella maggior parte dei casi.
+
+> I nomi delle proprietà dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile, quel tanto che basti a descrivere i dati che lo sviluppatore intende memorizzare in essi.
+
+> Le proprietà che fanno riferimento ad oggetti dovrebbero in qualche modo essere associate alla classe di cui la proprietà è un oggetto.
+> ```php
+> class Manager
+> {
+>     private $person;
+> 
+>     public function __construct(\Person $person)
+>     {
+>         $this->person = $person;
+>     }
+> }
+> ````
+
+
+**Le proprietà di classe devono essere dichiarate `private` o `protected`.**
+
+> Il concetto di _information hiding_ e incapsulamento è violato dalle proprietà dichiarate `public`. Devono essere invece utilizzate proprietà dichiarate `private` o `protected` e funzioni di accesso a queste proprietà.
+
+> Il costrutto `var` non è permesso.
+
+> Le proprietà della classe vanno raggruppate in base alla visibilità e, all'interno di ciascun gruppo, ordinate alfabeticamente per nome:
+> * protected;
+> * private;
+> la raccomandazione tenta di ridurre la complessità, rendendo prevedibile la posizione di ciascun elemento della classe.
+
+> Per una migliorare le leggibilità, non dovrebbero esserci righe vuote tra le dichiarazioni di proprietà e due righe vuote tra le sezioni di dichiarazione di proprietà e di metodo. È necessario aggiungere una riga vuota tra i diversi gruppi di visibilità.
+
+
+**La dichiarazione delle proprietà deve seguire il seguente _pattern_: (`protected`|`private`)[`static`]_property name_.**
+```php
+abstract class Person
+{
+    const FEMALE_TITLE = 'Mrs.';
+    const MALE_TITLE = 'Mr.';
+
+    private static $gender;
+
+    private $firstName;
+    private $lastName;
+
+    abstract public function getFormalName() : string;
+
+    public function __construct(string $firstName, string $lastName, string $gender)
+    {
+        $self::gender = $gender;
+
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+    }
+
+    public function getFirstName() : string
+    {
+        return $this->firstName;
+    }
+
+    public function getLastName() : string
+    {
+        return $this->lastName;
+    }
+
+    protected function getTitle() : string
+    {
+        if ('female' == $self::gender)
+        {
+            return self::FEMALE_TITLE;
+        }
+
+        return self::MALE_TITLE;
+    }
+}
+```
+> La raccomandazione tenta di ridurre la complessità, rendendo prevedibile la posizione di ciascun elemento della dichiarazione di proprietà.
+
+
+> La lezione più importante qui è rendere obbligatorio il modificatore di visibilità. Tra i possibili modificatori, questo è di gran lunga il più importante e deve sempre esser presente nella dichiarazione di una proprietà. Per gli altri modificatori, l'ordine è meno importante, ma ha senso avere una convenzione fissa.
+
+[vai all'indice ⬆](#indice)
+
+
+## Metodi
+
+**I nomi dei metodi di una classe devono contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo.**
+
+```php
+public function getFirstName()
+{
+
+}
+```
+
+> I numeri sono consentiti nei nomi dei metodi, ma sono da evitarsi nella maggior parte dei casi.
+
+> La verbosità è generalmente incoraggiata. I nomi dei metodi dovrebbero essere prolissi quanto è pratico per descrivere pienamente il loro scopo e comportamento.
+
+> Questa raccomandazione segue la prassi comune nella comunità di sviluppo PHP. Anche se la raccomandazione è in pratica identica a quella sui nomi delle funzioni, i metodi in PHP sono già distinguibili dalle funzioni per la loro forma specifica quando vengono invocati:
+> ```php
+> $person->getFirstName();
+>
+> getFirstName($person);
+> ```
+
+
+**I nomi dei metodi di una classe non devono contenere il nome della propria classe.**
+```php
+$person->getFirstName();
+```
+> Come mostrato nell'esempio, si rivela superfluo nell'uso: 
+> ```php
+> $person->getPersonFirstName(); // bad
+> ```
+
+
+**Il nome del metodo deve essere immediatamente seguito dalla parentesi di apertura degli argomenti.**
+```php
+class Person extends People implements Employee 
+{
+    public function setFirstName(string $firstName) : void
+    {
+        // code
+    }
+}
+```
+
+
+**Il corpo di un metodo deve seguire l'indentazione di Allman.**
+```php
+class Person extends People implements Employee 
+{
+    public function getFirstName() : string
+    {
+        // code
+    }
+}
+```
+> Deriva dalla raccomandazione generale sull'indentazione
+
+**La dichiarazione dei metodi deve seguire il seguente _pattern_: \[`abstract`|`final`](`public`|`protected`|`private`)\[`static`]_method name_.**
+```php
+abstract class Person
+{
+    const FEMALE_TITLE = 'Mrs.';
+    const MALE_TITLE = 'Mr.';
+
+    private static $gender;
+
+    private $firstName;
+    private $lastName;
+
+    abstract public function getFormalName() : string;
+
+    public function __construct(string $firstName, string $lastName, string $gender)
+    {
+        $self::gender = $gender;
+
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+    }
+
+
+
+    public function getFirstName() : string
+    {
+        return $this->firstName;
+    }
+
+
+
+    public function getLastName() : string
+    {
+        return $this->lastName;
+    }
+
+
+
+    protected function getTitle()
+    {
+        if ('female' == $self::gender)
+        {
+            return self::FEMALE_TITLE;
+        }
+
+        return self::MALE_TITLE;
+    }
+}
+```
+> La raccomandazione tenta di ridurre la complessità, rendendo prevedibile la posizione di ciascun elemento della dichiarazione di metodo.
+
+> I metodi magici precedono all'interno dei singoli gruppi gli altri metodi ordinati alfabeticamente per nome.
+
+> La lezione più importante qui è rendere obbligatorio il modificatore di visibilità. Tra i possibili modificatori, questo è di gran lunga il più importante e deve sempre esser presente nella dichiarazione del metodo. Per gli altri modificatori, l'ordine è meno importante, ma ha senso avere una convenzione fissa.
+
+
+**Gli argomenti dei metodi devono avere lo stesso nome del loro _tipo_.**
+```php
+public function connect(\PDO $pdo)
+{
+
+}
+```
+
+> Riduce la complessità riducendo il numero di termini e nomi utilizzati. Inoltre rende facile dedurre il tipo dato dal nome della variabile.
+
+> Se per qualche motivo questa convenzione non sembra adattarsi, c'è un forte sospetto che il nome del tipo è scelto male.
+
+> Gli argomenti non _generici_ hanno un _ruolo_. Questi argomenti possono spesso essere denominati combinando il _ruolo_ e il _tipo_:
+> ```php
+> public function sendMessage(\Person $fromPerson, \Person $toPerson)
+> {
+> 
+> }
+> ```
+
+
+**L'elenco di argomenti di un metodo deve essere interrotta dopo una virgola, allineando gli argomenti, se la lunghezza massima della riga viene superata.**
+```php
+class Foo
+{
+    public function bar($arg1, $arg2, $arg3,
+                        $arg4, $arg5, $arg6)
+    {
+        // code
+    }
+}
+```
+> Un numero di argomenti superiore a tre è indice di codice scritto male. 
+
+[vai all'indice ⬆](#indice)
