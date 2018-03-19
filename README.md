@@ -801,7 +801,7 @@ while ($i < 10)
     // code
 }
 ```
-> Questo deriva dalla regola generale sull'indentazione.
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
 **L'istruzione singola deve essere scritte con le parentesi.**
@@ -840,7 +840,7 @@ do
 }
 while ($condition) 
 ```
-> Questo deriva dalla regola generale sull'indentazione.
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
 ### for
@@ -864,7 +864,7 @@ for ($i = 0; $i < 10; ++$i)
     // code
 }
 ```
-> Deriva dalla regola generale.
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
 **L'istruzione singola deve essere scritte con le parentesi.**
@@ -886,7 +886,7 @@ foreach ($iterable as $key => $value)
 }
 
 ```
-> Deriva dalla regola generale sull'indentazione.
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 ### break
 
@@ -966,7 +966,7 @@ switch ($value)
 }
 ```
 
-> Deriva dalla regola generale sull'indentazione.
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
 ### declare
@@ -1050,55 +1050,64 @@ function bar() : string
 }
 ```
 
+ ### try-catch
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+**Il blocco di codice di una struttura di controllo `try-catch` deve seguire l'indentazione di Allman.**
+```php
+try
+{
+    // code block
+}
+catch (\Exception $exception)
+{
+    // code
+}
+
+try
+{
+    // code block
+}
+catch (\Exception $exception)
+{
+    // code
+}
+finally
+{
+    // code block
+}
+```
+> Deriva dalla raccomandazione generale sull'indentazione.
 
 
+### require / require_once / include / include_once
+
+**Per includere un file incondizionatamente deve essere utilizzata l'istruzione `require_once`.**
+> L'istruzione va utilizzata nei casi in cui si vuol includere un file sempre e comunque, tipicamente all'inizio di uno script. Un file incluso con `require_once` non sarà incluso di nuovo da `include_once`.
 
 
+**Per includere un file condizionatamente deve essere utilizzata l'istruzione `include_once`.**
+> Laddove l'inclusione di un file sia soggetta a qualche condizione (ad esempio, metodi factory), va usato `include_once`. L'uso di `require_once` e `include_once` assicurerà che i file vengano inclusi solo una volta. Condividono la stessa lista di file, quindi non bisogna preoccuparsi di mescolarli.
 
 
+**Le istruzioni di inclusione devono essere utilizzate senza parentesi.**
+```php
+require\_once ROOT_PATH . '/dir/file.php';
+```
+> Le istruzioni di inclusione `require_once` e `include_once` sono istruzioni del linguaggio e non funzioni, pertanto la corretta formattazione è senza parentesi.
 
 
+**Le classi devono essere incluse attraverso la funzione `autoload` oppure una soluzione personalizzata.**
+```php
+$object = new \Namespace\ClassName();
+```
+> Ciò consente ai pacchetti di funzionare senza modifiche, indipendentemente dal modo in cui sono strutturati su disco, incluso l'esecuzione di un singolo file di grandi dimensioni, all'interno di un archivio `phar` e fornisce la necessaria flessibilità.
+
+> Le classi dovrebbero essere semplicemente utilizzate con il `namespace` completo in modo da documentarne la posizione all'interno del _filesystem_.
 
 
-
-
-
-
+### goto
+**L'istruzione `goto` deve essere evitata assolutamente.**
+> Rende il codice difficile da correggere oltre che difficile da comprendere.
 
 [vai all'indice ⬆](#indice)
 
