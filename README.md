@@ -123,14 +123,14 @@ for ($tableNo = 0; $tableNo < $nTables;
 > L'assegnazione di ogni file ad un `namespace` specifico piuttosto che al `namespace` globale, è un'applicazione delle tecniche di programmazione orientate agli oggetti del linguaggio PHP.
 
 
-**Tutti i files sorgente files devono terminare con una singola riga vuota.**
+**Tutti i files sorgente devono terminare con una singola riga vuota.**
 
 > Migliora la leggibilità del codice.
 
 
-**I files sorgente che dichiarino interfacce, traits, classi o librerie di funzioni devono contenere solo le dichiarazioni di interfaccia, trait, classe o funzione.**
+**I files sorgente che dichiarino interfacce, traits, classi o librerie di funzioni devono contenere solo le dichiarazioni di interfaccia, trait, classe o funzioni.**
 
-> L'inserimento di codice aggiuntivo che provochi effetti collaterali deve essere evitato, per migliorare la leggibilità e la comprensione del codice.
+> L'inserimento di codice aggiuntivo che provochi effetti collaterali deve essere evitato, per migliorare la leggibilità, la manutenibilità e la comprensione del codice.
 
 
 **I files _template_ devono distinguere tra indentazione PHP e HTML.**
