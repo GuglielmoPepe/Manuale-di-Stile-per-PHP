@@ -616,17 +616,17 @@ if ($foo !== $baz)
 }
 ```
 > Gli operatori di confronto rigorosi vanno preferiti ogni volta che è possibile, per evitare problemi con valori booleani che potrebbero portare ad un comportamento diverso da quello che ci si aspetta, come nei seguenti casi:
-```php
-if ($foo == $bar) // bad, avoid truthy comparisons
-{
-    // code
-}
-
-if ($foo != $baz) // bad, avoid falsy comparisons
-{
-    // code
-}
-```
+> ```php
+> if ($foo == $bar) // bad, avoid truthy comparisons
+> {
+>     // code
+> }
+> 
+> if ($foo != $baz) // bad, avoid falsy comparisons
+> {
+>     // code
+> }
+> ```
 
 [vai all'indice ⬆](#indice)
 
