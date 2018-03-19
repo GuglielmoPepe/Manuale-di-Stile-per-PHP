@@ -182,3 +182,16 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 
 [vai all'indice ⬆](#indice)
 
+
+
+## Directory
+
+**I nomi delle directories devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi delle directories, ma sono da evitarsi nella maggior parte dei casi.
+
+> Queste raccomandazioni nascono dal fatto che i nomi delle directories vengono mappati con i nomi dei namespaces, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione di un namespace.
+
+
+
+
+
