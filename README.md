@@ -1,7 +1,7 @@
 # Manuale di Stile per PHP
 Guida alla redazione di programmi in PHP (in lavorazione).
 
-## indice
+#### indice
 
 * [Raccomandazione generale](#raccomandazione-generale)
 * [Directories](#directories)
@@ -10,7 +10,7 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Istruzioni](#istruzioni)
 * [Commenti](#commenti)
 * [Tipi](#tipi)
-* Variabili
+* [Variabili](#variabili)
 * Costanti
 * Operatori
 * Strutture di controllo
@@ -429,8 +429,50 @@ $arr = [
 
 [vai all'indice ⬆](#indice)
 
+## Variabili
+
+**I nomi delle variabili devono contenere solo caratteri alfanumerici ed essere scritti in `mixedCase`.**
+```php
+$firstName = 'Mickey';
+```
+
+> I numeri sono consentiti nei nomi delle variabili, ma sono da evitarsi nella maggior parte dei casi.
+
+> I nomi delle variabili dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile, quel tanto che basti a descrivere i dati che lo sviluppatore intende memorizzare in essi.
+
+> I nomi di variabili di una sola lettera, come `$i` e `$k`, sono da evitarsi tranne che nei cicli più piccoli. Se un ciclo contiene più di 20 righe di codice, le variabili dell'indice dovrebbero avere nomi più descrittivi.
+
+> Le variabili nell'ambito globale sono da evitarsi. Se sono proprio necessarie, si utilizzino le proprietà di classe `static` o le costanti anziché le variabili globali, seguendo il design pattern `factory`.
 
 
+**Le variabili _generiche_ devono avere lo stesso nome del loro tipo.**
+```php
+$person = new \Person();
+```
+
+> Riduce la complessità riducendo il numero di termini e nomi utilizzati. Inoltre rende facile dedurre il tipo dato dal nome della variabile.
+
+> Se per qualche motivo questa convenzione non sembra adattarsi, c'è un forte sospetto che il nome del _tipo_ è scelto male.
+
+> Le variabili non generiche hanno un _ruolo_. Queste variabili possono spesso essere nominate combinando il _ruolo_ e il _tipo_:
+> ```php
+> function sendMessage(\Person $fromPerson, \Person $toPerson)
+> {
+> 
+> }
+> ```
+
+
+**Le variabili devono avere un significato univoco.**
+
+> Migliora la leggibilità, assicurando che tutti i concetti siano rappresentati in modo univoco. Riduce inoltre la possibilità di errore da effetti collaterali.
+
+
+**Le variabili devono essere mantenute in vita per il minor tempo possibile.**
+
+> Mantenendo le operazioni su una variabile all'interno di un piccolo ambito, è più facile controllare gli effetti collaterali, e non, della variabile.
+
+[vai all'indice ⬆](#indice)
 
 
 
