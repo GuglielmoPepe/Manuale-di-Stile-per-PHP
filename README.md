@@ -7,9 +7,9 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Directories](#directories)
 * [Files](#files)
 * [Tags php](#tags-php)
-* Istruzioni
-* Commenti
-* Tipi
+* [Istruzioni](#istruzioni)
+* [Commenti](#commenti)
+* [Tipi](#tipi)
 * Variabili
 * Costanti
 * Operatori
@@ -196,10 +196,10 @@ $b = 'bar'; // code php
 </div>
 ```
 > L'uso del tag esteso `<?php echo` era richiesto nel caso in cui un server non avesse avuto la direttiva INI `short_open_tag` abilitata. 
->Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag _echo_ breve `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza e leggibilità non deve mai essere usato il tag _echo_ breve `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
+>Oggi questa esigenza risulta superata dopo che `PHP 5.4` ha reso sempre disponibile l'uso del tag _echo_ breve `<?=` indipendentemente dalla direttiva INI `short_open_tag`. Tuttavia per ragioni di consistenza e leggibilità non deve mai essere usato il tag _echo_ conciso `<?=` preferendogli l'uso esclusivo del tag esteso `<?php echo`.
 
 
-> Il punto e virgola finale non deve mai essere omesso anche quando PHP lo permette, come nell'esempio che segue:
+> Il punto e virgola finale non deve mai essere omesso, neanche quando PHP lo permette, come nell'esempio che segue:
 > ```php
 > <div>
 > 
@@ -212,8 +212,114 @@ $b = 'bar'; // code php
 > </div>
 > ```
 
+[vai all'indice ⬆](#indice)
+
+## Istruzioni
+
+**La lingua utilizzata per i nomi deve essere l'inglese.**
+> L'inglese è la lingua preferita per lo sviluppo a livello internazionale.
+
+**Le abbreviazioni e gli acronimi devono avere tutte lettere in minuscolo eccetto la prima se usati come nome.**
+> L'utilizzo di tutte le maiuscole per il nome di base causerà conflitti con le convenzioni di denominazione. Una vatiabile denominata `$pDF` non è molto leggibile. Inoltre quando un nome è composto da più di una parola (`PDFFile`) la leggibilità viene seriamente ridotta, perchè la parola che segue l'acronimo non spicca come dovrebbe.
+
+**Le unità logiche all'interno di un blocco di codice devono essere separate da una riga vuota.**
+```php
+if ($condition1)
+{
+    // code
+}
+
+if ($condition2)
+{
+    // code
+}
+
+if ($condition3)
+{
+    // code
+}
+```
+> Introducendo una riga vuota tra le unità logiche correlate, si migliora la leggibilità del codice. Le righe di codice correlate devono essere raggruppate in blocchi, separati gli uni dagli altri per mantenere il più alto grado di leggibilità possibile. La definizione di _correlate_ dipende dal codice. Si noti la poca leggibilità del codice seguente:
+> ```php
+> if ($condition1)
+> {
+>     // code
+> }
+> if ($condition2)
+> {
+>    // code
+> }
+> if ($condition3)
+> {
+>     // code
+> }
+> ```
 
 
+**Per l'indentazione deve essere utilizzato lo stile Allman.**
+```php
+function foo($bar)
+{
+    // code
+}
+```
+> Le parentesi graffe vanno sempre posizionate su una riga da sole e indentate allo stesso livello dell'istruzione che le _possiede_.
+
+
+**Le parentesi devono essere prive si spazi aggiuntivi al loro interno.**
+```php
+// no space inside the brackets
+function foo($bar)
+{
+
+}
+```
+
+**Le istruzioni devono essere tutte su una propria riga.**
+```php
+$foo = 'this';
+$bar = 'that';
+$bat = str_replace($foo, $bar, $bag);
+```
+> Mai combinare più istruzioni su una stessa riga come nell'esempio seguente:
+> ```php
+> $foo = 'this'; $bar = 'that'; $bat = str_replace($foo, $bar, $bag);
+> ```
+
+> I valori ed i commenti vanno allineati quando ciò è appropriato, come nell'esempio seguente:
+> ```php
+> $var        = ''; // do each on its own line
+> $other_var  = ''; // do each on its own line
+> ```
+
+**L'error reporting deve essere impostato con la costante `E_ALL`.**
+```php
+error\_reporting(E_ALL);
+```
+> Consente di suggerire le modifiche al codice che garantiscano la migliore interoperabilità e compatibilità all'indietro del codice.
+
+> Il livello di error reporting richiesto è `E_STRICT`, pertanto se viene utilizzata una versione precedente alla `5.4` l'error_reporting deve essere deve essere impostato come segue:
+```php
+error\_reporting(E_STRICT);
+```
+> A partire dalla versione `5.4` la costante `E_ALL` include `E_STRICT`;
+
+**Tutto il codice deve utilizzare le funzionalità avanzate di PHP 7 per la programmazione orientata agli oggetti.**
+> Ciò significa che non dovrebbero esserci funzioni al di fuori delle classi, se non assolutamente necessario. Se è necessario un _contenitore_ per alcune funzioni di supporto, prendere in considerazione la creazione di una classe statica.
+
+**Tra la parola chiave di una struttura di controllo e la parentesi aperta deve esserci uno spazio.**
+```php
+// single space following PHP control structures, but not in interior parenthesis
+foreach ($arr as $key => $value)
+{
+    // code
+}
+```
+> Questo è fatto per distinguere le parole chiave di controllo dai nomi di funzioni. Tutte le strutture di controllo devono contenere la loro logica all'interno di parentesi graffe.
+
+[vai all'indice ⬆](#indice)
+
+## Tipi
 
 
 
