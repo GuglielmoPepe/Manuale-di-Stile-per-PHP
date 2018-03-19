@@ -11,8 +11,8 @@ Guida alla redazione di programmi in PHP (in lavorazione).
 * [Commenti](#commenti)
 * [Tipi](#tipi)
 * [Variabili](#variabili)
-* Costanti
-* Operatori
+* [Costanti](#costanti)
+* [Operatori](#operatori)
 * Strutture di controllo
 * Funzioni
 * Namespaces
@@ -474,9 +474,161 @@ $person = new \Person();
 
 [vai all'indice ⬆](#indice)
 
+## Costanti
+
+**I nomi delle costanti devono contenere solo caratteri alfanumerici, essere tutte in maiuscolo con le parole separate da caratteri di sottolineatura.**
+```php
+define('DATABASE_HOST', 'dbhost');
+define('DATABASE_NAME', 'dbname');
+define('DATABASE_USER', 'dbuser');
+define('DATABASE_PASSWORD', 'dbpwd');
+```
+
+> Le costanti devono essere denominate in modo da indicare il loro scopo e contenuto.
+
+> Anche le costanti PHP predefinite come `TRUE`, `FALSE` e `NULL` devono essere tutte in maiuscolo.
+
+> I numeri sono consentiti nei nomi delle costanti, ma sono da evitarsi nella maggior parte dei casi.
+
+> I nomi delle costanti dovrebbero essere quanto più descrittivi possibile, ma anche quanto più brevi è possibile.
+
+> La definizione di costanti nell'ambito globale con la funzione `define` è consentita, ma fortemente sconsigliata. Sono da preferirsi le costanti di classe e, se proprio sono necessarie, è meglio inserire le costanti globali nel punto di ingresso dello script o meglio ancora in un file separato.
 
 
+**I nomi delle costanti che rappresentano un concetto comune devono avere un prefisso comune.**
+```php
+define('COLOR_RED', '#ff0000');
+define('COLOR_GREEN', '00ff00');
+define('COLOR_BLUE', '0000ff');
+```
+> Ciò indica che le costanti appartengono allo stesso insieme, e quale concetto rappresentino.
 
+> Un'alternativa a questo approccio consiste nel mettere le costanti all'interno di un'interfaccia in modo da utilizzare il nome dell'interfaccia come prefisso:
+> ```php
+> interface Color
+> {
+>   const RED   = '#ff0000';
+>   const GREEN = '#00ff00';
+>   const BLUE  = '#0000ff';
+> }
+> ```
+
+
+**L'istruzione `const` deve essere preferita all'istruzione `define` nella dichiarazione di una costante.**
+```php
+const COLOR_RED   = '#ff0000';
+const COLOR_GREEN = '#00ff00';
+const COLOR_BLUE  = '#0000ff';
+```
+> Si noti che `const` non funziona con le espressioni PHP, pertanto nel caso in cui debba essere definita una costante in maniera condizionale o con un valore non letterale va utilizzata l'istruzione `define`:
+> if ( ! defined('MAINTENANCE_MODE'))
+> {
+>     define('MAINTENANCE_MODE', 'development');
+> }
+
+[vai all'indice ⬆](#indice)
+
+## Operatori
+
+**Gli operatori binari devono essere circondati da uno spazio.**
+```php
+if ($a == $b)
+{
+    // code
+}
+```
+> Migliora la leggibilità del codice.
+
+
+**Gli operatori unari devono essere uniti alla variabile cui afferiscono, fatta eccezione per `!`.**
+```php
+@fopen('file/path');
+```
+> Migliora la leggibilità del codice.
+
+> L'operator `!` deve essere diviso dalla variabile cui afferisce da uno spazio, per migliorare la leggibilità del codice, soprattuto quando si trova nelle espressioni condizionali come nel caso che segue:
+> ```php
+> if ( ! $condition)
+> {
+>     // code
+> }
+> ```
+
+> Gli operatori unari di incremento `++` e decremento `--` vanno posizionati prima della variabile piuttosto che successivamente, per ragioni di efficienza.
+
+
+**Quando si confrontano una variabile con un'espressione si deve utilizzare la condizione _Yoda_.**
+```php
+if (TRUE == $foo)
+{
+    // code
+}
+```
+> Questa raccomandazione evita un'assegnazione accidentale all'interno dell'istruzione condizionale.
+
+> Quando si eseguono confronti logici che coinvolgono variabili, le variabili vanno messe a destra, mentre costanti, letterali o chiamate di funzione sul lato sinistro. Se nessuna delle due parti è una variabile, l'ordine non è importante.
+
+> Se nell'esempio precedente viene omesso un segno di uguale, si avrà un errore di analisi, perché non è possibile assegnare qualcosa ad a una costante come TRUE. Si veda, _a contrario_ l'esempio seguente:
+```php
+> if ($foo = TRUE)
+> {
+>     // code
+> }
+> ```
+> l'assegnazione è perfettamente valida, generando un bug nel codice.
+```
+
+
+**L'operatore di concatenazione deve essere preceduto e seguito da un singolo spazio.**
+```php
+$string = 'Mickey' . ' ' . 'Mouse';
+```
+> Migliora la leggibilità del codice.
+
+
+**L'operatore ternario deve essere contenuto su una sola riga.**
+```php
+$variable = isset($options['variable']) ? $options['variable'] : TRUE;
+```
+> Opzionalmente le parentesi possono essere utilizzate attorno al controllo delle condizioni del ternario per maggiore chiarezza. Ternari più lunghi dovrebbero essere suddivisi in altre dichiarazioni. 
+
+> Gli operatori ternari non dovrebbero mai essere annidati, come nell'esempio seguente:
+> ```php
+> // Nested ternaries are bad
+> $variable = isset($options['variable']) ? isset($options['othervar']) ? TRUE : FALSE : FALSE;
+> ```
+
+
+**L'operator `@` deve essere evitato assolutamente.**
+> L'uso dell'operatore `@` per silenziare i messaggi di errore rende il debug più difficile, oltre a rallentare l'esecuzione del codice.
+
+
+**Gli operatori di confronto rigorosi devono essere preferiti a tutti gli altri.**
+```php
+if ($foo === $bar)
+{
+    // code
+}
+
+if ($foo !== $baz)
+{
+    // code
+}
+```
+> Gli operatori di confronto rigorosi vanno preferiti ogni volta che è possibile, per evitare problemi con valori booleani che potrebbero portare ad un comportamento diverso da quello che ci si aspetta, come nei seguenti casi:
+```php
+if ($foo == $bar) // bad, avoid truthy comparisons
+{
+    // code
+}
+
+if ($foo != $baz) // bad, avoid falsy comparisons
+{
+    // code
+}
+```
+
+[vai all'indice ⬆](#indice)
 
 
 
