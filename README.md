@@ -864,7 +864,7 @@ for ($i = 0; $i < 10; ++$i)
     // code
 }
 ```
-> Questo segue dalla regola generale di blocco (inserisci link).
+> Deriva dalla regola generale.
 
 
 **L'istruzione singola deve essere scritte con le parentesi.**
@@ -880,14 +880,225 @@ if ($condition)
 
 **Il blocco di codice di una struttura di controllo `foreach` deve seguire l'indentazione di Allman.**
 ```php
-
 foreach ($iterable as $key => $value) 
 {
     echo $key . ' => ' . $value;
 }
 
 ```
-> Questo segue dalla regola generale di blocco (inserisci link).
+> Deriva dalla regola generale sull'indentazione.
+
+### break
+
+**L'uso di `break` nei cicli deve essere evitata.**
+> Questa istruzione dovrebbe essere utilizzata solo se dimostra di essere più leggibile rispetto alle controparti strutturate.
+
+
+**L'istruzione `break` deve essere indentata allo stesso livello del codice presente all'interno del blocco di codice cui appartiene.
+```php
+foreach ($iterable as $key => $value) 
+{
+    echo $key . ' => ' . $value;
+    
+    if ('foo' === $value)
+    {
+       break;
+    }  
+}
+
+```
+> All'interno di una struttura `switch` l'istruzione `break` deve essere preceduta e seguita da una riga vuota, come nell'esempio che segue:
+> ```php
+> switch ($value)  
+> {
+>     case ($condition) : 
+>         $a = 'foo'; 
+>         $b = 'bar'; 
+>                     // blank line
+>         break;
+>                     // blank line
+>     case ($condition) : 
+>         $a = 'bar';
+>         $b = 'foo';
+>                     // blank line
+>         break;
+>                     // blank line
+>     default : 
+>         $a = 'no-foo';
+>         $b = 'no-bar';
+>                     // blank line
+>         break;
+>                     // blank line
+> }
+> ```
+> Migliora la leggibilità del codice.
+
+
+### continue
+
+**L'uso di `continue` nei cicli deve essere evitata.**
+> Questa istruzione dovrebbe essere utilizzata solo se dimostra di essere più leggibile rispetto alle controparti strutturate.
+
+
+### switch
+
+**Il blocco di codice di una struttura di controllo `switch` deve seguire l'indentazione di Allman.**
+```php
+switch ($value)  
+{
+    case ($condition) : 
+        $a = 'foo'; 
+        $b = 'bar'; 
+                    // blank line
+        break;
+                    // blank line
+    case ($condition) : 
+        $a = 'bar';
+        $b = 'foo';
+                    // blank line
+        break;
+                    // blank line
+    default : 
+        $a = 'no-foo';
+        $b = 'no-bar';
+                       // blank line
+        break;
+}
+```
+
+> Deriva dalla regola generale sull'indentazione.
+
+
+### declare
+
+**Il costrutto `declare` deve essere la prima istruzione nel codice PHP.**
+```php
+<?php // blank space
+            // blank line
+declare(encoding = 'utf-8');
+declare(strict_types = 1);
+            // blank line
+```
+
+> Utilizzando il costrutto `declare` a livello globale, tutto il codice che segue sarà interessato da tale istruzione ed evita dimenticanze.
+
+> Il costrutto ```php declare(encoding = 'utf-8')``` consente di evitare effetti collaterali negativi dovuti ad altre codifiche di caratteri.
+
+> Il costrutto ```php declare(strict\_types = 1)``` consente di rendere il codice _autodocumentante_, oltre a renderlo più sicuro.
+
+
+### return
+
+**L'istruzione `return` deve essere separata dal resto del blocco codice da una riga vuota.**
+```php
+function bar() : int
+{
+    $sum = 0;
+
+    for ($i = 0; $i < 11; ++$i)
+    {
+        $sum += $i;
+    }
+                    // blank line
+    return $sum;
+}
+```
+
+> Questa raccomandazione migliora la leggibilità del codice.
+
+**Quando una funzione o un metodo restituiscono valori nulli esplicitamente si deve utilizzare `return NULL;`.**
+```php
+function foo() : null
+{
+    // code
+
+    return NULL;
+}
+```
+> Migliora la leggibilità del codice.
+
+
+**Quando una funzione o un metodo restituiscono valori `void` si deve utilizzare `return;`.**
+```php
+public function setFirstName(string $firstName) : void
+{
+    $this->firstName = $firstName;
+    
+    return;
+}
+```
+> Migliora la leggibilità del codice.
+
+
+**Il valore restituito da `return` deve essere privo di parentesi.**
+```php
+function bar() : string
+{
+    // code
+
+    return $bar;
+}
+```
+
+> Racchiudere il valore restituito da `return` tra parentesi può ostacolare la leggibilità, in aggiunta alla rottura del codice se una funzione o un metodo vengono successivamente modificati per restituire un valore per riferimento.
+```php
+function bar() : string
+{
+    // code
+
+    return ($bar); // bad
+}
+```
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [vai all'indice ⬆](#indice)
 
