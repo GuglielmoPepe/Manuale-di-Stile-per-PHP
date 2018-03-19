@@ -1196,7 +1196,7 @@ class Connection
     // code
 }
 
-function connect()
+function connect() : mixed
 {
     // code
 }
@@ -1358,7 +1358,7 @@ abstract class Person
 
 
 
-    protected function getTitle()
+    protected function getTitle() : string
     {
         if ('female' == $self::gender)
         {
@@ -1393,7 +1393,7 @@ class Person extends People implements Employee
 ```
 > Migliora la leggibilità.
 
-> Nel caso in cui la dichiarazione delle dipendenze di classe comportino il superamento della lunghezza massima della riga (72 caratteri, vedi [Lunghezza massima della riga](#lunghezza-massima-della-riga)), la dihiarazione va interrotta prima delle parole chiave `extends` e / o `implements` applicando un livello di rientro.
+> Nel caso in cui la dichiarazione delle dipendenze di classe comportino il superamento della lunghezza massima della riga, la dihiarazione va interrotta prima delle parole chiave `extends` e / o `implements` applicando un livello di rientro.
 > ```php
 > class Person
 >      extends People
@@ -1547,7 +1547,7 @@ abstract class Person
 **I nomi dei metodi di una classe devono contenere solo caratteri alfanumerici, essere scritte in `mixedCase` in caso di più parole ed iniziare con un verbo.**
 
 ```php
-public function getFirstName()
+public function getFirstName() : string
 {
 
 }
@@ -1637,7 +1637,7 @@ abstract class Person
 
 
 
-    protected function getTitle()
+    protected function getTitle() : string
     {
         if ('female' == $self::gender)
         {
@@ -1657,7 +1657,7 @@ abstract class Person
 
 **Gli argomenti dei metodi devono avere lo stesso nome del loro _tipo_.**
 ```php
-public function connect(\PDO $pdo)
+public function connect(\PDO $pdo) : mixed
 {
 
 }
@@ -1669,7 +1669,7 @@ public function connect(\PDO $pdo)
 
 > Gli argomenti non _generici_ hanno un _ruolo_. Questi argomenti possono spesso essere denominati combinando il _ruolo_ e il _tipo_:
 > ```php
-> public function sendMessage(\Person $fromPerson, \Person $toPerson)
+> public function sendMessage(\Person $fromPerson, \Person $toPerson) : mixed
 > {
 > 
 > }
@@ -1681,7 +1681,7 @@ public function connect(\PDO $pdo)
 class Foo
 {
     public function bar($arg1, $arg2, $arg3,
-                        $arg4, $arg5, $arg6)
+                        $arg4, $arg5, $arg6) : mixed
     {
         // code
     }
