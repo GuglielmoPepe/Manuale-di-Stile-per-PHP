@@ -26,7 +26,7 @@ Guida alla redazione di programmi in PHP.
 
 Il ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP/) di [Guglielmo Pepe](https://en.gravatar.com/guglielmopepe) é distribuito con Licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Se si utilizza il manuale nei termini della licenza o si prendono accordi speciali per utilizzarlo, si prega di inserire l'attribuzione copiando ed incollando il seguente codice html:
+Se si utilizza il manuale nei termini della licenza o si prendono accordi speciali per utilizzarlo, si prega di inserire l'attribuzione come sopra riportato oppure copiando ed incollando il seguente codice html:
 ```html
 Il <a href="https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP/">"Manuale di Stile per PHP"</a> di <a href="https://en.gravatar.com/guglielmopepe">Guglielmo Pepe</a> è distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
 ```
