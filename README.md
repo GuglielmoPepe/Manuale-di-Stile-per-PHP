@@ -19,7 +19,7 @@ Guida alla redazione di programmi in PHP.
 * [Costanti di classe](#costanti-di-classe)
 * [Proprietà](#proprietà)
 * [Metodi](#metodi)
-
+* [Licenza](#licenza)
 
 
 ## Licenza
