@@ -1,5 +1,5 @@
 # Manuale di Stile per PHP
-Guida alla redazione di programmi in PHP (in lavorazione).
+Guida alla redazione di programmi in PHP.
 
 * [Raccomandazione generale](#raccomandazione-generale)
 * [Directories](#directories)
