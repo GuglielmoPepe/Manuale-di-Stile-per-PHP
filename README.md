@@ -41,5 +41,4 @@ In ogni caso devi includere un collegamento ipertestuale o altro riferimento, co
 
 
 [vai all'indice ⬆](#indice)
-```
 
