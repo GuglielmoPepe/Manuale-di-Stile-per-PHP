@@ -47,7 +47,7 @@ Questo Manuale di Stile è pensato per essere utilizzato con la versione 7 e suc
 
 ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://guglielmopepe.github.io). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
-Se utilizzi questo manuale nei termini della licenza, è necessario fornire un'adeguata attribuzione.
+Se riproduci, distribuisci o modifichi questo manuale devi fornire un'adeguata attribuzione in base alla licenza.
 
 Se riproduci o distribuisci il manuale senza apportare sostanziali modifiche al suo contenuto, utilizza la seguente riga di attribuzione:
 
