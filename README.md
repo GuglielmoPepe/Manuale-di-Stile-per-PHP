@@ -1,10 +1,6 @@
-Le raccomandazioni raccolte in questo manuale aiutano i programmatori a scrivere codice PHP leggibile, aumentandone nel contempo manutenibilità e qualità generale. 
+Le raccomandazioni raccolte in questo manuale aiutano i programmatori a scrivere codice PHP elegante, aumentandone nel contempo manutenibilità e qualità generale. 
 
-Le raccomandazioni presenti in questo manuale, rispetto alla maggior parte delle altre linee guida esistenti, sono annotate in modo da facilitarne l'uso. 
-
-In generale, le raccomandazioni presenti in altre guide tendono a mescolare i problemi di stile con le questioni tecniche del linguaggio in un modo alquanto confuso. Il presente documento si concentra principalmente sullo stile di programmazione.
-
-Sebbene un dato ambiente di sviluppo (IDE) può migliorare la leggibilità del codice tramite visibilità dell'accesso, codifica a colori, formattazione automatica e così via, il programmatore non dovrebbe mai fare affidamento su tali caratteristiche. Il codice sorgente dovrebbe essere scritto in modo da massimizzare la sua leggibilità indipendentemente da qualsiasi IDE.
+Le raccomandazioni presenti in questo manuale sono orientate principalmente sullo stile di redazione del codice e sono annotate in modo da comprenderne il contesto d'uso. 
 
 Le raccomandazioni sono raggruppate per "elemento" e seguono questo schema:
 > **Raccomandazione**
@@ -13,9 +9,9 @@ Le raccomandazioni sono raggruppate per "elemento" e seguono questo schema:
 > $example = 'example';
 > ```
 > 
-> > Motivazione, riferimenti ed informazioni aggiuntive. 
+> > Motivazione, conseguenze ed informazioni aggiuntive. 
 
-La sezione "Motivazione, riferimenti ed informazioni aggiuntive" aiuta ad indicare il contesto per l'uso della raccomandazione evitando che si avviino "guerre di religione" come di solito accade in tema di standard e linee guida di codifica.
+La sezione "Motivazione, conseguenze ed informazioni aggiuntive" aiuta ad comprendere il contesto per l'uso della raccomandazione evitando che si avviino "guerre di religione" come di solito accade in tema di standard e linee guida di codifica.
 
 Si è scelto di usare solo raccomandazioni "obbligatorie" per ridurre al minimo il rischio di avere più stili di codifica per singoli elementi di codice.
 
