@@ -171,7 +171,7 @@ $b = 'bar'; // code php
 
         <p><?php echo $value; ?></p>
 
-    <?php endforeach;>
+    <?php endforeach; ?>
 
 </div>
 ```
@@ -202,7 +202,7 @@ if ($isSubmitted)
 
         <p><?php echo $value; ?></p>
 
-    <?php endforeach;>
+    <?php endforeach; ?>
 
 </div>
 ```
@@ -217,7 +217,7 @@ if ($isSubmitted)
 > 
 >         <p><?php echo $value ?></p> // bad
 > 
->     <?php endforeach;>
+>     <?php endforeach; ?>
 > 
 > </div>
 > ```
