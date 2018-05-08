@@ -11,7 +11,7 @@ Le raccomandazioni sono raggruppate per "elemento" e seguono questo schema:
 > 
 > > Motivazione, conseguenze ed informazioni aggiuntive. 
 
-La sezione "Motivazione, conseguenze ed informazioni aggiuntive" aiuta ad comprendere il contesto per l'uso della raccomandazione evitando che si avviino "guerre di religione" come di solito accade in tema di standard e linee guida di codifica.
+La sezione "Motivazione, conseguenze ed informazioni aggiuntive" aiuta a comprendere il contesto per l'uso della raccomandazione evitando che si avviino "guerre di religione" come di solito accade in tema di standard e linee guida di codifica.
 
 Si è scelto di usare solo raccomandazioni "obbligatorie" per ridurre al minimo il rischio di avere più stili di codifica per singoli elementi di codice.
 
