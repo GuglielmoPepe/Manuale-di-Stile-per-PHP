@@ -1016,7 +1016,7 @@ foreach ($iterable as $key => $value)
 **Le espressioni condizionali complesse devono essere evitate, introducendo semmai variabili booleane temporanee.**
 ```php
 $isFinished = ($elementNo < 0) || ($elementNo > $maxElement);
-$isRepeatedEntry = $elementNo == $lastElement; 
+$isRepeatedEntry = $elementNo === $lastElement; 
 
 if ($isFinished || $isRepeatedEntry)
 {
@@ -1755,7 +1755,7 @@ abstract class Person
 
     protected function getTitle() : string
     {
-        if ('female' == $self::gender)
+        if ('female' === $self::gender)
         {
             return self::FEMALE_TITLE;
         }
@@ -1937,7 +1937,7 @@ abstract class Person
 
     protected function getTitle() : string
     {
-        if ('female' == $self::gender)
+        if ('female' === $self::gender)
         {
             return self::FEMALE_TITLE;
         }
@@ -2059,7 +2059,7 @@ abstract class Person
 
     protected function getTitle() : string
     {
-        if ('female' == $self::gender)
+        if ('female' === $self::gender)
         {
             return self::FEMALE_TITLE;
         }
