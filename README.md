@@ -903,7 +903,7 @@ declare(strict_types = 1);
 
 > Il costrutto ```php declare(encoding = 'utf-8')``` consente di evitare effetti collaterali negativi dovuti ad altre codifiche di caratteri.
 
-> Il costrutto ```php declare(strict\_types = 1)``` consente di rendere il codice _autodocumentante_, oltre a renderlo più sicuro.
+> Il costrutto ```php declare(strict_types = 1)``` consente di rendere il codice _autodocumentante_, oltre a renderlo più sicuro.
 
 
 ### do-while
@@ -1511,10 +1511,10 @@ $doOtherExecute = function () use ($arg) : mixed
 > * la parentesi di chiusura di una chiamata di funzione su più righe deve essere su una riga da sola;
 > 
 > ```php
-> $matches = array\_intersect_key(
+> $matches = array_intersect_key(
 >     $this->listeners,
 >     array_flip(
->         preg\_grep($pattern, array_keys($this->listeners), 0)
+>         preg_grep($pattern, array_keys($this->listeners), 0)
 >     )
 > );
 > ```
