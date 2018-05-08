@@ -1172,7 +1172,7 @@ else
 
 **Le istruzioni di inclusione devono essere utilizzate senza parentesi.**
 ```php
-require\_once ROOT_PATH . '/dir/file.php';
+require_once ROOT_PATH . '/dir/file.php';
 ```
 > Le istruzioni di inclusione `require_once` e `include_once` sono istruzioni del linguaggio e non funzioni, pertanto la corretta formattazione è senza parentesi.
 
