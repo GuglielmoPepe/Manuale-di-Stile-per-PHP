@@ -56,7 +56,7 @@ Questo Manuale di Stile è pensato per essere utilizzato con la versione 7 e suc
 
 > Questa raccomandazione nasce dal fatto che i nomi delle _directories_ vengono mappati con i nomi dei _namespaces_, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione di un _namespace_.
 
-
+> **Nota sulla terminologia:** la notazione "CapitalizedWords" si ha quando un nome è composto da più parole unite e la prima lettera di ogni parola è in maiuscolo.
 
 [vai all'indice ⬆](#indice)
 
@@ -1435,6 +1435,7 @@ function getFirstName() : string
 
 > Le funzioni _user defined_ nel namespace globale sono da evitarsi nella maggior parte dei casi.
 
+> **Nota sulla terminologia:** la notazione "mixedCase" si ha quando un nome è composto da più parole unite e la prima lettera di ogni parola è in maiuscolo eccetto la prima lettera della prima parola.
 
 **Le funzioni devono essere sempre dichiarate in un `namespace`.**
 > Migliora l'organizzazione del codice, oltre che la portabilità dello stesso.
