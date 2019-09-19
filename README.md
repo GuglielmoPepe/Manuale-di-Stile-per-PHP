@@ -19,8 +19,8 @@ Questo Manuale di Stile è pensato per essere utilizzato con la versione 7 e suc
 
 #### indice
 * [Raccomandazione generale](#raccomandazione-generale)
-* [Directories](#directories)
-* [Files](#files)
+* [Directory](#directory)
+* [File](#file)
 * [Istruzioni](#istruzioni)
 * [Commenti](#commenti)
 * [Tipi](#tipi)
@@ -29,9 +29,9 @@ Questo Manuale di Stile è pensato per essere utilizzato con la versione 7 e suc
 * [Operatori](#operatori)
 * [Strutture di controllo](#strutture-di-controllo)
 * [Funzioni](#funzioni)
-* [Namespaces](#namespaces)
+* [Namespace](#namespace)
 * [Interfacce](#interfacce)
-* [Traits](#traits)
+* [Trait](#trait)
 * [Classi](#classi)
 * [Costanti di classe](#costanti-di-classe)
 * [Proprietà](#proprietà)
@@ -49,12 +49,12 @@ Questo Manuale di Stile è pensato per essere utilizzato con la versione 7 e suc
 
 
 
-## Directories
+## Directory
 
-**I nomi delle _directories_ devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
-> I numeri sono consentiti nei nomi delle _directories_, ma sono da evitarsi nella maggior parte dei casi.
+**I nomi delle _directory_ devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi delle _directory_, ma sono da evitarsi nella maggior parte dei casi.
 
-> Questa raccomandazione nasce dal fatto che i nomi delle _directories_ vengono mappati con i nomi dei _namespaces_, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione di un _namespace_.
+> Questa raccomandazione nasce dal fatto che i nomi delle _directory_ vengono mappati con i nomi dei _namespace_, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione di un _namespace_.
 
 > **Nota sulla terminologia:** la notazione "CapitalizedWords" si ha quando un nome è composto da più parole unite e la prima lettera di ogni parola è in maiuscolo.
 
@@ -62,33 +62,33 @@ Questo Manuale di Stile è pensato per essere utilizzato con la versione 7 e suc
 
 
 
-## Files
+## File
 
-**I nomi dei _files_ devono contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`.**
-> I numeri sono consentiti nei nomi dei _files_, ma sono da evitarsi nella maggior parte dei casi.
+**I nomi dei _file_ devono contenere solo caratteri alfanumerici, essere scritti in `CapitalizedWords` e terminare con l'estensione `.php`.**
+> I numeri sono consentiti nei nomi dei _file_, ma sono da evitarsi nella maggior parte dei casi.
 
-> Questa raccomandazionie nasce dal fatto che i nomi dei _files_ vengono mappati con i nomi delle interfacce, dei _traits_ o delle classi, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione delle interfacce, dei _traits_, delle classi, delle librerie o dei _files templates_.
+> Questa raccomandazionie nasce dal fatto che i nomi dei _file_ vengono mappati con i nomi delle interfacce, dei _trait_ o delle classi, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione delle interfacce, dei _trait_, delle classi, delle librerie o dei _file template_.
 
 
-**Nei _files_ deve essere utilizzata esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark).**
+**Nei _file_ deve essere utilizzata esclusivamente la codifica dei caratteri UTF-8 senza BOM (Byte Order Mark).**
 
 > La codifica può essere dichiarata usando `declare(encoding = 'utf-8');` nella parte superiore del _file_.
 
 > A differenza di UTF-16 e UTF-32, non esiste un ordine di byte da indicare in un _file_ con codifica UTF-8 e il BOM (Byte Order Mark) può avere un effetto collaterale negativo nell'invio dell'output, impedendo all'applicazione di impostare le proprie intestazioni.
 
 
-**Le righe dei _files_ devono avere una lunghezza massima di 72 caratteri e terminare con un singolo carattere di avanzamento riga Unix LF (_linefeed_).**
+**Le righe dei _file_ devono avere una lunghezza massima di 72 caratteri e terminare con un singolo carattere di avanzamento riga Unix LF (_linefeed_).**
 
 > Un limite di 72 caratteri rende necessario distribuire la logica o le espressioni complesse in funzioni e/o metodi, nonché assegnare nomi più brevi e più espressivi a funzioni e classi.
 
 > Limitando la larghezza delle righe a 72 caratteri si migliora la leggibilità del codice.
 
-> Limitando la larghezza della finestra dell'editor a 72 caratteri, è possibile avere diversi _files_ aperti fianco a fianco e funziona bene quando si utilizzano gli strumenti di revisione del codice che presentano le due versioni nelle colonne adiacenti.
+> Limitando la larghezza della finestra dell'editor a 72 caratteri, è possibile avere diversi _file_ aperti fianco a fianco e funziona bene quando si utilizzano gli strumenti di revisione del codice che presentano le due versioni nelle colonne adiacenti.
 
 > Il _wrapping_ predefinito nella maggior parte degli strumenti interrompe la struttura visiva del codice, rendendolo più difficile da capire. Il limite è stato scelto per evitare il _wrapping_ degli editor con la larghezza della finestra impostata su 80 caratteri, anche se lo strumento posiziona un glifo marcatore nella colonna finale quando effettua il _wrapping_ delle linee. Alcuni strumenti basati sul Web potrebbero non offrire affatto il ritorno a capo automatico della linea.
 
 > Non aggiungere spazi finali alla fine delle righe, ma terminare le righe secondo la convenzione dei file di testo Unix. I caratteri di avanzamento riga sono rappresentati come numero ordinale 10 oppure come numero esadecimale 0x0A.
-> Questo è più un problema per gli sviluppatori che lavorano in ambiente Windows, ma in ogni caso assicurarsi che l'editor di testo sia configurato per salvare i _files_ con interruzioni di riga Unix.
+> Questo è più un problema per gli sviluppatori che lavorano in ambiente Windows, ma in ogni caso assicurarsi che l'editor di testo sia configurato per salvare i _file_ con interruzioni di riga Unix.
 
 
 > **Nota sulla terminologia:** il _line-wrapping_ avviene quando il codice che potrebbe occupare in altro modo regolarmente una singola riga è diviso in più righe.
@@ -128,7 +128,7 @@ for ($tableNo = 0; $tableNo < $nTables;
 > Questi caratteri sono destinati a causare problemi a editor, stampanti, emulatori di terminali o debugger quando vengono utilizzati in un ambiente multi-programmatore e/o multipiattaforma.
 
 
-**I _files_ devono usare un'indentazione di quattro spazi.**
+**I _file_ devono usare un'indentazione di quattro spazi.**
 > Ciò aiuta ad evitare problemi con _diff_, _patch_, cronologia e annotazioni. L'uso degli spazi rende anche facile inserire una sub-indentazione a grana fine per l'allineamento tra le righe.
 
 > Gli spazi non devono mai essere mescolati con la tabulazione. 
@@ -136,11 +136,11 @@ for ($tableNo = 0; $tableNo < $nTables;
 > L'indentazione è usata per enfatizzare la struttura logica del codice. L'indentazione di uno spazio è troppo piccola per raggiungere questo risultato. L'indentazione maggiore di quattro spazi rende il codice profondamente annidato e difficile da leggere, aumentando peraltro la possibilità che le righe debbano essere divise.
 
 
-**Tutti i _files_ sorgente devono appartenere ad un `namespace` specifico.**
+**Tutti i _file_ sorgente devono appartenere ad un `namespace` specifico.**
 > L'assegnazione di ogni _file_ ad un `namespace` specifico piuttosto che al `namespace` globale, è una conseguenza dell'applicazione delle tecniche di programmazione orientate agli oggetti del linguaggio PHP.
 
 
-**I _files_ sorgente devono essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota.**
+**I _file_ sorgente devono essere aperti dal tag PHP esteso `<?php` seguito da una riga vuota.**
 ```
 <?php
             // blank line
@@ -150,20 +150,20 @@ $b = 'bar'; // code php
 ```
 > Devono sempre essere usati esclusivamente i tag PHP estesi `<?php ?>` e mai quelli concisi `<? ?>`. Questo è il modo più portabile per includere codice PHP su diversi sistemi operativi e configurazioni.
 
-> Nei _files_ che contengono esclusivamente codice PHP, il tag di apertura `<?php` deve essere seguito da una singola riga vuota al fine di migliorare la leggibilità del codice.
+> Nei _file_ che contengono esclusivamente codice PHP, il tag di apertura `<?php` deve essere seguito da una singola riga vuota al fine di migliorare la leggibilità del codice.
 
 
-**Il _tag_ di chiusura deve essere omesso nei _files_ sorgente.**
-> Nei _files_ che contengono esclusivamente codice PHP, il _tag_ di chiusura `?>` deve essere sostituito da una singola riga vuota.
+**Il _tag_ di chiusura deve essere omesso nei _file_ sorgente.**
+> Nei _file_ che contengono esclusivamente codice PHP, il _tag_ di chiusura `?>` deve essere sostituito da una singola riga vuota.
 
-> Il _tag_ di chiusura PHP `?>` in un documento PHP é facoltativo per il parser PHP. Tuttavia, se utilizzato, qualsiasi spazio vuoto successivo al tag di chiusura, introdotto dallo sviluppatore, dall'utente o da un'applicazione FTP, può causare _output_ indesiderati, errori PHP o, se questi ultimi vengono soppressi, pagine vuote. Per questo motivo, tutti i _files_ che contengono esclusivamente codice PHP devono omettere il _tag_ di chiusura `?>` e terminare con una singola riga vuota
+> Il _tag_ di chiusura PHP `?>` in un documento PHP é facoltativo per il parser PHP. Tuttavia, se utilizzato, qualsiasi spazio vuoto successivo al tag di chiusura, introdotto dallo sviluppatore, dall'utente o da un'applicazione FTP, può causare _output_ indesiderati, errori PHP o, se questi ultimi vengono soppressi, pagine vuote. Per questo motivo, tutti i _file_ che contengono esclusivamente codice PHP devono omettere il _tag_ di chiusura `?>` e terminare con una singola riga vuota
 
 
-**I _files_ sorgente che dichiarino interfacce, _traits_, classi o librerie di funzioni devono contenere solo le dichiarazioni di interfaccia, _trait_, classe o funzioni.**
+**I _file_ sorgente che dichiarino interfacce, _trait_, classi o librerie di funzioni devono contenere solo le dichiarazioni di interfaccia, _trait_, classe o funzioni.**
 > L'inserimento di codice aggiuntivo che provochi effetti collaterali deve essere evitato, per migliorare la leggibilità, la manutenibilità e la comprensione del codice.
 
 
-**I _files template_ devono distinguere tra indentazione PHP e HTML.**
+**I _file template_ devono distinguere tra indentazione PHP e HTML.**
 ```php
 <div>
 
@@ -178,7 +178,7 @@ $b = 'bar'; // code php
 > Ciò rende molto più facile trovare tag di apertura e chiusura corrispondenti, definiti con diversi rientri.
 
 
-**Nei _files template_ deve essere PHP in HTML piuttosto che HTML in PHP.**
+**Nei _file template_ deve essere PHP in HTML piuttosto che HTML in PHP.**
 ```php
 // bad
 if ($isSubmitted)
@@ -194,7 +194,7 @@ if ($isSubmitted)
 > Dopotutto, PHP è un linguaggio di scripting incorporato in HTML, e non il contrario.
 
 
-**Nei _files template_ devono essere usati i _tags_ estesi `<?php ?>`.**
+**Nei _file template_ devono essere usati i _tags_ estesi `<?php ?>`.**
 ```php
 <div>
 
@@ -495,7 +495,7 @@ $sql = "SELECT `id`, `name` " .
 > Quando si concatenano le stringhe con l'operatore `.`, è meglio suddividere l'istruzione in più righe per migliorarne la leggibilità. In questi casi, ogni riga successiva deve essere riempita con tanti spazi bianchi, tali da allinearla con la riga precedente. 
 
 
-**Gli _arrays_ devono essere dichiarati con la sintassi concisa.**
+**Gli _array_ devono essere dichiarati con la sintassi concisa.**
 ```php
 $arr = [];
 ```
@@ -512,7 +512,7 @@ $arr = [];
 > ];
 > ```
 
-**Gli _arrays_ devono avere indici numerici positivi.**
+**Gli _array_ devono avere indici numerici positivi.**
 > L'uso di numeri negativi come indici di un _array_ può causare problemi con alcune funzioni della libreria standard di PHP.
 
 
@@ -532,7 +532,7 @@ $arr = ['firstKey' => 'firstValue', 'secondKey' => 'secondValue'];
 > Migliora la leggibilità del codice.
 
 
-**Gli _arrays_ suddivisi su più righe devono avere il seguente formato:**
+**Gli _array_ suddivisi su più righe devono avere il seguente formato:**
 ```php
 $arr = [
     'firstKey'  => 'firstValue', 
@@ -959,7 +959,7 @@ for ($i = 0; $i < 10; ++$i)
 > Deriva dalla raccomandazione generale sull'indentazione.
 
 
-**Nei _files template_, dove PHP è mescolato all'Html, deve essere utilizzata la sintassi alternativa per la struttura di controllo `for`.**
+**Nei _file template_, dove PHP è mescolato all'Html, deve essere utilizzata la sintassi alternativa per la struttura di controllo `for`.**
 ```php
 <div>
 
@@ -989,7 +989,7 @@ foreach ($iterable as $key => $value)
 > Deriva dalla raccomandazione generale sull'indentazione.
 
 
-**Nei files dove PHP è mescolato all'Html deve essere utilizzata la sintassi alternativa per la struttura di controllo `foreach`.**
+**Nei file dove PHP è mescolato all'Html deve essere utilizzata la sintassi alternativa per la struttura di controllo `foreach`.**
 ```php
 <div>
 
@@ -1135,7 +1135,7 @@ else
 > L'istruzione `else if` non è compatibile con la sintassi alternativa dell'istruzione `if else`, pertanto, per consistenza col resto del codice, va utilizzata solo l'istruzione `elseif`.
 
 
-**Nei files dove PHP è mescolato all'Html deve essere utilizzata la sintassi alternativa per la struttura di controllo `if-else`.**
+**Nei file dove PHP è mescolato all'Html deve essere utilizzata la sintassi alternativa per la struttura di controllo `if-else`.**
 ```php
 <div>
 
@@ -1341,7 +1341,7 @@ switch ($value)
 > Deriva dalla raccomandazione generale sull'indentazione.
 
 
-**Nei files dove PHP è mescolato all'Html deve essere evitato l'uso della sintassi alternativa per la struttura di controllo `switch`.**
+**Nei file dove PHP è mescolato all'Html deve essere evitato l'uso della sintassi alternativa per la struttura di controllo `switch`.**
 > Poiché  qualsiasi output (inclusi spazi bianchi) tra un'istruzione `switch` e il primo `case` genererà un errore di sintassi, per poter utilizzare la sintassi alternativa di `switch` deve essere eliminata l'indentazione della prima istruzione `case` rendendo oscuro il codice. 
 
 
@@ -1398,7 +1398,7 @@ while ($i < 10)
 > Deriva dalla raccomandazione generale sull'indentazione.
 
 
-**Nei files dove PHP è mescolato all'Html deve essere utilizzata la sintassi alternativa per la struttura di controllo `while`.**
+**Nei file dove PHP è mescolato all'Html deve essere utilizzata la sintassi alternativa per la struttura di controllo `while`.**
 ```php
 <div>
 
@@ -1477,7 +1477,7 @@ $var = getFoo($bar, $bar2, $bar3);
 > L'allineamento può facilitare la leggibilità, ma crea problemi per la manutenzione futura. Si consideri un cambiamento futuro che deve toccare solo una riga. Questo cambiamento spinge il programmatore a regolare lo spazio bianco anche sulle linee vicine, probabilmente attivando una serie di riformattazioni a cascata.
 
 
-**Le _closures_ devono essere scritte secondo il seguente formato:**
+**Le _closure_ devono essere scritte secondo il seguente formato:**
 ```php
 $doExecute = function () : mixed
 {
@@ -1494,7 +1494,7 @@ $doOtherExecute = function () use ($arg) : mixed
 
 > Si noti che il costrutto `use` è preceduto e seguito da uno spazio.
 
-> Le _closures_ all'interno di chiamate di funzioni devono stare su una propria riga, come nell'esempio seguente:
+> Le _closure_ all'interno di chiamate di funzioni devono stare su una propria riga, come nell'esempio seguente:
 > ```
 > $rowIds = array_map(
 >     function ($row)
@@ -1531,16 +1531,16 @@ $var = foo($bar, $baz = 'string', $quux = NULL);
 
 
 
-## Namespaces
+## Namespace
 
-**I nomi dei namespaces devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
-> I numeri sono consentiti nei nomi dei _namespaces_, ma sono da evitarsi nella maggior parte dei casi.
+**I nomi dei namespace devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi dei _namespace_, ma sono da evitarsi nella maggior parte dei casi.
 
-> Queste raccomandazioni nascono dal fatto che i nomi dei _namespaces_ vengono mappati con i nomi delle _directories_, creando un collegamento biunivoco con queste ultime.
+> Queste raccomandazioni nascono dal fatto che i nomi dei _namespace_ vengono mappati con i nomi delle _directory_, creando un collegamento biunivoco con queste ultime.
 
-> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione del `namespace` all'interno delle _directories_.
+> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione del `namespace` all'interno delle _directory_.
 
-> La dichiarazione dei _namespaces_ non inizia mai con un _backslash_ `Vendor\Space\Space`.
+> La dichiarazione dei _namespace_ non inizia mai con un _backslash_ `Vendor\Space\Space`.
 
 
 **Ci deve essere una riga vuota prima e dopo la dichiarazione di un `namespace`.**
@@ -1624,11 +1624,11 @@ use \OtherNamespace;
 **I nomi delle interfacce devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
 > I numeri sono consentiti nei nomi delle interfacce, ma sono da evitarsi nella maggior parte dei casi.
 
-> Queste raccomandazioni nascono dal fatto che i nomi delle interfacce vengono mappati con i nomi dei _files_, creando un collegamento biunivoco con questi ultimi.
+> Queste raccomandazioni nascono dal fatto che i nomi delle interfacce vengono mappati con i nomi dei _file_, creando un collegamento biunivoco con questi ultimi.
 
 
 **Le interfacce devono essere dichiarati in singoli file con il nome del _file_ corrispondente al nome della interfaccia con l'aggiunta dell'estensione `.php`.**
-> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione dell'interfaccia all'interno delle _directories_.
+> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione dell'interfaccia all'interno delle _directory_.
 
 
 **Il corpo di un'interfaccia deve seguire l'indentazione di Allman.**
@@ -1657,16 +1657,16 @@ interface Person
 
 
 
-## Traits
+## Trait
 
-**I nomi dei _traits_ devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
-> I numeri sono consentiti nei nomi dei _traits_, ma sono da evitarsi nella maggior parte dei casi.
+**I nomi dei _trait_ devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
+> I numeri sono consentiti nei nomi dei _trait_, ma sono da evitarsi nella maggior parte dei casi.
 
-> Queste raccomandazioni nascono dal fatto che i nomi dei _traits_ vengono mappati con i nomi dei _files_, creando un collegamento biunivoco con questi ultimi.
+> Queste raccomandazioni nascono dal fatto che i nomi dei _trait_ vengono mappati con i nomi dei _file_, creando un collegamento biunivoco con questi ultimi.
 
 
-**I _traits_ devono essere dichiarati in singoli file con il nome del file corrispondente al nome del _trait_ con l'aggiunta dell'estensione `.php`.**
-> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione del _trait_ all'interno delle _directories_.
+**I _trait_ devono essere dichiarati in singoli file con il nome del file corrispondente al nome del _trait_ con l'aggiunta dell'estensione `.php`.**
+> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione del _trait_ all'interno delle _directory_.
 
 
 **Il corpo di un `trait` deve seguire l'indentazione di Allman.**
@@ -1688,11 +1688,11 @@ trait Employee
 **I nomi delle classi devono contenere solo caratteri alfanumerici ed essere scritti in `CapitalizedWords`.**
 > I numeri sono consentiti nei nomi delle classi, ma sono da evitarsi nella maggior parte dei casi.
 
-> Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei _files_, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione di un _file_.
+> Queste raccomandazioni nascono dal fatto che i nomi delle classi vengono mappati con i nomi dei _file_, creando un collegamento biunivoco con questi ultimi e rendendo predicibile la posizione di un _file_.
 
 
-**Le classi devono essere dichiarati in singoli _files_ con il nome del _file_ corrispondente al nome della classe con l'aggiunta dell'estensione `.php`.**
-> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione del _file_ sorgente della classe all'interno delle _directories_.
+**Le classi devono essere dichiarati in singoli _file_ con il nome del _file_ corrispondente al nome della classe con l'aggiunta dell'estensione `.php`.**
+> Migliora l'organizzazione del codice, oltre a rendere prevedibile la posizione del _file_ sorgente della classe all'interno delle _directory_.
 
 
 **Le classi devono essere sempre dichiarate in un `namespace`.**
@@ -1700,7 +1700,7 @@ trait Employee
 
 
 **Le classi devono essere dichiarate ognuna in un proprio _file_ sorgente.**
-> Migliora l'organizzazione del codice, oltre al fatto che i _files_ sorgenti vanno mappati alle classi.
+> Migliora l'organizzazione del codice, oltre al fatto che i _file_ sorgenti vanno mappati alle classi.
 
 
 **Il corpo di una classe deve seguire l'indentazione di Allman.**
@@ -1767,7 +1767,7 @@ abstract class Person
 ```
 > La raccomandazione tenta di ridurre la complessità, rendendo prevedibile la posizione di ciascun elemento della classe.
 > Gli elementi della classe vanno raggruppati e, all'interno di ciascun gruppo, ordinati alfabeticamente per nome:
-> * traits;
+> * trait;
 > * costanti;
 > * proprietà;
 > * metodi;
@@ -2115,17 +2115,17 @@ class Foo
 
 ## Note legali
 
-["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
+["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 - 2019 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 Se riproduci, distribuisci o modifichi questo manuale devi fornire un'adeguata attribuzione in base alla licenza.
 
 Se riproduci o distribuisci il manuale senza apportare sostanziali modifiche al suo contenuto, utilizza la seguente riga di attribuzione:
 
-> ["Manuale di Stile per PHP"](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Copyright &copy; 2018 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode). Usato in conformità alla licenza.
+> ["Manuale di Stile per PHP"](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Copyright &copy; 2018 - 2019 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode). Usato in conformità alla licenza.
 
 Se modifichi il contenuto del manuale, ad esempio per conformarlo alle convenzioni di codifica del tuo team, utilizza questa riga di attribuzione:
 
-> Adattato in conformità alla licenza a partire dal ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
+> Adattato in conformità alla licenza a partire dal ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 - 2019 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 In ogni caso devi includere un collegamento ipertestuale o altro riferimento, collegando "Manuale di Stile per PHP" all'url _https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP_ e "Guglielmo Pepe" all'url _https://www.guglielmopepe.com_.
 
