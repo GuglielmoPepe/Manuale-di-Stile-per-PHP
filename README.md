@@ -2121,7 +2121,7 @@ Se riproduci, distribuisci o modifichi questo manuale devi fornire un'adeguata a
 
 Se riproduci o distribuisci il manuale senza apportare sostanziali modifiche al suo contenuto, utilizza la seguente riga di attribuzione:
 
-> ["Manuale di Stile per PHP"](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Copyright &copy; 2018 - 2019 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode). Usato in conformità alla licenza.
+> ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 - 2019 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode). Usato in conformità alla licenza.
 
 Se modifichi il contenuto del manuale, ad esempio per conformarlo alle convenzioni di codifica del tuo team, utilizza questa riga di attribuzione:
 
