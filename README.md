@@ -2115,19 +2115,19 @@ class Foo
 
 ## Note legali
 
-["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://guglielmopepe.github.io). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
+["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 Se riproduci, distribuisci o modifichi questo manuale devi fornire un'adeguata attribuzione in base alla licenza.
 
 Se riproduci o distribuisci il manuale senza apportare sostanziali modifiche al suo contenuto, utilizza la seguente riga di attribuzione:
 
-> ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://guglielmopepe.github.io). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode). Usato in conformità alla licenza.
+> ["Manuale di Stile per PHP"](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Copyright &copy; 2018 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode). Usato in conformità alla licenza.
 
 Se modifichi il contenuto del manuale, ad esempio per conformarlo alle convenzioni di codifica del tuo team, utilizza questa riga di attribuzione:
 
-> Adattato in conformità alla licenza a partire dal ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://guglielmopepe.github.io). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
+> Adattato in conformità alla licenza a partire dal ["Manuale di Stile per PHP"](https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP). Copyright &copy; 2018 [Guglielmo Pepe](https://www.guglielmopepe.com/?utm_source=github&utm_medium=Manuale-di-Stile-per-PHP&utm_campaign=awareness). Distribuito con licenza [Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
-In ogni caso devi includere un collegamento ipertestuale o altro riferimento, collegando "Manuale di Stile per PHP" all'url _https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP_ e "Guglielmo Pepe" all'url _https://guglielmopepe.github.io_.
+In ogni caso devi includere un collegamento ipertestuale o altro riferimento, collegando "Manuale di Stile per PHP" all'url _https://guglielmopepe.github.io/Manuale-di-Stile-per-PHP_ e "Guglielmo Pepe" all'url _https://www.guglielmopepe.com_.
 
 
 [vai all'indice ⬆](#indice)
